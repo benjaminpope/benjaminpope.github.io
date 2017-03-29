@@ -17,7 +17,7 @@
 
 </script>
 
-<meta name="keywords" content="Benjamin Pope, Balliol, University Challenge, Oxford, Berkeley, Sydney, Sagan, NYU, astronomy, astrophysics, physics, exoplanets, optics, kernel phase, aperture masking, interferometry, Bayesian, big data, Gaussian Processes, Kepler, K2, integral field, instrumentation, adaptive optics, halo photometry, smear photometry, bright stars" />
+<meta name="keywords" content="Benjamin Pope, Oxford, Berkeley, Sydney, astronomy, astrophysics, physics, optics, kernel phase, aperture, masking, interferometry, Bayesian, big data, Gaussian processes, Kepler, K2, integral field, instrumentation, adaptive optics" />
 <meta name="robots" content="all" /> 
 <meta name="description" content="Homepage for Benjamin Pope, astronomy and astrophysics student at the University of Oxford." /> 
 <meta name="author" content="Benjamin Pope" />
@@ -43,10 +43,14 @@
 
 				<!-- One -->
 					<section id="one">
-						<!-- <header class="major">
-							<h2>Astronomy, optics and Bayesian statistics</h2>
-						</header> -->
-						<p>I'm a graduate student in astrophysics at the University of Oxford. I study exoplanets and develop new and better methods for detecting and characterizing them. Currently, I'm working on a <a href="./kepler.html">survey of naked-eye stars in <i>Kepler</i></a> to search for transiting planets. I will be moving to NYU to take up a <a href="http://nexsci.caltech.edu/sagan/fellowship.shtml">Sagan Fellowship</a> in late 2017.</p>
+						<header class="major">
+							<h2>Kepler/K2 Bright Stars</h2>
+						</header>
+						<p>Kepler, launched in 2009, measures the brightness (photometry) of tens to hundreds of thousands of stars at a time every ~30 minutes to produce 'light curves' with two chief objectives: to detect planets orbiting these stars by the dip in brightness as they pass in front of the star; and to study the physics of stars themselves. The nominal Kepler mission lasted 3.5 years and studied ~170,000 stars, only to be crippled by the failure of two of the reaction wheels necessary to steer the spacecraft. It has been revived as K2, with the spacecraft pointing balanced against radiation pressure from the Sun, allowing it to conduct ~ 80 day Campaigns in the ecliptic plane. </p>
+
+						<p> We have applied Gaussian Process non-parametric models to <a href="http://adsabs.harvard.edu/abs/2016MNRAS.459.2408A">Bayesian calibration of systematics in K2 data</a>, which is otherwise severely affected by pointing drift and thruster firings not present in nominal Kepler, in order to look for planets around these stars. We have <a href="http://adsabs.harvard.edu/doi/10.1093/mnras/stw1373">discovered 145 such planet candidates</a>, and continue to produce light curves, make these public, and search for planets as each new Campaign is released.</p>
+
+						<p>In the interests of open science, all our code and data is publicly available. Both our <a href="https://github.com/OxES/k2sc">K2 Systematics Correction (K2SC)</a> and <a href="https://github.com/hpparvi/k2ps">K2 Planet Search (K2PS)</a> packages are on GitHub, and all our corrected K2 light curves are available as <a href="https://archive.stsci.edu/prepds/k2sc/">High Level Science Products</a> on the Mikulski Archive for Space Telescopes </p>
 					</section>
 
 				<!-- Two -->
@@ -71,7 +75,6 @@
 							</article>
 						</div>
 					</section>
-
 
 				<!-- Three -->
 					<section id="three">

@@ -17,7 +17,7 @@
 
 </script>
 
-<meta name="keywords" content="Benjamin Pope, Balliol, University Challenge, Oxford, Berkeley, Sydney, Sagan, NYU, astronomy, astrophysics, physics, exoplanets, optics, kernel phase, aperture masking, interferometry, Bayesian, big data, Gaussian Processes, Kepler, K2, integral field, instrumentation, adaptive optics, halo photometry, smear photometry, bright stars" />
+<meta name="keywords" content="Benjamin Pope, Oxford, Berkeley, Sydney, astronomy, astrophysics, physics, optics, kernel phase, aperture, masking, interferometry, Bayesian, big data, Gaussian processes, Kepler, K2, integral field, instrumentation, adaptive optics" />
 <meta name="robots" content="all" /> 
 <meta name="description" content="Homepage for Benjamin Pope, astronomy and astrophysics student at the University of Oxford." /> 
 <meta name="author" content="Benjamin Pope" />
@@ -43,10 +43,20 @@
 
 				<!-- One -->
 					<section id="one">
-						<!-- <header class="major">
-							<h2>Astronomy, optics and Bayesian statistics</h2>
-						</header> -->
-						<p>I'm a graduate student in astrophysics at the University of Oxford. I study exoplanets and develop new and better methods for detecting and characterizing them. Currently, I'm working on a <a href="./kepler.html">survey of naked-eye stars in <i>Kepler</i></a> to search for transiting planets. I will be moving to NYU to take up a <a href="http://nexsci.caltech.edu/sagan/fellowship.shtml">Sagan Fellowship</a> in late 2017.</p>
+						<header class="major">
+							<h2>Kernel Phase Interferometry</h2>
+						</header>
+
+						<p>My Honours and Masters research was on kernel-phase interferometry, working with <a href=http://www.physics.usyd.edu.au/~gekko/>Peter Tuthill</a> (Sydney) and <a href=http://www.frantzmartinache.com/subaru/index.html>Frantz Martinache</a> (Subaru). This is a generalization of the idea of non-redundant aperture masking, which constructs self-calibrating, closure-phase like quantities from redundant apertures.
+						This means that what was once accomplished in hardware, at a significant cost in optical throughput, can now be done entirely with software postprocessing. Using this, we are able to achieve high angular resolution, high-contrast detection of faint companions from <a href="http://adsabs.harvard.edu/abs/2015arXiv151006406P">ground-based AO</a> and <a href="http://adsabs.harvard.edu/abs/2013ApJ...767..110P">space telescope data.</a></p>
+
+						<p>Kernel phase can also be used in reverse, for <a href="http://adsabs.harvard.edu/abs/2014MNRAS.440..125P">cophasing segmented mirrors</a> and <a href="http://adsabs.harvard.edu/abs/2014SPIE.9148E..59P">calibrating non-common-path error in AO</a>. I'm presently very interested in extending these ideas to include coronagraphs, and in optimizing the performance of the James Webb Space Telescope with kernel phase and masking.</p>
+
+						<p>Kernel phase is incredibly precise - here's a <a href = ../movies/movie3.gif>neat visualisation</a> of how well it pins down the position angle of a known binary system. I've set the separation and contrast to the best fit, and we're walking around in position angle. The model kernel phases line up with the data only when the angle is exactly right! Likewise, setting position angle and contrast and walking away in <a href = ../movies/moviesep2.gif>separation</a> illustrates the astrometric precision of kernel phase in both parameters.</p>
+
+						<h2> pysco</h2>
+
+						<p>The latest version of the PYthon Self-Calibrating Observables package, the core kernel phase code, is available on <a href = "http://www.github.com/benjaminpope/pysco">my GitHub page</a>. </p>
 					</section>
 
 				<!-- Two -->
