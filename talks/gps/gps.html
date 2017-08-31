@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="Extreme Solar Events in the Radiocarbon Record">
+		<meta name="author" content="Benjamin Pope">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/black.css" id="theme"> -->
+	<link rel="stylesheet" href="css/theme/white.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="./kolmogorov.jpg">
+					<h1>Gaussian Processes</h1>
+					<h3> for the General Practitioner</h3>
+					<!-- <p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p> -->
+				</section>
+
+				<section>
+					<section data-background="./kolmogorov.jpg">
+						<h1>Interpolation</h1>
+						<!-- <p>
+							reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+						</p> -->
+						<!-- <img width='480' height='288' data-src="rings.jpg" alt="Tree rings"> -->
+					</section>
+
+					<section>
+						<!-- <h2>Miyake Events</h2> -->
+						We often want to model a function - say, an image, or a time series - where we might not be able to specify some functional form in advance, but rather only very general properties, such a a rough amplitude and length scale.
+						<!-- <p>
+							reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+						</p> -->
+					</section>
+
+					<section>
+						When we interpolate, we are performing a <i>regression</i> analysis, trying to fit a function to data. This is the same problem as extrapolation, where we are predicting the value of this function a long way from the samples on which it is conditioned.
+					</section>
+
+					<section>
+						<!-- <h2>Miyake Events</h2> -->
+						<h2>Interpolating with splines</h2>
+						<!-- <p>
+							reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+						</p> -->
+						Splines are a common piece-wise polynomial model, anchored at a finite set of points, used for interpolation.
+
+					</section>
+
+					<section data-transition="slide-in fade-out">
+						<!-- <h2>Two Miyake Events!</h2> -->
+						<img width='555' height='555' data-src="spline_basic.jpg" alt="Good Spline">
+					</section>
+
+
+					<section data-transition-speed="fast" data-transition="fade-in slide-out">
+						<img width='555' height='555' data-src="spline_bad.jpg" alt="Bad Spline">
+					</section>
+
+					<section>
+						These are no good for extrapolation. We need something that won't blow up away from the data! 
+					</section>
+
+				</section>
+
+				<section >
+
+					<section data-background="./kolmogorov.jpg">
+						<h1>Gaussian Processes</h1>
+					</section>
+
+					<section>
+						<img width='258' height="418" data-src="hippocrates.jpg"><br>
+						<a href="https://en.wikipedia.org/wiki/Hippocrates">Hippocrates</a>: 'First, do no harm'.
+					</section>
+
+					<section>
+						Go to a GP - a Gaussian Process!
+					</section>
+
+					<section>
+						<p>A Gaussian Process is a <b>distribution over functions</b> such that any <b>finite set </b> of samples are <b>jointly Gaussian-distributed.</b></p>
+						<p class="fragment">These are sometimes also referred to as <b>Gaussian random fields.</b></p>
+					</section>
+
+					<section>
+						\[
+						\underbrace{\mathbf{y}}_{\text{data}} \sim \mathscr{N}(\overbrace{\mu}^{\text{mean}},\underbrace{\mathbf{K}}_{\text{covariance}})
+						\]	
+					</section>
+
+					<section>
+						These are good for regression where you have some idea of the shape of a function, and crucially, give you estimates of the uncertainty in your predictions as well.
+					</section>
+
+					<section>
+						<p>You specify a  mean function \[\mu(\mathbf{x},\mathbf{\theta}_\mu) \] which defines a deterministic, parametric model (e.g. the orbit of a planet)...</p>
+						<p class="fragment">and a covariance function \[\mathbf{K}(\mathbf{x}_1, \mathbf{x_2}, \mathbf{\theta}_K) \] which generates random variations, such as stellar activity.</p>
+					</section>
+
+					<section>
+						<p>In general you will want your covariance function to simply be a 'kernel' \[\mathbf{K}(x_1,x_2) = k(|\mathbf{x}_1 - \mathbf{x}_2|, \mathbf{\theta}_K) \]</p>
+						<p class="fragment"> which we see depends only on the distance between your input data. </p>
+					</section>
+
+					<section>
+						<p>Any zero-mean GP/Gaussian Random Field is fully characterized by its power spectral density (PSD), or equivalently, its covariance function. </p>
+						<p class="fragment">These are interchangeable because of the Wiener-Khinchine theorem, which states that these are related by a Fourier transform. </p>
+						<p class="fragment">
+							\[ 
+							\underbrace{f\star f}_{\text{autocorrelation}} = FT(|f|^2) 
+							\]
+						</p>
+					</section>
+
+					<section>
+						<p>These can be simple 1D functions, like here where \(k(\Delta t) = \exp(-{\Delta t}/\tau)^2 \)</p>
+						<img class="fragment" width='450' height = '450' data-src='1dtest.jpg' alt='1d'>
+					</section>
+
+					<section>
+						... or these can have higher dimensions. For example, the <a href="http://www.sjsu.edu/faculty/watkins/kolmo.htm">Kolmogorov theory of turbulence</a> has a self-similar, power-law power spectral density in wavenumber \(k\)<br><br>
+						\[ E(k) \propto  k^{-5/3} \]
+					</section>
+
+					<section>
+						which generates the Gaussian Random Field below.
+						<img class="fragment" width='555' height = '555' data-src='kolmogorov.jpg' alt='Kolmogorov Turbulence'>
+					</section>
+
+
+
+					<section data-transition="slide-in fade-out">
+						<p>You can use GPs to interpolate conservatively!</p>
+						<img class="fragment" width='450' height='450' data-src="gpfit.jpg" alt="GP">
+					</section>
+
+					<section data-transition-speed="fast" data-transition="fade-in slide-out">
+						<p>... and work better if you optimize the kernel.</p>
+						<img width='450' height='450' data-src="gpfit_periodic.jpg" alt="Periodic GP">
+					</section>
+
+				</section>
+
+
+
+				<section>
+
+					<section data-background="./kolmogorov.jpg">
+						<h1>History</h1>
+					</section>
+
+					<section>
+					Danish astronomer <a href="https://en.wikipedia.org/wiki/Thorvald_N._Thiele">Thorvald Thiele</a> was the first to my knowledge to use something like a GP, discovering what was later called the <a href="https://en.wikipedia.org/wiki/Kalman_filter">Kalman Filter</a>, a special case of the GP.
+					</section>
+
+					<section>
+						GP filtering was rediscovered in similar but different forms by American <a href="https://en.wikipedia.org/wiki/Norbert_Wiener">Norbert Wiener</a> in the context of controlling anti-aircraft guns in World War II, and contemporaneously by <a href="https://en.wikipedia.org/wiki/Andrey_Kolmogorov">Andrey Kolmogorov</a> in the Soviet Union. This inspired <a href="https://en.wikipedia.org/wiki/Rudolf_E._K%C3%A1lm%C3%A1n">Rudolf E. Kálmán</a> to develop the Kalman filter for missile guidance in the Cold War.
+					</section>
+
+					<section>
+						<a href="http://econgeol.geoscienceworld.org/content/58/8/1246">Matheron</a> defined 'kriging' (after pioneering miner <a href="https://en.wikipedia.org/wiki/Danie_G._Krige">Danie Krige</a>) as a technique in geospatial statistics 'computing the weighted average of available samples... The suitable weights \(a_i\) are determined by \(\sum_i a_i = 1 \)... [and the prediction] variance... should take the smallest possible value'.
+					</section>
+
+					<section>
+						The idea was that if it is expensive to take exploratory samples, you should have some optimal interpolating method that knows about the spatial structure of an ore body to help you make the best inference about where to mine.
+					</section>
+
+					<section>
+						<p>This has also been used in meteorology, to interpolate between a few weather stations across a wide region (eg Switzerland below)</p>
+						<img class="fragment" width='400' height='318' data-src='kriging_weather.jpg' alt='http://www.gitta.info/ContiSpatVar/en/html/Interpolatio_learningObject3.xhtml'> 
+					</section>
+
+					<section>
+						GPs are now ubiquitously used in machine learning: 'Bayesian neural networks with infinitely many hidden units converge to Gaussian processes with a particular kernel (covariance) function' (from <a href="https://arxiv.org/abs/1511.02222">here</a> and <a href="http://www.springer.com/gp/book/9780387947242">here</a>). Serious machine learning people are trying to combine the smoothness and power of GPs with the flexibility of neural networks - this is a hot topic! 
+					</section>
+
+				</section>
+
+				<section>
+
+					<section data-background="./kolmogorov.jpg">
+					<h2>So how does it work?</h2>
+					</section>
+
+					<section>
+						<img width='500' height='384' data-src="covariance.jpg" alt="How Covariance Works">
+						<p class="fragment">Information about \(x_1\) tells you more about \(x_2\) than just the marginal distribution - because they are correlated, learning \(x_1\) allows you to predict \(x_2\) more accurately.</p>
+					</section>
+
+					<section>
+						<p>In using a GP we exploit this by knowing the correlations across, say, a whole time series or spatial map.</p>
+					</section>
+
+					<section>
+						<p>This is characterized by a covariance matrix like this, for squared exponential correlation with \(\lambda = 100\).</p>
+						<img class="fragment" width='500' height='500' data-src='covariance_matrix.jpg' style="border:none; box-shadow:none" alt="Matrix">
+					</section>
+
+					<section>
+						<p>Remarkably, the posterior for a GP conditioned upon data \(\mathbf{x}_* \) is also a GP, and has an analytic distribution</p>
+						<p class="fragment">
+							 \[ p(\mathbf{y}*) = \mathscr{N}(\mathbf{m}_*, \mathbf{C}_*),\]
+						</p>
+						<p class="fragment">
+							where \[ \mathbf{m}_* = \mathbf{\mu}(\mathbf{x}_*) + \mathbf{K}(\mathbf{x}_*, \mathbf{x})\mathbf{K}(\mathbf{x}, \mathbf{x})^{-1} (\mathbf{y}(\mathbf{x}) - \mathbf{\mu}(\mathbf{x}))
+							\]
+						</p>
+						<p class="fragment"> 
+							and <br>
+							\[ \mathbf{C}_* = \mathbf{K}(\mathbf{x}_*,\mathbf{x}_*) -\mathbf{K}(\mathbf{x}_*,\mathbf{x})\mathbf{K}(\mathbf{x},\mathbf{x})^{-1}\mathbf{K}(\mathbf{x}_*,\mathbf{x})^T.
+ 							\]
+						</p>
+					</section>
+
+										<section>
+						<p>Your kernel can be thought of as matching the impulse response function of a linear system. So for a driven, damped harmonic oscillator, the kernel is</p>
+						<p class="fragment">
+						\[ k(\Delta t) = A_0 \cdot \exp{(-\dfrac{\Delta t}{\tau})} \cos(\omega \Delta t)
+						\]
+						</p>
+						<p class="fragment">Let's look at some draws from this distribution.</p>
+					</section>
+
+					<section>
+						<img width='450' height='450' data-src="sho_kernel.jpg" style="border:none; box-shadow:none" alt="SHO Kernel">
+					</section>
+
+					<section>
+						<p>There are many kernels for different tasks, and I will not cover them all here. For example, there is the Matern-3/2 kernel</p>
+						<p class="fragment">\[k(r^2) = (1+\sqrt{3r^2}) \exp(-\sqrt{3} r^2)
+						\]</p>
+						<p class="fragment"> which is good for rough or jagged processes.</p>
+					</section>
+
+					<section>
+						<p>Or there is the Exponential Sine Squared kernel</p>
+						<p class="fragment">\[k(x_i,x_j) = \exp(-\Gamma \sin^2{(\dfrac{\pi}{P} |x_j - x_i|)})\]</p>
+						<p class="fragment"> which is good for periodic processes which 'lose memory' at a rate determined by \(\Gamma\).</p>
+					</section>
+
+					<section>
+						Choosing the kernel is often as much an art as a science - while it should ideally match the dynamics of the system, in practice these are often not well known, and a combination of experimentation and intuition is required.
+					</section>
+
+					<section>
+						<p>Often you will want to represent white noise as a diagonal term in your covariance matrix, so that</p>
+						<p class="fragment">\[\mathbf{K} = \mathbf{K}_0 + \sigma^2 \mathbf{I}.  \]</p>
+						<p class="fragment">This white noise parameter \(\sigma\) allows you to account for uncorrelated errors safely.</p>
+					</section>
+
+
+					<section>
+						<h2>Hyperparameters</h2>
+					</section>
+
+
+					<section>
+						<p>The parameters \( \tau, P, \Gamma, \nu\) et cetera above are called <i>hyperparameters.</i></p>
+						<p class="fragment"> While GPs are non-parametric models, the general information such as length scale, period, amplitude and so forth that controls a GP is determined by these hyperparameters. In general, you will want to optimize these to get the best possible fit to your data.</p>
+					</section>
+
+					<section>
+						<p>Conveniently, the GP has an analytic marginal likelihood!</i></p>
+						<p class="fragment"> \[ \log p(\mathbf{y}|\mathbf{x},\mathbf{\theta},I) = -\underbrace{\dfrac{1}{2} \mathbf{y}^T (\mathbf{K}+\sigma^2 \mathbf{I})^{-1} \mathbf{y}}_{\text{data fit}}\]</p>
+						<p class="fragment">\[-\underbrace{\dfrac{1}{2} \log(\det(\mathbf{K}+\sigma^2 \mathbf{I}))}_{\text{complexity penalty}}
+						- \underbrace{\dfrac{n}{2}\log(2\pi)}_{\text{constant}}\]
+						</p>
+					</section>
+
+					<section>
+						You will usually use an optimizing library such as <a href="scipy.optimize.minimize">scipy</a> to maximize the likelihood of this GP fit and therefore optimize the hyperparameters - you uually don't care as much about their detailed distribution.
+					</section>
+
+					<section>
+						<p>In practice the determinant and matrix inversion are what kills you, as these scale as \( \mathscr{O}(3)\) with the number of data points \( n\) - brutal! </p>
+						<p class="fragment">It is very often the case that most of the ingenuity in a GP software package is in implementing a clever matrix decomposition such as the <a href="https://arxiv.org/abs/1403.6015">HODLR</a> or <a href="https://en.wikipedia.org/wiki/Cholesky_decomposition">Cholesky</a> decompositions, which are beyond my mortal ken.</p>
+					</section>
+
+					<section>
+						In your work you should rarely need to use these! There are excellent GP packages available, such as <a href="http://dan.iel.fm/george/">george</a>, <a href="http://celerite.readthedocs.io/en/stable/">celerite</a>, <a href="http://scikit-learn.org/stable/modules/gaussian_process.html">scikit-learn</a>, and <a href="http://www-ai.cs.uni-dortmund.de/weblab/static/api_docs/pyGPs/">pyGPs</a>, which are all fast and stable.
+					</section>
+				</section>
+
+
+
+				<section>
+					
+					<section data-background="./kolmogorov.jpg">
+					<h1>Examples</h1>
+					</section>
+
+					<section>
+						<h3>Asteroseismology</h3>
+						<p class="fragment">In asteroseismology, a star rings like a bell and its frequencies tell us important information about the stellar interior.</p>
+						<p class="fragment">For solar-like stars driven by convective noise, the signal should reduce to a sum of simple harmonic oscillator Gaussian Processes.
+						\[ k(\Delta t) = A_0 \cdot \exp{(-\dfrac{\Delta t}{\tau})} \cos(\omega \Delta t)
+						\]</p>
+
+					</section>
+
+					<section>
+					<img width="500" height="500" data-src="asteroseismology.jpg" alt="Brewer & Stello">
+					<p>Brewer and Stello, 2009. Link this</p>
+					</section>
+
+					<section>
+						<h3>Multiple Inputs and Outputs</h3>
+						<p class="fragment">A GP kernel can depend on several different inputs (eg position and time), and a GP can output a vector-valued function.</p>
+
+					</section>
+					<section>
+						<h3>Searching for Exoplanets </h3>
+						<p class="fragment">Exoplanets are detectable by the dip they cause in brightness as they pass in front of a star...</p>
+						<p class="fragment">... but the instrument is not perfect, and stars can vary for other reasons!</p>
+					</section>
+					<section>
+						<iframe src="https://player.vimeo.com/video/89418853" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<p><a href="https://vimeo.com/89418853">Exoplanet-style transit light curve of Venus</a> from <a href="https://vimeo.com/user13009721">James Gilbert</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+					</section>
+
+					<section>
+						<h3>Raw K2 Data</h3>
+						<video data-autoplay loop src="movie.mp4"></video>
+					</section>
+
+					<section>
+						<p>So we model this as a 2D GP: with a squared exponential kernel in both time and in the spacecraft roll angle.</p>
+						<p>We calibrate out the error introduced by roll by then predicting the GP at each roll angle, with time set to zero - and subtract this purely-roll systematic from the real data.</p>
+					</section>
+
+					<section>
+					<img width="681" height="502" data-src="k2sc.jpg" alt="K2 Lightcurves">
+					</section>
+
+					<section>
+					<p>A planet - EPIC 212357477 b</p>
+					<img width="1063" height="530" data-src="transit.jpg" alt="EPIC 212357477">
+					</section>
+
+					<section>
+						<p>Remember the mean function? We can use a GP to account for correlated noise. This 'red' noise is a huge problem in, for example, precise measurements of exoplanetary atmospheres.</p>
+						<p>You jointly fit the mean parameters \(\mathbf{\theta}_\mu\) and the stochastic parameters \(\mathbf{\theta}_K\) with, say, MCMC or nested sampling.</p>
+					</section>
+
+					<section>
+						<img width="458" height="351" data-src="planet_transit.jpg" style="border:none; box-shadow:none"  alt="http://www.robots.ox.ac.uk/~sjrob/Pubs/philTransA_2012.pdf">
+						<p>Here, we want to infer \(\mathbf{\theta}_\mu\) (orbital parameters, planet radius, etc) and marginalize over instrumental systematics as nuisance parameters.</p>
+					</section>
+
+
+					<section>
+						<h3>Traps</h3>
+						<p>Cowtan and Way (2013) realised that there was very poor coverage of temperature maps near the poles – only 84% global coverage.</p>
+						<img width="530" height="285" data-src="climate.jpg" alt="Bad Climate Data Modelling">
+
+					</section>
+
+					<section>
+						<p>If you use a GP to try and fill in the gaps, you find there has been a bias to estimating lower global warming than previously thought.</p>
+						<p class="fragment">The issue is that the poles have very different physics to the equator and you can't interpolate one over the other - GPs model stationary processes!</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section  data-background="kolmogorov.jpg"><h1>Conclusions</h1></section>
+
+					<section>
+						<h3>Gaussian processes are awesome, and you should use them for statistically-robust non-parametric modelling.</h3>
+					</section>
+
+					<section>
+						Learning a good regression tool such as these (there are other good techniques too!) will benefit your career in and out of academia.
+					</section>
+
+					<section>
+						<p>For further reading, I recommend</p>
+						<p><h4>Books</h4></p>
+						<p>David Mackay, <a href="http://www.inference.org.uk/itprnn/book.pdf"><i>Information, Inference and Learning Algorithms</i></a>, available free online;</p>
+						<p>Rasmussen and Williams, <a href="http://www.gaussianprocess.org/gpml/chapters/RW.pdf"><i>Gaussian Processes for Machine Learning</i></a>, also free online; </p>
+
+						<p><h4>Paper</h4></p>
+						<p>Roberts et al., <a href="http://www.robots.ox.ac.uk/~sjrob/Pubs/philTransA_2012.pdf"><i>Gaussian Processes for Time Series Modelling</i></a></p>
+					</section>
+
+
+					<section data-background="./kolmogorov.jpg">
+					<h1>Questions?</h1>
+					</section>
+
+
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+					math: {
+						mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+						config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					},
+
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
