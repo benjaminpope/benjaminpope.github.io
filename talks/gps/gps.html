@@ -345,6 +345,12 @@
 					</section>
 
 					<section>
+						<p>Remember the mean function? We can use a GP to account for correlated noise.</p>
+						<p>You jointly fit the mean parameters \(\mathbf{\theta}_\mu\) and the stochastic parameters \(\mathbf{\theta}_K\) with, say, MCMC or nested sampling.</p>
+					</section>
+
+
+					<section>
 						<p>We have generated data with a real spectral line at 1.5 GHz, with depth 0.1, and \(\log(\sigma^2) =0.0005 \), buried in correlated noise from a GP with a squared-exponential kernel, \(\lambda=0.5\), amplitude 0.1. </p>					
 						<img class="fragment" width="400" height="400" data-src="data_spectral.jpg" style="border:none; box-shadow:none"  alt="Toy Data">
 
@@ -417,11 +423,6 @@
 					<section>
 					<p>A planet - <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1606.01264">EPIC 212357477 b</a></p>
 					<img width="1063" height="530" data-src="transit.jpg" alt="EPIC 212357477">
-					</section>
-
-					<section>
-						<p>Remember the mean function? We can use a GP to account for correlated noise. This 'red' noise is a huge problem in, for example, precise measurements of exoplanetary atmospheres.</p>
-						<p>You jointly fit the mean parameters \(\mathbf{\theta}_\mu\) and the stochastic parameters \(\mathbf{\theta}_K\) with, say, MCMC or nested sampling.</p>
 					</section>
 
 					<section>
