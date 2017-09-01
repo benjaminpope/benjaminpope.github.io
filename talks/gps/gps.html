@@ -43,7 +43,7 @@
 				<section data-background="./kolmogorov.jpg">
 					<h1>Gaussian Processes</h1>
 					<h3> for the General Practitioner</h3><br>
-					<a href="benjaminpope.github.io" style="color:#000000">Benjamin Pope</a> <br>
+					<a href="benjaminpope.github.io" style="color:#222222">Benjamin Pope</a> <br>
 
 					<!-- <p>
 						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
@@ -166,7 +166,7 @@
 
 					<section data-transition="slide-in fade-out">
 						<p>You can use GPs to interpolate conservatively!</p>
-						<img class="fragment" width='450' height='450' data-src="gpfit.jpg" alt="GP">
+						<img class="fragment" width='450' height='450' data-src="gpinterp.jpg" alt="GP">
 					</section>
 
 					<section data-transition-speed="fast" data-transition="fade-in slide-out">
@@ -247,7 +247,18 @@
 						</p>
 					</section>
 
-										<section>
+					<section>
+						<p><h2>Implementing a GP</h2></p>
+					</section>
+
+					<section>
+						<p>1. Choose your mean function \(\mu(\mathbf{x},\mathbf{\theta}_\mu)\) and kernel \(k(\mathbf{x},\mathbf{\theta}_k)\) appropriate to the problem.</p>
+						<p class="fragment">2. Fit your kernel hyperparameters \(\mathbf{\theta}_k\). This is usually too expensive to jointly fit with your deterministic model. </p>
+						<p class="fragment">3. Compute your GP covariance matrix. This is now just a familiar \(\chi^2\) problem. </p>
+						<p class="fragment">4. MCMC to get posteriors for the parameters \(\mathbf{\theta}_\mu\).</p>
+					</section>
+					<section>
+						<p><h3>Choosing your kernel</h3>
 						<p>Your kernel can be thought of as matching the impulse response function of a linear system. So for a driven, damped harmonic oscillator, the kernel is</p>
 						<p class="fragment">
 						\[ k(\Delta t) = A_0 \cdot \exp{(-\dfrac{\Delta t}{\tau})} \cos(\omega \Delta t)
@@ -312,7 +323,7 @@
 					</section>
 
 					<section>
-						In your work you should rarely need to use these! There are excellent GP packages available, such as <a href="http://dan.iel.fm/george/">george</a>, <a href="http://celerite.readthedocs.io/en/stable/">celerite</a>, <a href="http://scikit-learn.org/stable/modules/gaussian_process.html">scikit-learn</a>, and <a href="http://www-ai.cs.uni-dortmund.de/weblab/static/api_docs/pyGPs/">pyGPs</a>, which are all fast and stable.
+						There are excellent GP packages available to do this, such as <a href="http://dan.iel.fm/george/">george</a>, <a href="http://celerite.readthedocs.io/en/stable/">celerite</a>, <a href="http://scikit-learn.org/stable/modules/gaussian_process.html">scikit-learn</a>, and <a href="http://www-ai.cs.uni-dortmund.de/weblab/static/api_docs/pyGPs/">pyGPs</a>, which are all fast and stable.
 					</section>
 				</section>
 
@@ -322,6 +333,41 @@
 					
 					<section data-background="./kolmogorov.jpg">
 					<h1>Examples</h1>
+					</section>
+
+					<section>
+						<h3>Spectral Line</h3>
+						<p>A Test Case</p>
+					</section>
+
+					<section>
+						Very often the gain on a radio telescope can vary considerably across a spectral bandpass, due to interference or imperfections in the electronics. We are going to look for a Gaussian spectral line amid correlated noise across the spectral band.
+					</section>
+
+					<section>
+						<p>We have generated data with a real spectral line at 1.5 GHz, with depth 0.1, and \(\log(\sigma^2) =0.0005 \), buried in correlated noise from a GP with a squared-exponential kernel, \(\lambda=0.5\), amplitude 0.1. </p>					
+						<img class="fragment" width="400" height="400" data-src="data_spectral.jpg" style="border:none; box-shadow:none"  alt="Toy Data">
+
+					</section>
+
+					<section>
+						Not knowing the true kernel, we want to infer the parameters of the line buried in this correlated noise. Using <a href="http://george.readthedocs.io/en/latest/tutorials/model/">george</a> to model our GP, we choose a Matern-3/2 kernel - we shall see that the mismatch in kernel isn't too bad.
+					</section>
+
+					<section data-transition-speed="fast" data-transition="slide-in fade-out">
+						<p>Using <a href="http://dan.iel.fm/emcee/current/">emcee</a>, an affine-invariant MCMC sampler, we fit the GP hyperparameters jointly with our Gaussian line model.</p>
+						<img class="fragment" width="400" height="400" data-src="gpfit.jpg" style="border:none; box-shadow:none"  alt="Toy Data">
+
+					</section>
+
+					<section data-transition-speed="fast" data-transition="fade-in slide-out">
+						<p>We can subtract the best model fit out to see how well the GP models the noise:</p>
+						<img width="400" height="400" data-src="gpfit_gp.jpg" style="border:none; box-shadow:none"  alt="Toy Data">
+					</section>
+
+					<section>
+						<p>And we can make a <a href="http://corner.readthedocs.io/en/latest/">corner</a> plot to show the marginal distribution we get for the model parameters. We nail it pretty well in some tough noise! </p>
+						<img class="fragment" width="400" height="400" data-src="posterior.jpg" style="border:none; box-shadow:none"  alt="Toy Data">
 					</section>
 
 					<section>
