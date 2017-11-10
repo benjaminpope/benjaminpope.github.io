@@ -47,6 +47,10 @@ body {
   background-color: #fff;
   color: #000; }
 
+  html.dim-background .slide-background {
+    opacity: 0.6 !important;
+}
+
 /*********************************************
  * VIEW FRAGMENTS
  *********************************************/
