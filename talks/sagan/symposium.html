@@ -102,18 +102,23 @@
 					</section>
 
 					<section data-state="dim-background">
-						In the <a href="https://github.com/davidwhogg/OWL">OWL</a> method (Hogg & Foreman-Mackey), you choose weights to minimize variance of the final light curve. But this has very limited success on these stars. 
+						In the <a href="https://github.com/davidwhogg/OWL">OWL</a> method (Hogg & Foreman-Mackey), you choose weights to minimize variance of the final light curve - but this has limited success.
 					</section>
 
 					<section data-state="dim-background">
 					To find the appropriate weights, we instead minimize the Total Variation 
-					<br><br>
-					\[\begin{align}
+					<!-- <br><br> -->
+					<p class="fragment">\[\begin{align}
 					TV \equiv \dfrac{\sum_i |f_i - f_{i-1}|} {\sum_i f_i }
 					\end{align} \]
-					<br>
-					This is convex and has analytic derivatives in Theano - easy to optimize.
+					</p>
+					<p class="fragment">This is the L1 norm on the derivative of the time series.</p>
+					<p class="fragment">TV is convex and has analytic derivatives in Theano - easy to optimize.</p>
 					</section>
+				
+				</section>
+
+				<section data-background="./pleiades.jpg">
 
 					<section>
 						<h3>Pleiades</h3>
@@ -139,24 +144,8 @@
 
 					<section data-state="dim-background">
 						<p>I am currently searching all bright stars in K2 for transiting planets - none so far, but plenty of asteroseismology!</p>
-						<br>
-						<p>The method generalizes well to simulated TESS data - which saturates at ~ 6th mag.</p>
 					</section>
               	
-	              	<section data-markdown data-state="dim-background">
-		                <script type="text/template">
-						#### Predicted Yields from all 906 FGK stars with V mag < 6.5 (using Fressin et al., 2013 rates)
-
-						| Type    	    | E[n]       
-						| ------------- | -------------
-						| Giants    	| 0.31 ± 0.55
-						| Large Neptunes| 0.24 ± 0.47   
-						| All Neptunes  | 3.42 ± 1.89     
-						| Super-Earths  | 4.11 ± 2.10      
-
-		                </script>
-		                Numbers from Fressin et al., 2013.
-              		</section>
 
 				</section>
 
@@ -218,6 +207,27 @@
 					<section>
 						Thanks to the K2 GO office, we have more than a hundred halo light curves and are working our way through them.
 					</section>
+
+					<section>
+						The method generalizes well to simulated TESS data - which saturates at ~ 6th mag.
+
+					</section>
+
+					<section data-markdown>
+		                <script type="text/template">
+						Predicted Yields from all 906 FGK stars with V mag < 6.5 (using <a href="http://adsabs.harvard.edu/abs/2013ApJ...766...81F">Fressin et al., 2013</a> rates)
+
+						| Type    	    | E[n]       
+						| ------------- | -------------
+						| Giants    	| 0.31 ± 0.55
+						| Large Neptunes| 0.24 ± 0.47   
+						| All Neptunes  | 3.42 ± 1.89     
+						| Super-Earths  | 4.11 ± 2.10      
+
+		                </script>
+		                Numbers from Fressin et al., 2013.
+              		</section>
+
 
 					<section>
 						We still don't have an explanation for the unreasonable effectiveness of the L1 norm in this algorithm - help us understand!
