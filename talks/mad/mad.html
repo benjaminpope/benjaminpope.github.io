@@ -66,25 +66,31 @@
 						<p><small><a href="https://vimeo.com/89418853">Exoplanet-style transit light curve of Venus</a> from <a href="https://vimeo.com/user13009721">James Gilbert</a> on <a href="https://vimeo.com">Vimeo</a>.</small></p>
 					</section>
 
-					<section> 
+					<section data-state="dim-background"> 
 						Large searches for exoplanets like the <a href="https://keplerscience.arc.nasa.gov"><i>Kepler</i></a> mission have shown planets to be common in our Galaxy - now we want to learn about their atmospheres and compositions. 
 						<p class="fragment"> The best options are those around bright stars, like <a href="http://adsabs.harvard.edu/abs/2016Natur.532..207D">55 Cancri e</a> - subject of 367 papers in the last decade! </p>
 					</section>
 
-					<section>
+					<section data-state="dim-background">
 					My <a href="nexsci.caltech.edu/sagan/fellowship.shtml">Sagan Fellowship</a> project is to search for planets transiting naked-eye stars (V mag &lt 6.5) in order to find ideal targets for characterization with the upcoming <a href="https://jwst.nasa.gov/">James Webb Space Telescope</a>.
 					</section>
 
 				</section>
 
-				<section>
+				<section data-background="./flare.jpg">
 					
 					<section>
 						<h2>Asteroseismology</h2>
 					</section>
 
-					<section>
-						Asteroseismic power spectrum of the Sun's 5-minute oscillations
+					<section data-state="dim-background">
+						Stars ring like bells, with acoustic and buoyancy oscillations. 
+						<p><img width="288" height="288" data-src="l2m2.gif" alt="l=2, m=2 oscillation"></p>
+						<p class="fragment">Their frequencies tell us about stellar interior structure.</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Power spectrum of the Sun's 5-minute oscillations</p>
 						<img width='654' height='513' data-src="helio.jpg" alt="Helioseismic Power Spectrum">
 					</section>
 
@@ -96,11 +102,11 @@
 						<h2><i>Kepler</i> Photometry</h2>
 					</section>
 
-					<section>
+					<section data-state="dim-background">
 						The <a href="https://www.nasa.gov/mission_pages/kepler/main/index.html"><i>Kepler Space Telescope</i></a>, launched in 2009, looks for planets by the transit method, and also does asteroseismology.
 					</section>
 
-					<section>
+					<section data-state="dim-background">
 						After the failure of a reaction wheel in 2012, it is now operating as the '<a href="https://www.nasa.gov/feature/ames/nasas-k2-mission-the-kepler-space-telescopes-second-chance-to-shine/">K2 Mission</a>', with very unstable pointing (hence the shaking in the videos you'll see).
 					</section>
 
@@ -110,7 +116,7 @@
 						</video>					
 					</section>
 
-					<section>
+					<section data-state="dim-background">
 						To get the photometry, you can just sum the pixel values in a window containing the whole PSF...
 						<p class="fragment">but the pixels have different gains ("inter- and intra-pixel sensitivity variation")... </p>
 						<p class="fragment">and the pixel window doesn't necessarily track the whole PSF perfectly ("aperture losses").</p>
@@ -120,12 +126,14 @@
 						In <a href="http://adsabs.harvard.edu/abs/2016MNRAS.459.2408A">Aigrain, Parviainen & Pope (2015)</a> we use Gaussian Process models to detrend the flux time series with respect to the position of the star.
 					</section>
 
-					<section>
-						<img width='681' height='502' data-src="k2sc.png" alt="K2SC Figure">
+					<section data-state="dim-background">
+						<p>Raw - GP in position - GP in time</p>
+						<img width='681' height='502' data-src="k2sc.jpg" alt="K2SC Figure">
 					</section>
 
-					<section>
-						<img width='1063' height='530' data-src="transit.png" alt="K2SC Figure 2">
+					<section data-state="dim-background">
+						<p>By subtracting the GP time and spatial components, we can find a transiting planet!</p>
+						<img width='708' height='353' data-src="transit.jpg" alt="K2SC Figure 2">
 					</section>
 
 					<section data-state="dim-background">
@@ -133,7 +141,7 @@
 						<p class="fragment">We will be motivated by this here.</p>
 					</section>
 
-					<section>
+					<section data-state="dim-background">
 						For sufficiently bright stars, though, light fills the CCD wells with electrons that spill up and down the column, ruining the photometry as they leave the aperture.
 					</section>
 
@@ -145,7 +153,7 @@
 
 					<section data-state="dim-background"> 
 					<i>Kepler</i> saturates on stars brighter than ~ 11th mag (log scale: 5 mag = factor of 100) - but we want to look at stars 10k times brighter.
-					</section>a
+					</section>
 
 				</section>
 
@@ -188,7 +196,7 @@
 						<p class="fragment">This has analytic derivatives in Theano - easy to optimize.</p>
 					</section>
 
-					<section>
+					<section data-state="dim-background">
 						Note that these light curves are basically a sum of sine waves - anything but sparse in the derivative! 
 						<p class="fragment">But they're sparse in the Fourier domain... perhaps this is relevant?</p>
 					</section>
@@ -237,11 +245,7 @@
 					</section>
 
 					<section data-state="dim-background">
-						<img width="691" height="475" data-src="psds.jpg" alt="GP PSDs">
-					</section>
-
-					<section data-state="dim-background">
-						<p>We detect p-mode acoustic oscillations at 2.2 μHz with K2</p>
+						<p>We detect acoustic oscillations at 2.2 μHz with K2</p>
 						<img width="600" height="450" data-src="aldebaran_lc.png" alt="Aldebaran K2 Light Curve">
 					</section>
 
