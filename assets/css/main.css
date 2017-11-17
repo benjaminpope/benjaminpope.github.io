@@ -2332,10 +2332,10 @@
 		background-color: transparent;
 		border-radius: 0.35em;
 		border: solid 3px #efefef;
-		color: #787878 !important;
+		color: #dddddd !important;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: 400;
+		font-weight: bold;
 		height: 3.15em;
 		height: calc(2.75em + 6px);
 		line-height: 2.75em;
