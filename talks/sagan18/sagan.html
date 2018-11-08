@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Sagan Symposium 2018: Benjamin Pope</title>
+
+		<meta name="description" content="Sagan Symposium 2018">
+		<meta name="author" content="Benjamin Pope">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/black.css" id="theme"> -->
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="./pleiades.jpg">
+
+					<section>
+					<h1>Exoplanet Transits</h2>
+					<h3>with Radio Telescopes</h3>
+					<h3>Benjamin Pope, NYU</h3>
+					<h4>NASA Sagan Fellow</h4>
+					<!-- <p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p> -->
+					</section>
+
+					<section data-state="dim-background">
+						Presenting work in collaboration with <a href="https://github.com/jrcallingham">Joe Callingham</a> (ASTRON), Paul Withers and Marissa Vogt (BU). 
+					</section>
+
+
+					<section data-state="dim-background">
+						Slides available at <br><a href="benjaminpope.github.io/talks/sagan18/sagan">benjaminpope.github.io/talks/sagan18/sagan</a>
+					</section>
+				</section>
+
+
+
+				<section data-background="./flare.jpg">
+					
+					<section>
+						<h2>Radio Stars and Transits</h2>
+					</section>
+
+					<section data-state="dim-background">
+						<a href="2018MNRAS.tmp.1077L">Many papers</a> have discussed low-frequency searches for exoplanetary radio emission, with no detections so far.
+						<p class="fragment">Theorists now say that <a href="2017MNRAS.469.3505W">expanded ionospheres of hot Jupiters might self-absorb this emission</a> down to undetectable levels.</p>
+						<p class="fragment">What else can radio astronomy do for exoplanetary science?</p>
+					</section>
+
+					<section data-state="dim-background">	
+						The first and brightest celestial radio source to be discovered was the Sun - brighter than 10,000 Jy across the radio spectrum.
+					</section>
+
+					<section data-state="dim-background">
+						<p>The <a href="http://adsabs.harvard.edu/abs/1947RSPSA.190..357M">first radio images of the Sun</a> revealed that emission is dominated by active regions (sunspots)</p>
+						<img width='654' data-src="rps.png" alt="Ruby Payne-Scott Sun Images">
+					</section>
+
+					<section data-state="dim-background">
+						<p>Using 17 GHz maps of the Sun <a href="http://adsabs.harvard.edu/abs/2013ApJ...777L..34S">Selhorst et al</a> predicted deep transits across active regions as seen by ALMA.</p>
+						<img width='654' data-src="selhorst.png" alt="Selhorst Figure">
+					</section>
+
+					<section data-state="dim-background">
+						Alas, nearby main sequence stars have ~μJy brightnesses in ALMA bands - compare to ~mJy sensitivities <a href="https://almascience.eso.org/proposing/sensitivity-calculator">for 1 hr integrations with ALMA</a>. 
+						<p class="fragment"> How well might we do with the SKA?</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Using <a href="https://astronomers.skatelescope.org/wp-content/uploads/2017/10/SKA-TEL-SKO-0000818-01_SKA1_Science_Perform.pdf">SKA design specifications</a>, we calculate the sensitivity of the SKA to transits around solar-like stars (using <a href="http://adsabs.harvard.edu/abs/2018ApJ...857..133B">VLA fluxes of ε Eridani</a> and the <a href="http://adsabs.harvard.edu/abs/2017SoPh..292...75O">MWA SED of the Sun</a>) and M dwarfs (scaled from <a href="http://adsabs.harvard.edu/abs/2005ApJ...626..486B">LHS 3003</a>), we predict the sensitivity of the SKA to transits. </p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width='700' data-src="sensitivities.png" alt="Callingham Sensitivities Figure">
+					</section>
+
+					<section data-state="dim-background">
+						<p>As we can see, it is very challenging to detect solar-like stars at more than a few parsecs, let alone their transits.</p>
+						<p class="fragment">Transits across active M dwarfs, on the other hand, can be seen out to tens of parsecs! Gaia indicates there are many hundreds out to this distance, most undetected so far in radio.</p>
+						<p class="fragment">With very significant radio variability and complicated magnetic field topologies, it is harder to see what transits across these will look like.</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>The magnetosphere of a hot Jupiter planet is <a href="">expected</a> to cause both strong scintillation...</p>
+						<img width='650' data-src="hotjupiter_scintillation_v02.png" alt="Hot Jupiter scintillation">
+					</section>
+
+					<section data-state="dim-background">
+						<p>... and broadband strong lensing.</p>
+						<img width='650' data-src="hotjupiter_defocusing_v02.png" alt="Hot Jupiter defocusing">
+					</section>
+
+
+				</section>
+
+				<section data-background="exoplanet.jpg" data-state="dim-background">
+					<section>
+						<h2>The Future</h2>
+					</section>
+					
+					<section>
+						TESS will deliver thousands of new planetary candidates - and hopefully including some close enough to detect transits with the SKA.
+					</section>
+
+					<section>
+						Can we improve the sensitivity to radio transits by stacking many transits? By improved observing strategies or instrumentation? 
+						<p class="fragment">Can we predict their light curves better?</p>
+						<p class="fragment">What else might the SKA do for exoplanets?</p>
+
+					</section>
+
+
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+					math: {
+						mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+						config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					},
+
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
