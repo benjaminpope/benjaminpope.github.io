@@ -54,8 +54,9 @@
 					<section data-state="dim-background">
 						Slides available at <br><a href="benjaminpope.github.io/talks/smear/smear.html">benjaminpope.github.io/talks/smear/smear</a>
 					</section>
-				</section>
 
+				</section>
+<!-- 
 				<section data-background="./kep444.jpg">
 					<section>
 						<h2>Transiting Planets</h2>
@@ -76,7 +77,7 @@
 					</section>
 
 				</section>
-
+ -->
 				<section data-background="./flare.jpg">
 					
 					<section>
@@ -147,13 +148,67 @@
 
 					<section data-state="dim-background">
 						<video width="480" height="480" controls autoplay loop>
-						<source src="./bright.mp4" type="video/mp4">
+						<source src="./aldebaran.mp4" type="video/mp4">
 						</video>			
 					</section>
 
 					<section data-state="dim-background"> 
 					<i>Kepler</i> saturates on stars brighter than ~ 11th mag (log scale: 5 mag = factor of 100) - but we want to look at stars 10k times brighter.
 					</section>
+
+				</section>
+
+				<section data-background="./monet.jpg">
+
+					<section>
+						<h2>CCD Smear</h2>
+					</section>
+
+					<section data-state="dim-background">
+						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/j8jaiJjgOrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
+					</section>
+
+					<section data-state="dim-background">
+						<p>To calibrate this 'smear' the Kepler detectors have two smear registers not exposed to light</p>
+						<img width='450' data-src="ccd_map.jpg" alt="CCD Map">
+					</section>
+
+					<section data-state="dim-background">
+						<p>102 KIC targets with Kp < 9 were untargeted or significantly undertargeted during Kepler - mostly giants and hot stars.</p>
+						<img width='450' data-src="gaia_kepler_hr.png" alt="Gaia-Kepler HR Diagram">
+					</section>
+
+					<section data-state="dim-background">
+						We have <a href="https://arxiv.org/abs/1510.00008">used these smear data</a> to construct <a href="https://github.com/benjaminpope/smearcampaign/tree/master/data/lcs">light curves</a> for all the missing stars down to Kp=9!
+					</section>
+
+					<section data-state="dim-background">
+						<p>There can be contamination for multiple sources in the same column</p>
+						<img width='250' data-src="contam_HD_181778.png" alt="Contamination for HD 181778">
+					</section>
+
+					<section  data-state="dim-background">
+						<p>We find no transiting planets, but detect one new eclipsing binary</p>
+						<p class="fragment">We detect solar-like oscillations in 34 red giants</p>
+						<p class="fragment">We detect classical variability in 26 BAF stars...</p>
+						<p class="fragment">including five 'hump and spike' Rossby mode detections</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>With TRES spectra from Dave Latham and Allyson Bieryla and asteroseismic constraints we measure abundances for the giants</p>
+						<p class="fragment">Consistent with Galactic disk pop</p>
+						<img width='400' data-src="chem_pope.png" alt="Abundances">
+					</section>
+
+					<section data-state="dim-background">
+						<p>Using the asteroseismology and spectroscopy we measure the giants' masses</p>
+						<img width='400' data-src="different_constraints_fullsample_ove02.png" alt="Masses">
+					</section>
+
+					<section data-state="dim-background">
+						<p>This new sample of asteroseismic + spectroscopic benchmark stars doubles those available from the Gaia-ESO survey</p>
+					</section>
+
 
 				</section>
 
@@ -212,9 +267,9 @@
 					</section>
 
 					<section data-state="dim-background">
-					<img width='800' height='390' data-src="combined.png" alt="Combined Figure">
-					<p>Atlas lightcurve: raw (top) and halo (bottom)</p>
-					<p><a href="http://adsabs.harvard.edu/abs/2017MNRAS.471.2882W">White, Pope et al., 2017</a></p>
+						<img width='800' height='390' data-src="combined.png" alt="Combined Figure">
+						<p>Atlas lightcurve: raw (top) and halo (bottom)</p>
+						<p><a href="http://adsabs.harvard.edu/abs/2017MNRAS.471.2882W">White, Pope et al., 2017</a></p>
 					</section>
 
 					<section data-state="dim-background">
