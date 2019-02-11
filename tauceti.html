@@ -68,11 +68,11 @@
 
 					<p><img width="700" src="./tauceti/tau_ceti_background.png" alt="background"></p>
 
-					<p>Uh-oh! The 'transit' signal is clearly seen in the background light. This isn't an absolute killer - tau Ceti is very bright, and it isn't implausible that its light could have directly contaminated the background or done so via some electronic chip effect ('cross-talk'). But it is pretty alarming. I wonder if it appears in other stars...</p>
+					<p>Uh-oh! The 'transit' signal is clearly seen in the background light. This isn't an absolute killer - tau Ceti is very bright, and it isn't implausible that its light could have directly contaminated the background or done so via some electronic chip effect ('cross-talk'). But it is pretty alarming.</p>
 
 					<p>Let's look at some less highly processed data. What we have been looking at so far has been a 'target pixel file' (TPF) produced with a frame every 2 minutes and a lot of sophisticated calibration. Insted let's use the <a href="https://mast.stsci.edu/tesscut/">TESSCut</a> tool to grab part of the Full Frame Image (FFI) data, which has 30 minute frames and a lot less processing but of a much wider field. If you use <a href="https://docs.lightkurve.org/">lightkurve.interact()</a> and look at the individual pixel time series in the FFI TPF, they all show this dip. But in the pipeline TPF this is different: above the mid-axis of the star, they go up during 'transit' and below they go down. You can actually see this at a global level if you use the slider and the right scalings: it seems that as a whole the background flux shifts upward on the detector for a few hours and then shifts back down. So something funky has happened to the spatially-varying background during processing.</p>
 
-					<p>So let's look at another very bright star in the field: the giant star zeta Ceti. Unfortunately we get overall very poor halo results (but surprisingly very good pipeline results) on zeta Ceti, which shows the same background dip - but as Tim White pointed out, at a slightly different time! Here's his figure showing this: </p>
+					<p>So let's look at another very bright star in the field: the giant star zeta Ceti. Do we see the same problem? Unfortunately, overall we get rather poor halo results (but surprisingly very good pipeline results) on zeta Ceti, which shows the same background dip - but as Tim White pointed out, at a slightly different time! Here's his figure showing this: </p>
 
 					<p><img width="700" src="./tauceti/tau_ceti_bkgd_app.png" alt="background"></p>
 
