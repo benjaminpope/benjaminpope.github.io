@@ -68,7 +68,7 @@
 
 					<p><img width="700" src="./tauceti/tau_ceti_background.png" alt="background"></p>
 
-					<p>Uh-oh! There is a 'transit' signal in the background light, a little later. This isn't an absolute killer - τ Ceti is very bright, and it isn't implausible that its light could have directly contaminated the background or done so via some electronic chip effect ('cross-talk'). But it is pretty alarming.</p>
+					<p>Uh-oh! There is a 'transit' signal in the background light, a little later than the transit. This isn't an absolute killer - τ Ceti is very bright, and it isn't implausible that its light could have directly contaminated the background or done so via some electronic chip effect ('cross-talk'). It is also not quite at the same time as our putative planet. But it is pretty alarming.</p>
 
 					<p>Let's look at some less highly processed data. What we have been looking at so far has been a 'target pixel file' (TPF) produced with a frame every 2 minutes and a lot of sophisticated calibration. Insted let's use the <a href="https://mast.stsci.edu/tesscut/">TESSCut</a> tool to grab part of the Full Frame Image (FFI) data, which has 30 minute frames and a lot less processing but of a much wider field. If you use <a href="https://docs.lightkurve.org/">lightkurve.interact()</a> and look at the individual pixel time series in the FFI, they all show this dip. But in the pipeline TPF this is different: above the mid-axis of the star, they go up during 'transit' and below they go down. You can actually see this at a global level if you use the slider and the right scalings: it seems that as a whole the background flux shifts upward on the detector for a few hours and then shifts back down. So something funky has happened to the spatially-varying background during processing.</p>
 
@@ -77,7 +77,7 @@
 					<p><img width="700" src="./tauceti/tau_ceti_bkgd_app.png" alt="background"></p>
 
 					<p>
-						There's a lot going on here. 'Above' and 'below' τ Ceti or ζ Ceti shouldn't mean anything really - we could just as easily have picked different pixels - but they get background calibrations pushing them up in one direction and down in the other. Meanwhile the overall dips in the background happen at slightly different times for both stars - which I think fairly conclusively tells us they are something to do with TESS and not a planet around τ Ceti! 
+						There's a lot going on here. 'Above' and 'below' τ Ceti or ζ Ceti shouldn't mean anything really - we could just as easily have picked different pixels - but they get background calibrations pushing them up in one direction and down in the other. Meanwhile the overall dips in the background happen at slightly different times for both stars (near to but just a little after the 'transit' at 1394.3) - which I think tells us they are something to do with TESS and not a planet around τ Ceti! 
 					</p>
 
 					<p>
@@ -90,11 +90,11 @@
 					</video>
 
 					<p>
-						As you can probably just make out, there is a lot of spatial structure there, mostly in the lower left. Just before the transit, there is a spur through the middle towards the top right that lights up a little, and then it switches back to the lower left, and then everything gets brighter overall towards perigee. This spatial structure is apparent <i>after</i> the TESS pipeline processing: digging it out with the lower time resolution from the huge FFI images would be much harder, but is perhaps a worthwhile next step.
+						As you can probably just make out, there is a lot of spatial structure there, mostly in the lower left. Just around the transit, there is a spur through the middle towards the top right that lights up a little, and then it switches back to the lower left, and then everything gets brighter overall towards perigee. This spatial structure is apparent <i>after</i> the TESS pipeline processing: digging it out with the lower time resolution from the huge FFI images would be much harder, but is perhaps a worthwhile next step.
 					</p>
 
 					<p>
-						Regrettably we can conclude that we may have been 'dispossessed' of this potentially very exciting planet candidate. But this is how science is: something that is too good to be true very often turns out that way, but it doesn't make it any less worth investigating. In digging through the data on τ Ceti we were forced to fix bugs in our pipelines and grapple with unfamiliar systematics in TESS that we didn't see in <i>Kepler</i>. Personally, I am concerned that systematics which affect so many pixels in common over such a wide field are going to pose a serious problem to the approach we had been taking to bright stars in K2, and playing with the τ Ceti data has been a valuable learning experience. While we haven't yet detected her planet's transits, we should keep in mind the maxim of Le Guin's Anarresti scientist Takver:  
+						Regrettably we may have been 'dispossessed' of this potentially very exciting planet candidate. But this is how science is: something that is too good to be true very often turns out that way, but it doesn't make it any less worth investigating. In digging through the data on τ Ceti we were forced to fix bugs in our pipelines and grapple with unfamiliar systematics in TESS that we didn't see in <i>Kepler</i>. Personally, I am concerned that systematics which affect so many pixels in common over such a wide field are going to pose a serious problem to the approach we had been taking to bright stars in K2, and playing with the τ Ceti data has been a valuable learning experience. While we haven't yet detected her planet's transits, we should keep in mind the maxim of Le Guin's Anarresti scientist Takver:  
 						<p><i>There was process: process was all. You could go in a promising direction or you could go wrong, but you did not set out with the expectation of ever stopping anywhere.</i></p>
 					</p>
 
