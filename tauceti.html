@@ -72,21 +72,21 @@
 
 					<p>Let's look at some less highly processed data. What we have been looking at so far has been a 'target pixel file' (TPF) produced with a frame every 2 minutes and a lot of sophisticated calibration. Insted let's use the <a href="https://mast.stsci.edu/tesscut/">TESSCut</a> tool to grab part of the Full Frame Image (FFI) data, which has 30 minute frames and a lot less processing but of a much wider field. If you use <a href="https://docs.lightkurve.org/">lightkurve.interact()</a> and look at the individual pixel time series in the FFI, they all show this dip. But in the pipeline TPF this is different: above the mid-axis of the star, they go up during 'transit' and below they go down. You can actually see this at a global level if you use the slider and the right scalings: it seems that as a whole the background flux shifts upward on the detector for a few hours and then shifts back down. So something funky has happened to the spatially-varying background during processing.</p>
 
-					<p>So let's look at another very bright star in the field: the giant star ζ Ceti. Do we see the same problem? Unfortunately, overall we get rather poor halo results (but surprisingly very good pipeline results) on zeta Ceti, which shows the same background dip - but as Tim White pointed out, at a slightly different time! Here's his figure showing this: </p>
+					<p>So let's look at another very bright star in the field: the giant star ζ Ceti. Do we see the same problem? Unfortunately, overall we get rather poor halo results (but surprisingly very good pipeline results) on ζ Ceti, which shows the same background dip - but as Tim White pointed out, at a slightly different time! Here's his figure showing this: </p>
 
 					<p><img width="700" src="./tauceti/tau_ceti_bkgd_app.png" alt="background"></p>
 
 					<p>
-						There's a lot going on here. 'Above' and 'below' τ Ceti or zeta Ceti shouldn't mean anything really - we could just as easily have picked different pixels - but they get background calibrations pushing them up in one direction and down in the other. Meanwhile the overall dips in the background happen at slightly different times for both stars - which I think fairly conclusively tells us they are something to do with TESS and not a planet around τ Ceti! 
+						There's a lot going on here. 'Above' and 'below' τ Ceti or ζ Ceti shouldn't mean anything really - we could just as easily have picked different pixels - but they get background calibrations pushing them up in one direction and down in the other. Meanwhile the overall dips in the background happen at slightly different times for both stars - which I think fairly conclusively tells us they are something to do with TESS and not a planet around τ Ceti! 
 					</p>
 
 					<p>
-						So to look at the spatial detail in the background, I downloaded <i>all</i> TPFs on the same camera as τ Ceti, extracted their background light curves, and made a video of their background flux over time. Each point below is coloured by the logarithm of the background flux, clipped at the top and bottom to bring out the features best. τ Ceti is a blue star bang in the middle and zeta Ceti orange to the top right, and the 'transit' occurs at day 1394.3 or about 11 seconds into the video.
+						So to look at the spatial detail in the background, I downloaded <i>all</i> TPFs on the same camera as τ Ceti, extracted their background light curves, and made a video of their background flux over time. Each point below is coloured by the logarithm of the background flux, clipped at the top and bottom to bring out the features best. τ Ceti is a blue star bang in the middle and ζ Ceti orange to the top right, and the 'transit' occurs at day 1394.3 or about 11 seconds into the video.
 					</p>
 
 					<video width="700" controls>
 					  <source src="./tauceti/tess_bg.mp4" type="video/mp4">
-					τ Ceti (blue star) and zeta Ceti (orange star) superimposed on the field of TESS TPFs from Camera-CCD 1-2, coloured by their log background flux.
+					τ Ceti (blue star) and ζ Ceti (orange star) superimposed on the field of TESS TPFs from Camera-CCD 1-2, coloured by their log background flux.
 					</video>
 
 					<p>
