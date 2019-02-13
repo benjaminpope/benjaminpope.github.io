@@ -55,11 +55,22 @@
 
 					<p><img width="700" src="./tauceti/tau-Ceti-test.png" alt="light curves"></p>
 
-					<p>When I told Suzanne, she confirmed this was exactly when they thought the transit was. So we were on: time to check if it's real! <i>Material from Oscar/Suzanne here</i>. </p>
+					<p>When I told Suzanne, she confirmed this was exactly when they thought the transit was. So we were on: time to check if it's real! Suzanne's postdoc <a href="https://oscaribv.github.io/">Dr Oscar Barragán</a> modelled the transit signal in the standard PDC data, assuming the transit was equatorial, the planet was in a circular orbit and using the stellar mass and radius to try to estimate a range of valid periods. The depth of the transit signal gives you a planet to star ratio of 0.0108835, translating to a planet radius of 0.94 Earth radii. So this would be by far the closest Earth-sized planet to be known to transit. Meanwhile from the transit duration of ~ 11 hours we get that the minimum orbital period should be ~ 230 days, corresponding to an orbital radius of ~0.7 AU (though somewhat worryingly, not to the known periods of any of the planets found by radial velocity - though it could just be because it has too low a mass to detect). At this distance from the star the planet's equilibrium temperature would be ~225 K. At nearly fifty degrees C below freezing this is quite cold, but there is a lot of uncertainty about the effects of planetary atmospheres, and to me this is quite exciting - no cool transiting Earths are known around such a nearby star! </p>
 
-					<p>First thing to check: halophot doesn't do anything obviously wrong, and generates a model (on the right of the figure above) that looks rather like the expected pattern of light from a star as seen by TESS. The light curve you get from this has a deep and clean transit, which is maybe a bit long and deep, but looks ok. What is immediately suspicious, though, is that it occurs just before perigee: TESS has an <a href="https://www.youtube.com/watch?v=IGy_wmFf9lU">eccentric orbit in a 2:1 resonance with the moon</a>, which means that twice a month it approaches very close to the Earth briefly (perigee) and then swings back out again to spend most of its orbit far away. When it is at perigee it is subject to a lot of reflected light from the Earth - Earthshine! This is why there is a gap right in the middle of the light curve. So to me it immediately raised alarm bells that this signal happened just when the telescope was most vulnerable to contamination from background light.</p>
+					<p>
+						Oscar produced this great visualization of his model:
+					</p>
 
-					<p>To figure out what is going on with the Earthshine, we produce a 'background' light curve for τ Ceti using only pixels far away from where the star is contributing much light. Let's plot this with a vertical line to note the midpoint of the 'transit' we found earlier:
+					<p><img width="700" src="./tauceti/Tau_Ceti.gif" alt="barragan model"></p>
+
+					<p>So with such high stakes we had to be very careful. In comparison to the PDC data, the transit in the halo light curve I made was much higher signal-to-noise, but seemed much deeper (a few percent rather than a fraction of a percent). This isn't necessarily a killer, in that neither the absolute normalization of PDC nor halo light curves of saturated stars is completely accurate, but they are usually much closer than this. First thing to check: halophot doesn't do anything obviously wrong, and generates a model (on the right of the figure above) that looks rather like the expected pattern of light from a star as seen by TESS. The light curve you get from this has a deep and clean transit, which is maybe a bit long and deep, but looks ok.</p>
+
+					<p> 
+						What is immediately suspicious, though, is that it occurs just before perigee: TESS has an <a href="https://www.youtube.com/watch?v=IGy_wmFf9lU">eccentric orbit in a 2:1 resonance with the moon</a>, which means that twice a month it approaches very close to the Earth briefly (perigee) and then swings back out again to spend most of its orbit far away. When it is at perigee it is subject to a lot of reflected light from the Earth - Earthshine! This is why there is a gap right in the middle of the light curve. So to me it immediately raised alarm bells that this signal happened just when the telescope was most vulnerable to contamination from background light.
+					</p>
+
+					<p>
+						To figure out what is going on with the Earthshine, we produce a 'background' light curve for τ Ceti using only pixels far away from where the star is contributing much light. Let's plot this with a vertical line to note the midpoint of the 'transit' we found earlier:
 					</p>
 
 					<p><img width="700" src="./tauceti/tau_ceti_background.png" alt="background"></p>
