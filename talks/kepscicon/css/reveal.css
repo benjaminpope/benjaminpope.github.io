@@ -1367,3 +1367,8 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+.reveal .fa {
+  font-family: 'FontAwesome';
+  font-style: normal;
+}
