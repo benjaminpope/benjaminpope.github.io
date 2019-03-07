@@ -88,7 +88,7 @@
 
 				<section data-background="./k2concept.jpg">
 					<section>
-						<h2><i>Kepler</i> Photometry</h2>
+						<h2>K2 Photometry</h2>
 					</section>
 
 					<section data-state="dim-background">
@@ -99,7 +99,7 @@
 					</section>
 
 					<section data-state="dim-background">
-						To get Kepler photometry, you can just sum the pixel values in a window containing the whole PSF...
+						To extract photometry, you can just sum the pixel values in a window containing the whole PSF...
 						<p class="fragment">but the pixels have different gains ("inter- and intra-pixel sensitivity variation")... </p>
 						<p class="fragment">and the pixel window doesn't necessarily track the whole PSF perfectly ("aperture losses").</p>
 					</section>
@@ -137,7 +137,7 @@
 
 					<section data-state="dim-background">
 						<p>102 KIC targets with Kp < 9 were untargeted or significantly undertargeted during Kepler - mostly giants and hot stars.</p>
-						<img width='450' data-src="gaia_kepler_hr.png" alt="Gaia-Kepler HR Diagram">
+						<img width='550' data-src="gaia_kepler_hr.png" alt="Gaia-Kepler HR Diagram">
 					</section>
 
 					<section data-state="dim-background">
@@ -157,9 +157,8 @@
 					</section>
 
 					<section data-state="dim-background">
-						<p>With TRES spectra from Dave Latham and Allyson Bieryla and asteroseismic constraints we measure abundances for the giants</p>
-						<p class="fragment">Consistent with Galactic disk pop</p>
-						<img width='400' data-src="chem_pope.png" alt="Abundances">
+						<p>With TRES spectra from Latham and Bieryla & asteroseismic constraints we measure abundances for the giants</p>
+						<img width='500' data-src="chem_pope.png" alt="Abundances">
 					</section>
 
 					<section data-state="dim-background">
@@ -194,26 +193,23 @@
 					</section>
 
 					<section data-state="dim-background">
-						Flux \(f_i \) at cadence i is a sum over j pixels \(p_{ij}\) with weights \(w_j\):
+						<p>Flux \(f_i \) at cadence i is a sum over j pixels \(p_{ij}\) with weights \(w_j\):
 						<br><br>
 						\[
 						f_i \equiv \sum\limits_i w_j p_{ij}
-						 \]
-					</section>
+						 \]</p>
 
-					<section data-state="dim-background">
-						To find the appropriate weights, we instead minimize the Total Variation 
+						<p class="fragment"> To find the appropriate weights, we instead minimize the Total Variation 
 						<!-- <br><br> -->
-						<p class="fragment">\[\begin{align}
+						\[\begin{align}
 						TV \equiv \dfrac{\sum_i |f_i - f_{i-1}|} {\sum_i f_i }
 						\end{align} \]
 						</p>
-						<p class="fragment">This is the L1 norm on the derivative of the time series.</p>
-						<p class="fragment">This has analytic derivatives you can compute with autograd - easy to optimize.</p>
+
 					</section>
 
 					<section data-state="dim-background">
-						<p>Data are available online at <a href="https://github.com/benjaminpope/k2halo">github.com/benjaminpope/k2halo</a></p>
+						<p>All K2 Halo data are available online at <a href="https://github.com/benjaminpope/k2halo">github.com/benjaminpope/k2halo</a></p>
 					</section>
 				
 				</section>
@@ -261,19 +257,16 @@
 					</section>
 
 					<section data-state="dim-background">
-						Without this asteroseismology, we have 
+						<p>Without this asteroseismology, we have 
 						<br><br>
 						\[M = 1.27^{+0.24}_{-0.20} \, \mathrm{M_{\odot}}\]
 
-						 and age \(4.9^{+3.6}_{-2.0} \, \rm Gyr \)
-					</section>
-
-					<section data-state="dim-background">
-						With this new constraint, we have 
+						 and age \(4.9^{+3.6}_{-2.0} \, \rm Gyr \)</p>
+						 <p class="fragment">With this new constraint, we have 
 						<br><br>
 						\[M = 1.16^{+0.07}_{-0.07} \, \mathrm{M_{\odot}}\]
 
-						 and age \(6.4^{+1.4}_{-1.1} \, \rm Gyr \)
+						 and age \(6.4^{+1.4}_{-1.1} \, \rm Gyr \)</p>
 					</section>
 
 					<section data-state="dim-background">
