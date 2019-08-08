@@ -183,14 +183,30 @@
 					</section>
 
 					<section data-state="dim-background">
-						To find the appropriate weights, we instead minimize the Total Variation 
+						To find the appropriate weights, we instead started by minimizing the Total Variation 
 						<!-- <br><br> -->
 						<p class="fragment">\[\begin{align}
-						TV \equiv \dfrac{\sum_i |f_i - f_{i-1}|} {\sum_i f_i }
+						TV \equiv \sum_i |f_i - f_{i-1}|
+						\end{align} \] subject to constraints  \[\begin{align}\forall_j w_j &> 0\\
+						\sum_{i=1}^{N} f_i  &= N.\end{align} \]
+						</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>This is the <a href="https://en.wikipedia.org/wiki/Taxicab_geometry">\(L_1\) norm</a> or 'taxicab metric' on the derivative of the time series.</p>
+						<p class="fragment">This has analytic derivatives you can compute with autograd - easy to optimize.</p>
+
+					</section>
+
+					<section data-state="dim-background">
+						We have recently improved this by minimizing the <i>lagged</i> Total Variation
+						<!-- <br><br> -->
+						<p class="fragment">\[\begin{align}
+						TV_δ \equiv \sum_i |f_{i} - f_{i-δ}|
 						\end{align} \]
 						</p>
-						<p class="fragment">This is the <a href="https://en.wikipedia.org/wiki/Taxicab_geometry">L1 norm</a> or 'taxicab metric' on the derivative of the time series.</p>
-						<p class="fragment">This has analytic derivatives you can compute with autograd - easy to optimize.</p>
+						<p class="fragment">We can also generalize the \(L_1\) norm to the \(L_k\) norm \[Q_{k,\delta} \equiv {\sum_i{|f_i - f_{i-\delta}|^k}}\]</p>
+						<p class="fragment">This has analytic derivatives you can compute with e.g. <a href="https://github.com/HIPS/autograd">autograd</a> - easy to optimize.</p>
 					</section>
 
 					<section data-state="dim-background">
