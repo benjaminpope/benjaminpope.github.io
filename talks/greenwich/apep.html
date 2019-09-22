@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Greenwich CT: Benjamin Pope</title>
+
+		<meta name="description" content="Greenwich Talk">
+		<meta name="author" content="Benjamin Pope">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/black.css" id="theme"> -->
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="./composite.jpg" data-state="dim-background">
+
+					<section data-state="dim-background">
+					<h2>Apep: A Galactic LGRB Progenitor?</h2>
+					<h3>Benjamin Pope</h3>
+					<h4>NASA Sagan Fellow, NYU</h4>
+
+					<!-- <p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p> -->
+					</section>
+
+					<section data-state="dim-background">
+						I work on very bright stars in Kepler, K2 and TESS, with recent work on <a href="https://arxiv.org/abs/1606.01264">K2 transits</a>, the <a href="https://arxiv.org/abs/1708.07462">Pleiades</a>, <a href="https://arxiv.org/abs/1802.09812">Aldebaran</a>, and red giants in <a href="https://arxiv.org/abs/1510.00008">K2</a> and <a href="https://github.com/benjaminpope/smearcampaign">Kepler</a>. 
+						<p class="fragment">I am also interested in M dwarfs with planets, and would love to talk about work with <a href="http://sirius.bu.edu/withers/">Paul Withers</a> and <a href="http://sites.bu.edu/marissavogt/">Marissa Vogt</a> (BU) on <a href="https://arxiv.org/abs/1810.11493">planetary transits in the radio</a>.</p>
+						<p class="fragment">Instead I will be talking about Wolf-Rayet stars today!</p>
+					</section>
+
+					<section data-state="dim-background">
+						Published in <a href="https://doi.org/10.1038/s41550-018-0617-7">Nature Astronomy</a>: 
+						<p><i>Anisotropic winds in a Wolf–Rayet binary identify a potential gamma-ray burst progenitor</i></p>
+						<p class="fragment">Collaborators <a href="http://astron.nl/~callingham/">Joe Callingham</a>, <a href="http://www.physics.usyd.edu.au/~gekko/">Peter Tuthill</a>, Peredur Williams, Paul Crowther.</p>
+
+					</section>
+
+					<section data-state="dim-background">
+						Slides available at <br><a href="benjaminpope.github.io/talks/greenwich/apep.html">benjaminpope.github.io/talks/greenwich/apep</a>
+					</section>
+				</section>
+
+
+				<section data-background="./cwb.jpg" data-state="dim-background">
+
+					<section data-state="dim-background">
+						<h3>Wolf-Rayet Stars</h3>
+					</section>
+
+					<section data-state="dim-background">
+						Wolf-Rayet stars are the last stage in the life cycles of the most massive stars (~>25 Msun)
+						<p class="fragment">Thought to be progenitors of Type 1bc supernovae</p>
+						<p class="fragment">Rapidly-rotating WRs progenitors of long gamma-ray bursts...</p>
+						<p class="fragment">...but at solar metallicity strong line-driven winds cause them to spin down.</p>
+
+					</section>
+
+					<section data-state="dim-background">
+						<p>WR colliding wind binaries (eg WR + O star) produce dust in a 'pinwheel' spiral, like WR 104. Spiral evolution encodes binary parameters.</p>
+						<img width="300" src="wr104.gif">
+					</section>
+
+					<section data-state="dim-background">
+						<p>The 'rotation' is actually an Archimedean spiral expanding</p>
+						<img width="300" src="pinwheel_20.gif">
+					</section>
+
+					<section>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/iv63DIt9epE?start=105" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
+					</section>
+
+					<section data-state="dim-background">
+						<p>Joe Callingham (ASTRON) found a very bright CWB cross-matching Molonglo 843 MHz, 2XMM (X-ray) and WISE (IR) catalogs.</p>
+						<img width="450" src="sed_photo_ir_crop.png">
+					</section>
+
+					<section data-state="dim-background">
+						<p>2MASS, DSS, XMM</p>
+					    <img width="300" src="2mass.png">
+						<img width="300" src="dss.png">
+						<img width="300" src="xmm.png">
+					</section>
+
+					<section>
+						<img width="500" src="vlt.jpg">
+					</section>
+
+					<section data-state="dim-background">
+						<p>SINFONI J+H band spectra indicated a WR component</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>IRIS2 AAT spectrum: He 1083 Å line P Cygni profile indicates a ~ 3400 km/s wind speed. Fast!</p>
+						<img width="400" src="he1083_velocity_fit_overplot_noouter.jpg">
+					</section>
+
+					<section data-state="dim-background">
+						<p>So we got VLT/NACO (inset, radio contours) and VISIR (main) images...</p>
+						<img width="500" src="visir_89_gray_log_scalebar.jpg" class="fragment">
+					</section>
+
+					<section data-state="dim-background">
+						<p>Whoah! Never seen a pinwheel this complex before. Wanted second epoch to make a video like before. </p>
+						<p class="fragment">SED fits and DIB constraints place this at d = 2.4 ± 0.5 kpc. (Bad Gaia parallax.)</p>
+						<p class="fragment">At this distance we expect a ~ 10 pix radial expansion.</p>			
+					</section>
+
+				</section>
+
+				<section data-background="./composite.jpg" data-state="dim-background">
+					
+					<section data-state="dim-background">
+						<h3>Apep*</h3>
+						<p class="fragment"><small>*Named for <a href="https://en.wikipedia.org/wiki/Apep">Egyptian god of Chaos</a>, dragon enemy of Ra</small></p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Difference with second epoch</p>
+						<img width="500" src="visir_89_diff_smooth_rel.jpg">
+					</section>
+
+					<section data-state="dim-background">
+						<p>It expanded by ~ 1.1 pixels - 570 km/s! Far too slow.</p>
+						<img width="500" src="visir_89_2ndepoch_sharp_rel_motionsadded.jpg">
+					</section>
+
+					<section data-state="dim-background">
+						<p>Our best model fits a very high opening angle shock, indicating momentum parity between winds. 2x WR?</p>
+						<img width="500" src="apep_movie.gif">
+					</section>
+
+					<section data-state="dim-background">
+						<p>This is supported by ATNF VLBI radio imaging of the shock - curvature is real</p>
+						<img width="500" src="vlbi.jpg">
+					</section>
+
+					<section data-state="dim-background">
+						Wind speed discrepancy could be resolved by making it more distant - but it would then be far brighter than η Car!
+					</section>
+
+					<section  data-state="dim-background">
+						Alternatively - if there is a fast polar wind and slow equatorial wind...
+						<p class="fragment">a signature of rapid rotation known in LBVs but never yet observed in Galactic WRs.</p>
+						<p class="fragment">LGRB progenitor?</p>
+					</section>
+
+				</section>
+
+
+				<section data-background="./composite.jpg" data-state="dim-background">
+					
+					<section data-state="dim-background">
+						<h3>The Future</h3>	
+					</section>
+
+					<section data-state="dim-background">
+						This lord of chaos causes problems for our understanding of how WRs form and evolve - why is it spinning so fast?
+						<p class="fragment">Binary interaction?</p>
+						<p class="fragment">Why is it so bright - what is the nature of the central engine?</p>
+					</section>
+
+					<section data-state="dim-background">
+						We have ongoing radio and IR followup showing more of the same...
+						<p class="fragment">we really need ALMA to look for cold dust.</p>
+					</section>
+
+					<section data-state="dim-background">
+						Apep is a new class of colliding-wind binary system with potentially very significant observational value.
+						<p class="fragment">This is the beginning of an adventure to understand it!</p>
+						<p class="fragment">Questions?</p>
+					</section>
+
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+					math: {
+						mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+						config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					},
+
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
