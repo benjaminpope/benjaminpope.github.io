@@ -148,6 +148,64 @@
 
 				</section>
 
+				<section data-background="./monet.jpg">
+
+					<section>
+						<h2>CCD Smear</h2>
+					</section>
+
+					<section data-state="dim-background">
+<!-- https://maxl.us/hideyt --><style>.hytPlayerWrap{display: inline-block; position: relative;}.hytPlayerWrap.ended::after{content:""; position: absolute; top: 0; left: 0; bottom: 0; right: 0; cursor: pointer; background-color: black; background-repeat: no-repeat; background-position: center; background-size: 64px 64px; background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgNTEwIDUxMCI+PHBhdGggZD0iTTI1NSAxMDJWMEwxMjcuNSAxMjcuNSAyNTUgMjU1VjE1M2M4NC4xNSAwIDE1MyA2OC44NSAxNTMgMTUzcy02OC44NSAxNTMtMTUzIDE1My0xNTMtNjguODUtMTUzLTE1M0g1MWMwIDExMi4yIDkxLjggMjA0IDIwNCAyMDRzMjA0LTkxLjggMjA0LTIwNC05MS44LTIwNC0yMDQtMjA0eiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==);}.hytPlayerWrap.paused::after{content:""; position: absolute; top: 70px; left: 0; bottom: 50px; right: 0; cursor: pointer; background-color: black; background-repeat: no-repeat; background-position: center; background-size: 40px 40px; background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEiIHdpZHRoPSIxNzA2LjY2NyIgaGVpZ2h0PSIxNzA2LjY2NyIgdmlld0JveD0iMCAwIDEyODAgMTI4MCI+PHBhdGggZD0iTTE1Ny42MzUgMi45ODRMMTI2MC45NzkgNjQwIDE1Ny42MzUgMTI3Ny4wMTZ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+);}</style><div class="hytPlayerWrapOuter"> <div class="hytPlayerWrap"> <iframe width="640" height="360" src="https://www.youtube.com/embed/j8jaiJjgOrQ?rel=0&enablejsapi=1" frameborder="0" ></iframe> </div></div><script>"use strict"; document.addEventListener('DOMContentLoaded', function(){if (window.hideYTActivated) return; let onYouTubeIframeAPIReadyCallbacks=[]; for (let playerWrap of document.querySelectorAll(".hytPlayerWrap")){let playerFrame=playerWrap.querySelector("iframe"); let tag=document.createElement('script'); tag.src="https://www.youtube.com/iframe_api"; let firstScriptTag=document.getElementsByTagName('script')[0]; firstScriptTag.parentNode.insertBefore(tag, firstScriptTag); let onPlayerStateChange=function(event){if (event.data==YT.PlayerState.ENDED){playerWrap.classList.add("ended");}else if (event.data==YT.PlayerState.PAUSED){playerWrap.classList.add("paused");}else if (event.data==YT.PlayerState.PLAYING){playerWrap.classList.remove("ended"); playerWrap.classList.remove("paused");}}; let player; onYouTubeIframeAPIReadyCallbacks.push(function(){player=new YT.Player(playerFrame,{events:{'onStateChange': onPlayerStateChange}});}); playerWrap.addEventListener("click", function(){let playerState=player.getPlayerState(); if (playerState==YT.PlayerState.ENDED){player.seekTo(0);}else if (playerState==YT.PlayerState.PAUSED){player.playVideo();}});}window.onYouTubeIframeAPIReady=function(){for (let callback of onYouTubeIframeAPIReadyCallbacks){callback();}}; window.hideYTActivated=true;});</script>
+
+<!-- using https://www.maxlaumeister.com/blog/hide-related-videos-in-youtube-embeds/ -->
+					</section>
+
+					<section data-state="dim-background">
+						<p>To calibrate this 'smear' the Kepler detectors have two smear registers not exposed to light</p>
+						<img width='450' data-src="ccd_map.jpg" alt="CCD Map">
+					</section>
+
+					<section data-state="dim-background">
+						<p>102 KIC targets with Kp < 9 were untargeted or significantly undertargeted during Kepler - mostly giants and hot stars.</p>
+						<img width='550' data-src="gaia_kepler_hr.png" alt="Gaia-Kepler HR Diagram">
+					</section>
+
+					<section data-state="dim-background">
+						<p>The smear data give you a 1D projection of flux in the whole module - including untargeted bright stars</p>
+						<img width='700' data-src="ffi_profile_hr8500_flat_small.png" alt="Smear Profile">
+					</section>
+
+					<section data-state="dim-background">
+						We have <a href="https://arxiv.org/abs/1510.00008">used these smear data</a> to construct <a href="https://github.com/benjaminpope/smearcampaign/tree/master/data/lcs">light curves</a> for all the missing stars down to Kp=9!
+					</section>
+
+					<section  data-state="dim-background">
+						<p>We find no transiting planets, but detect one new eclipsing binary</p>
+						<p class="fragment">We detect solar-like oscillations in 34 red giants</p>
+						<p class="fragment">We detect classical variability in 26 BAF stars...</p>
+						<p class="fragment">including five 'hump and spike' Rossby mode detections</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>With TRES spectra from Latham and Bieryla & asteroseismic constraints we measure abundances for the giants</p>
+						<img width='500' data-src="chem_pope.png" alt="Abundances">
+					</section>
+
+					<section data-state="dim-background">
+						<p>Using the asteroseismology and spectroscopy we measure the giants' masses</p>
+						<img width='500' data-src="different_constraints_fullsample_ove02.png" alt="Masses">
+					</section>
+
+					<section data-state="dim-background">
+						<p>This new sample of asteroseismic + spectroscopic benchmark stars doubles those available from the Gaia-ESO survey</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>All <i>Kepler</i> Smear Campaign data are available online at <a href="https://github.com/benjaminpope/smearcampaign">github.com/benjaminpope/smearcampaign</a></p>
+					</section>
+				</section>
+
+
 				<section data-background="./starry.jpg">
 
 					<section>
