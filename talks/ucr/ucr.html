@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>UCR Seminar: Benjamin Pope</title>
+
+		<meta name="description" content="UCR Seminar">
+		<meta name="author" content="Benjamin Pope">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/black.css" id="theme"> -->
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="./pleiades.jpg">
+
+					<section>
+					<h2>Planets and their Host Stars</h2>
+					<h3>Benjamin Pope, NYU</h3>
+					<h4>UCR Seminar</h4>
+					</section>
+
+					<section data-state="dim-background">
+						Slides available at <br><a href="benjaminpope.github.io/talks/ucr/ucr.html">benjaminpope.github.io/talks/ucr/ucr</a>
+					</section>
+				</section>
+
+				<section data-background="./kep444.jpg">
+					<section>
+						<h2>Transiting Planets</h2>
+					</section>
+
+					<section data-state="dim-background">
+						<iframe src="https://player.vimeo.com/video/89418853" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<p><small><a href="https://vimeo.com/89418853">Exoplanet-style transit light curve of Venus</a> from <a href="https://vimeo.com/user13009721">James Gilbert</a> on <a href="https://vimeo.com">Vimeo</a>.</small></p>
+					</section>
+
+					<section data-state="dim-background"> 
+						Large searches for exoplanets like the <a href="https://keplerscience.arc.nasa.gov"><i>Kepler</i></a> mission have shown planets to be common in our Galaxy - now we want to learn about their atmospheres and compositions. 
+						<p class="fragment"> The best options are those around bright stars, like <a href="http://adsabs.harvard.edu/abs/2016Natur.532..207D">55 Cancri e</a> - subject of 367 papers in the last decade! </p>
+					</section>
+
+					<section data-state="dim-background">
+					My <a href="nexsci.caltech.edu/sagan/fellowship.shtml">Sagan Fellowship</a> project is to search for planets transiting naked-eye stars (V mag &lt 6.5) in order to find ideal targets for characterization with the upcoming <a href="https://jwst.nasa.gov/">James Webb Space Telescope</a>.
+					</section>
+
+				</section>
+
+				<section data-background="./flare.jpg">
+					
+					<section>
+						<h2>Asteroseismology</h2>
+					</section>
+
+					<section data-state="dim-background">
+						Stars ring like bells, with acoustic and buoyancy oscillations. 
+						<p><img width="288" height="288" data-src="l2m2.gif" alt="l=2, m=2 oscillation"></p>
+						<p class="fragment">Their frequencies tell us about stellar interior structure.</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Power spectrum of the Sun's 5-minute oscillations</p>
+						<img width='654' height='513' data-src="helio.jpg" alt="Helioseismic Power Spectrum">
+					</section>
+
+				</section>
+
+
+				<section data-background="./k2concept.jpg">
+					<section>
+						<h2><i>Kepler</i> Photometry</h2>
+					</section>
+
+					<section data-state="dim-background">
+						The <a href="https://www.nasa.gov/mission_pages/kepler/main/index.html"><i>Kepler Space Telescope</i></a>, launched in 2009, looks for planets by the transit method, and also does asteroseismology.
+					</section>
+
+					<section data-state="dim-background">
+						After the failure of a reaction wheel in 2012, it is now operating as the '<a href="https://www.nasa.gov/feature/ames/nasas-k2-mission-the-kepler-space-telescopes-second-chance-to-shine/">K2 Mission</a>', with very unstable pointing (hence the shaking in the <a href="https://github.com/KeplerGO/k2flix" title="made using Geert Barentsen's code here">videos</a> you'll see).
+					</section>
+
+					<section data-state="dim-background">
+						<video width="480" height="480" controls autoplay loop>
+						<source src="./epic_212521166.mp4" type="video/mp4">
+						</video>					
+					</section>
+
+					<section data-state="dim-background">
+						To get the photometry, you can just sum the pixel values in a window containing the whole PSF...
+						<p class="fragment">but the pixels have different gains ("inter- and intra-pixel sensitivity variation")... </p>
+						<p class="fragment">and the pixel window doesn't necessarily track the whole PSF perfectly ("aperture losses").</p>
+					</section>
+
+					<section data-state="dim-background">
+						In <a href="http://adsabs.harvard.edu/abs/2016MNRAS.459.2408A">our group's pipeline</a> we use Gaussian Process models to detrend the flux time series with respect to the position of the star.
+					</section>
+
+					<section data-state="dim-background">
+						<p>Raw - GP in position - GP in time</p>
+						<img width='681' height='502' data-src="k2sc.jpg" alt="K2SC Figure">
+					</section>
+
+					<section data-state="dim-background">
+						<p>By subtracting the GP time and spatial components, we can find a transiting planet!</p>
+						<img width='708' height='353' data-src="transit.jpg" alt="K2SC Figure 2">
+					</section>
+
+					<section data-state="dim-background">
+						For sufficiently bright stars, though, light fills the CCD wells with electrons that spill up and down the column, ruining the photometry as they leave the aperture.
+					</section>
+
+					<section data-state="dim-background">
+						<video width="480" height="480" controls autoplay loop>
+						<source src="./bright.mp4" type="video/mp4">
+						</video>			
+					</section>
+
+					<section data-state="dim-background"> 
+					<i>Kepler</i> saturates on stars brighter than ~ 11th mag (log scale: 5 mag = factor of 100) - but we want to look at stars 10k times brighter.
+					</section>
+
+				</section>
+
+				<section data-background="./starry.jpg">
+
+					<section>
+						<h2>Halo Photometry</h2>
+					</section>
+
+					<section data-state="dim-background">
+						What if we just look at unsaturated pixels?
+					</section>
+
+					<section data-state="dim-background">
+						<video width="480" height="480" controls autoplay loop>
+						<source src="./aldebaran.mp4" type="video/mp4">
+						</video>
+					</section>
+
+					<section data-state="dim-background">
+						Flux \(f_i \) at cadence i is a sum over j pixels \(p_{ij}\) with weights \(w_j\):
+						<br><br>
+						\[
+						f_i \equiv \sum\limits_i w_j p_{ij}
+						 \]
+					</section>
+
+					<section data-state="dim-background">
+						To find the appropriate weights, we instead started by minimizing the Total Variation 
+						<!-- <br><br> -->
+						<p class="fragment">\[\begin{align}
+						TV \equiv \sum_i |f_i - f_{i-1}|
+						\end{align} \] subject to constraints  \[\begin{align}\forall_j w_j &> 0\\
+						\sum_{i=1}^{N} f_i  &= N.\end{align} \]
+						</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>This is the <a href="https://en.wikipedia.org/wiki/Taxicab_geometry">\(L_1\) norm</a> or 'taxicab metric' on the derivative of the time series.</p>
+						<p class="fragment">This has analytic derivatives you can compute with autodiff - easy to optimize.</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>All K2 Halo data are available online at <a href="https://github.com/benjaminpope/k2halo">github.com/benjaminpope/k2halo</a></p>
+					</section>
+
+				</section>
+
+				<section data-background="./pleiades.jpg">
+
+					<section>
+						<h3>Pleiades</h3>
+						<p>Πλειάδες, the Seven Sisters</p>
+						<p class="fragment">Alcyone, Atlas (dad), Electra, Maia, Merope, Taygeta, Pleione (mum)</p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width='800' height='390' data-src="combined.png" alt="Combined Figure">
+						<p>Atlas lightcurve: raw (top) and halo (bottom)</p>
+						<p><a href="http://adsabs.harvard.edu/abs/2017MNRAS.471.2882W">White, Pope et al., 2017</a></p>
+					</section>
+
+					<section data-state="dim-background">
+
+						<img width='288' height='432' data-src="timeseries.jpg" alt="Combined Figure"><img width='288' height='432' data-src="ampspec.jpg" alt="Combined Figure">
+						<p>Lightcurves of All Seven Bright Pleiades</p>
+						<p><a href="http://adsabs.harvard.edu/abs/2017MNRAS.471.2882W">White, Pope et al., 2017</a></p>
+						
+					</section>
+
+				</section>
+
+				<section data-background="./taurus.jpg" data-state="dim-background">
+						
+					<section data-state="dim-background">
+						<h2>Aldebaran</h2>
+						<p>α Tauri<p>
+						<p>الدبران ,<i>the follower</i></p>
+						<p class="fragment">... follows the Pleiades!</p>
+					</section>
+
+					<section data-state="dim-background">
+						<a href="http://adsabs.harvard.edu/abs/1993ApJ...413..339H">Hatzes & Cochran, 1993</a> claimed an early detection of a \(628.96 \pm 0.90\) d RV planet around Aldebaran - finally confirmed in <a href="http://adsabs.harvard.edu/abs/2015A%26A...580A..31H">Hatzes et al., 2015</a>!
+					</section>
+
+					<section data-state="dim-background">
+					<p>Detection of p-mode oscillations at 2.2 μHz</p>
+						<img width="600" height="450" data-src="aldebaran_lc.png" alt="Aldebaran K2 Light Curve">
+					</section>
+
+					<section data-state="dim-background">
+						<p>Without this asteroseismology, we have 
+						<br><br>
+						\[M = 1.27^{+0.24}_{-0.20} \, \mathrm{M_{\odot}}\]
+
+						 and age \(4.9^{+3.6}_{-2.0} \, \rm Gyr \)</p>
+						 <p class="fragment">With this new constraint, we have 
+						<br><br>
+						\[M = 1.16^{+0.07}_{-0.07} \, \mathrm{M_{\odot}}\]
+
+						 and age \(6.4^{+1.4}_{-1.1} \, \rm Gyr \)</p>
+					</section>
+
+					<section data-state="dim-background">
+					<p>Using MESA models, we find that on the main sequence Aldebaran b had a semi-major axis of \(1.50 \pm 0.03 \) AU and Aldebaran had a luminosity \(2.0 \pm 0.7 \, L_\odot \)...</p>
+
+					<p class="fragment">so Aldebaran b had an insolation comparable to Earth when its star was on the main sequence.</p>
+					</section>
+
+				</section>
+
+
+				<section data-background="exoplanet.jpg" data-state="dim-background">
+					<section>
+						<h2>The Future</h2>
+					</section>
+					
+					<section data-state="dim-background">
+						We have looked at all the bright stars in Kepler and K2 - but the TESS mission will deliver hundreds more. Can we find our nearest neighbours?
+					</section>
+
+					<section data-state="dim-background">
+						Can we use algorithms of this family to improve ground based astronomy? 
+					</section>
+
+					<section data-state="dim-background">
+						What can we do with open data and open software more broadly in astronomy?
+					</section>
+
+
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+					math: {
+						mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+						config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					},
+
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
