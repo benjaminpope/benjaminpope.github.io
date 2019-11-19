@@ -141,8 +141,13 @@
 					</section>
 
 					<section data-state="dim-background">
-						In a GP you consider \(n\) points drawn from a multidimensional Gaussian with covariance
+						In a GP you consider \(n\) points drawn from a multidimensional Gaussian 
 						<p>
+							\[p(\mathbf{y}(\mathbf{x})) \sim \mathscr{N}(\mathbf{\mu}(\mathbf{x}),K(\mathbf{x},\mathbf{x})\]
+						</p>
+
+						<p class='fragment'>with covariance</p>
+						<p class='fragment'>
 							\[K(\mathbf{x},\mathbf{x}) = \begin{bmatrix}
 							k(x_1,x_1) & k(x_1,x_2)  & ... & k(x_1,x_n) \\ 
 							k(x_2,x_1) & k(x_2,x_2)  & ... & k(x_2,x_n) \\ 
