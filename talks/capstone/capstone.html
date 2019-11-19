@@ -123,6 +123,34 @@
 						<img class='fragment' width='650' data-src="splines.png" alt="Splines Figure">
 					</section>
 
+					<section data-state="dim-background">
+						Consider a correlated Gaussian in 2D
+						<img width='500' data-src="correlated.png" alt="Correlated Gaussian">
+					</section>
+
+					<section data-state="dim-background">
+						Knowing the value of \(x_1\) constrains the value of \(x_2\)
+						<p class='fragment'>This information is contained in the covariance matrix</p>
+						<p class="fragment">
+							\[K = \begin{bmatrix}
+							\sigma_1 & \kappa\\ 
+							 \kappa&\sigma_2 
+							\end{bmatrix}\]
+						</p>
+						<p class='fragment'>How do we generalize this to higher dimensions?</p>
+					</section>
+
+					<section data-state="dim-background">
+						In a GP you consider \(n\) points drawn from a multidimensional Gaussian with covariance
+						<p>
+							\[K(\mathbf{x},\mathbf{x}) = \begin{bmatrix}
+							k(x_1,x_1) & k(x_1,x_2)  & ... & k(x_1,x_n) \\ 
+							k(x_2,x_1) & k(x_2,x_2)  & ... & k(x_2,x_n) \\ 
+							\vdots &\vdots  &\vdots  &\vdots \\ 
+							k(x_n,x_1) & k(x_n,x_2)  & ... & k(x_n,x_n) 
+							\end{bmatrix}\]
+						</p>
+					</section>
 				</section>
 
 			</div>
