@@ -39,7 +39,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="./pleiades.jpg">
+				<section data-background="./exoplanet.jpg">
 
 					<section>
 					<h2>How to Find an Exoplanet</h2>
@@ -62,36 +62,7 @@
 						<p><small><a href="https://vimeo.com/89418853">Exoplanet-style transit light curve of Venus</a> from <a href="https://vimeo.com/user13009721">James Gilbert</a> on <a href="https://vimeo.com">Vimeo</a>.</small></p>
 					</section>
 
-					<section data-state="dim-background"> 
-						Large searches for exoplanets like the <a href="https://keplerscience.arc.nasa.gov"><i>Kepler</i></a> mission have shown planets to be common in our Galaxy - now we want to learn about their atmospheres and compositions. 
-						<p class="fragment"> The best options are those around bright stars, like <a href="http://adsabs.harvard.edu/abs/2016Natur.532..207D">55 Cancri e</a> - subject of 367 papers in the last decade! </p>
-					</section>
-
-					<section data-state="dim-background">
-					My <a href="nexsci.caltech.edu/sagan/fellowship.shtml">Sagan Fellowship</a> project is to search for planets transiting naked-eye stars (V mag &lt 6.5) in order to find ideal targets for characterization with the upcoming <a href="https://jwst.nasa.gov/">James Webb Space Telescope</a>.
-					</section>
-
 				</section>
-<!-- 
-				<section data-background="./flare.jpg">
-					
-					<section>
-						<h2>Asteroseismology</h2>
-					</section>
-
-					<section data-state="dim-background">
-						Stars ring like bells, with acoustic and buoyancy oscillations. 
-						<p><img width="288" height="288" data-src="l2m2.gif" alt="l=2, m=2 oscillation"></p>
-						<p class="fragment">Their frequencies tell us about stellar interior structure.</p>
-					</section>
-
-					<section data-state="dim-background">
-						<p>Power spectrum of the Sun's 5-minute oscillations</p>
-						<img width='654' height='513' data-src="helio.jpg" alt="Helioseismic Power Spectrum">
-					</section>
-
-				</section>
- -->
 
 				<section data-background="./k2concept.jpg">
 					<section>
@@ -131,116 +102,6 @@
 						<p>By subtracting the GP time and spatial components, we can find a transiting planet!</p>
 						<img width='708' height='353' data-src="transit.jpg" alt="K2SC Figure 2">
 					</section>
-
-					<section data-state="dim-background">
-						Alternatively, the <a href="https://github.com/rodluger/everest">EVEREST</a> model (<a href="http://adsabs.harvard.edu/abs/2016AJ....152..100L">Luger et al, 2016</a>) does 'pixel-level decorrelation', fitting a linear combination of pixel time series to the data, getting excellent photometry. 
-						<p class="fragment">We will be motivated by this here.</p>
-					</section>
-
-					<section data-state="dim-background">
-						For sufficiently bright stars, though, light fills the CCD wells with electrons that spill up and down the column, ruining the photometry as they leave the aperture.
-					</section>
-
-					<section data-state="dim-background">
-						<video width="480" height="480" controls autoplay loop>
-						<source src="./bright.mp4" type="video/mp4">
-						</video>			
-					</section>
-
-					<section data-state="dim-background"> 
-					<i>Kepler</i> saturates on stars brighter than ~ 11th mag (log scale: 5 mag = factor of 100) - but we want to look at stars 10k times brighter.
-					</section>
-
-				</section>
-
-				<section data-background="./starry.jpg">
-
-					<section>
-						<h2>Halo Photometry</h2>
-					</section>
-
-					<section data-state="dim-background">
-						What if we just look at unsaturated pixels?
-					</section>
-
-					<section data-state="dim-background">
-						<video width="480" height="480" controls autoplay loop>
-						<source src="./aldebaran.mp4" type="video/mp4">
-						</video>
-					</section>
-
-					<section data-state="dim-background">
-						Flux \(f_i \) at cadence i is a sum over j pixels \(p_{ij}\) with weights \(w_j\):
-						<br><br>
-						\[
-						f_i \equiv \sum\limits_i w_j p_{ij}
-						 \]
-					</section>
-
-					<section data-state="dim-background">
-						In the <a href="https://github.com/davidwhogg/OWL">OWL</a> method (Hogg & Foreman-Mackey), you choose weights to minimize variance of the final light curve - but this has limited success.
-					</section>
-
-					<section data-state="dim-background">
-						To find the appropriate weights, we instead started by minimizing the Total Variation 
-						<!-- <br><br> -->
-						<p class="fragment">\[\begin{align}
-						TV \equiv \sum_i |f_i - f_{i-1}|
-						\end{align} \] subject to constraints  \[\begin{align}\forall_j w_j &> 0\\
-						\sum_{i=1}^{N} f_i  &= N.\end{align} \]
-						</p>
-					</section>
-
-					<section data-state="dim-background">
-						<p>This is the <a href="https://en.wikipedia.org/wiki/Taxicab_geometry">\(L_1\) norm</a> or 'taxicab metric' on the derivative of the time series.</p>
-						<p class="fragment">This has analytic derivatives you can compute with autograd - easy to optimize.</p>
-
-					</section>
-
-					<section data-state="dim-background">
-						We have recently improved this by minimizing the <i>lagged</i> Total Variation
-						<!-- <br><br> -->
-						<p class="fragment">\[\begin{align}
-						TV_δ \equiv \sum_i |f_{i} - f_{i-δ}|
-						\end{align} \]
-						</p>
-						<p class="fragment">We can also generalize the \(L_1\) norm to the \(L_k\) norm \[Q_{k,\delta} \equiv {\sum_i{|f_i - f_{i-\delta}|^k}}\]</p>
-						<p class="fragment">This has analytic derivatives you can compute with e.g. <a href="https://github.com/HIPS/autograd">autograd</a> - easy to optimize.</p>
-					</section>
-
-					<section data-state="dim-background">
-						Note that these light curves are basically a sum of sine waves - anything but sparse in the derivative! 
-						<p class="fragment">But they're sparse in the Fourier domain... perhaps this is relevant?</p>
-					</section>
-				
-					<section data-state="dim-background">
-						<p>All K2 Halo data are available online at <a href="https://github.com/benjaminpope/k2halo">github.com/benjaminpope/k2halo</a></p>
-					</section>
-
-				</section>
-
-				<section data-background="exoplanet.jpg" data-state="dim-background">
-					<section>
-						<h2>The Future</h2>
-					</section>
-					
-					<section>
-						The method generalizes well to simulated data for the upcoming <a href="https://tess.gsfc.nasa.gov/">TESS mission</a>. We have many K2 halo datasets and are working our way through them - between these missions we should cover the whole sky.
-					</section>
-
-					<section>
-						We still don't have an explanation for the unreasonable effectiveness of the L1 norm in this algorithm - help us understand!
-					</section>
-
-					<section>
-						All our code is open source at <a href="https://github.com/hvidy/halophot">github.com/hvidy/halophot</a> - play with it!
-					</section>
-
-					<section>
-						We have a solution looking for problems - we want to extend this to TESS, JWST, and even ground-based missions. 
-						<p class="fragment">We need your help to be able to understand and improve photometry tools.</p>
-					</section>
-
 
 				</section>
 
