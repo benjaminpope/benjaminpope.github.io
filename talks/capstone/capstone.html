@@ -49,6 +49,7 @@
 
 					<section data-state="dim-background">
 						Slides available at <br><a href="benjaminpope.github.io/talks/capstone/capstone.html">benjaminpope.github.io/talks/capstone/capstone.html</a>
+						<img width='400' data-src="qrcode_capstone.jpg" alt="QR Code">
 					</section>
 				</section>
 
@@ -112,6 +113,13 @@
 					</section>
 
 					<section data-state="dim-background">
+						For a great overview, see <a href="https://tinyurl.com/wohyqvj">Roberts et al, 2012</a>, "Gaussian Processes for Timeseries Modelling". (<a href="https://tinyurl.com/wohyqvj">tinyurl.com/wohyqvj</a>)
+						<p class='fragment'>Also see Dan Foreman-Mackey's tutorial, <a href="https://speakerdeck.com/dfm/an-astronomers-introduction-to-gaussian-processes-v2">An Astronomer's Introduction to Gaussian Processes</a> (<a href="https://tinyurl.com/swbgsmd">tinyurl.com/swbgsmd</a>)</p>
+						<p class='fragment'>Or the great book, <a href="http://www.gaussianprocess.org/">Rasmussen & Williams</a> (<a href="http://www.gaussianprocess.org">gaussianprocess.org</a>).</p>
+					</section>
+
+
+					<section data-state="dim-background">
 						Gaussian processes are a method of non-parametric inference.
 						<p class='fragment'>GPs provide a pdf over <b>functions</b></p>
 						<p class='fragment'>You can use these to fit to variations in time series, spectroscopic, spatial data... whatever you want</p>
@@ -156,7 +164,30 @@
 							\end{bmatrix}\]
 						</p>
 					</section>
+
+					<section data-state="dim-background">
+						A common kernel is the squared exponential kernel
+						<p>\[k(x_i,x_j) = h^2 \exp({-(\frac{x_i - x_j}{\lambda})^2})\]</p>
+					</section>
+
+					<section data-state="dim-background">
+					Draws from GPs with vertical scale \(h=1\) and horizontal correlation length \(\lambda\) a) 0.1, b) 1, c) 10
+					<img width='600' data-src="draws.png" alt="Draws">
+					</section>
+
 				</section>
+
+								<section data-background="./k2concept.jpg">
+					<section>
+						<h2>Applying a GP to real data</h2>
+					</section>
+
+					<section data-state="dim-background">
+						Follow along in a Google Colab online: <a href="https://tinyurl.com/t5j2ncs">tinyurl.com/t5j2ncs</a>
+					</section>
+
+				</section>
+
 
 			</div>
 
