@@ -49,7 +49,7 @@
 
 					<section data-state="dim-background">
 						Slides available at <br><a href="benjaminpope.github.io/talks/capstone/capstone.html">benjaminpope.github.io/talks/capstone/capstone.html</a>
-						<img width='400' data-src="qrcode_capstone.jpg" alt="QR Code">
+						<img width='300' data-src="qrcode_capstone.jpg" alt="QR Code">
 					</section>
 				</section>
 
@@ -171,14 +171,43 @@
 					</section>
 
 					<section data-state="dim-background">
+						<img width='600' data-src="matrix_sqexp.png" alt="Squared Exponential kernel">
+					</section>
+
+					<section data-state="dim-background">
+						Alternatively, an exponential sine-squared times our previous one:
+						<p>\[k(x_i,x_j) = h^2 \exp({-(\frac{x_i - x_j}{\lambda})^2}) \exp(-\Gamma {\sin^2}[\Pi/P |x_i - x_j|]) \]</p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width='600' data-src="matrix_periodic.png" alt="Periodic Kernel">
+					</section>
+
+					<section data-state="dim-background">
 					Draws from GPs with vertical scale \(h=1\) and horizontal correlation length \(\lambda\) a) 0.1, b) 1, c) 10
 					<img width='600' data-src="draws.png" alt="Draws">
 					</section>
 
+					<section data-state="dim-background">
+						<div align="left">
+							In practice:
+						</div>
+							<ul>
+							  <li class='fragment'>Write down a kernel</li>
+							  <li class='fragment'>Optimize hyperparameters with respect to data</li>
+							  <li class='fragment'>Calculate the posterior mean</li>
+							</ul>
+					</section>
+
+					<section data-state="dim-background">
+						Careful - scales as \( \mathscr{O}(N^3) \)!
+					</section>
+
 				</section>
 
-								<section data-background="./k2concept.jpg">
-					<section>
+				<section data-background="./giacometti.jpg">
+
+					<section data-state="dim-background">
 						<h2>Applying a GP to real data</h2>
 					</section>
 
@@ -187,7 +216,6 @@
 					</section>
 
 				</section>
-
 
 			</div>
 
