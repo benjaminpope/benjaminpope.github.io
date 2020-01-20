@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>STScI Colloquium: Benjamin Pope</title>
+
+		<meta name="description" content="STScI Colloquium">
+		<meta name="author" content="Benjamin Pope">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/black.css" id="theme"> -->
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="./pleiades.jpg">
+
+					<section>
+					<h2>The Brightest Stars</h2> 
+					<h2>and their Planets</h2>
+					<h3>Benjamin Pope, NYU</h3>
+					</section>
+
+					<section data-state="dim-background">
+						Slides available at <br><a href="benjaminpope.github.io/talks/stsci/stsci.html">benjaminpope.github.io/talks/stsci/stsci</a>
+					</section>
+				</section>
+
+				<section data-background="./kep444.jpg">
+					<section>
+						<h2>Transiting Planets</h2>
+					</section>
+
+					<section data-state="dim-background">
+						<iframe src="https://player.vimeo.com/video/89418853" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<p><small><a href="https://vimeo.com/89418853">Exoplanet-style transit light curve of Venus</a> from <a href="https://vimeo.com/user13009721">James Gilbert</a> on <a href="https://vimeo.com">Vimeo</a>.</small></p>
+					</section>
+
+					<section data-state="dim-background"> 
+						Large searches for exoplanets like the <a href="https://keplerscience.arc.nasa.gov"><i>Kepler</i></a> mission have shown planets to be common in our Galaxy - now we want to learn about their atmospheres and compositions. 
+						<p class="fragment"> The best options are those around bright stars, like <a href="http://adsabs.harvard.edu/abs/2016Natur.532..207D">55 Cancri e</a> - subject of 367 papers in the last decade! </p>
+					</section>
+
+					<section data-state="dim-background">
+					My <a href="nexsci.caltech.edu/sagan/fellowship.shtml">Sagan Fellowship</a> project is to search for planets transiting naked-eye stars (V mag &lt 6.5) in order to find ideal targets for characterization with the upcoming <a href="https://jwst.nasa.gov/">James Webb Space Telescope</a>.
+					</section>
+
+				</section>
+
+				<section data-background="./k2concept.jpg">
+					<section>
+						<h2><i>Kepler</i> Photometry</h2>
+					</section>
+
+					<section data-state="dim-background">
+						After the failure of a reaction wheel in 2012, Kepler was rebooted as the '<a href="https://www.nasa.gov/feature/ames/nasas-k2-mission-the-kepler-space-telescopes-second-chance-to-shine/">K2 Mission</a>', with very unstable pointing (hence the shaking in the <a href="https://github.com/KeplerGO/k2flix" title="made using Geert Barentsen's code here">videos</a> you'll see).
+					</section>
+
+					<section data-state="dim-background">
+						<video width="480" height="480" controls autoplay loop>
+						<source src="./epic_212521166.mp4" type="video/mp4">
+						</video>					
+					</section>
+
+					<section data-state="dim-background">
+						To get the photometry, you can just sum the pixel values in a window containing the whole PSF...
+						<p class="fragment">but the pixels have different gains ("inter- and intra-pixel sensitivity variation")... </p>
+						<p class="fragment">and the pixel window doesn't necessarily track the whole PSF perfectly ("aperture losses").</p>
+					</section>
+
+					<section data-state="dim-background">
+						For sufficiently bright stars light fills the CCD wells with electrons that spill up and down the column and even leaving the chip.
+					</section>
+
+					<section data-state="dim-background">
+						<video width="480" height="480" controls autoplay loop>
+						<source src="./bright.mp4" type="video/mp4">
+						</video>			
+					</section>
+
+					<section data-state="dim-background"> 
+					<i>Kepler</i> saturates on stars brighter than ~ 11th mag (log scale: 5 mag = factor of 100) - but we want to look at stars 10k times brighter.
+					</section>
+
+				</section>
+
+
+				<section data-background="./starry.jpg">
+
+					<section>
+						<h2>Halo Photometry</h2>
+					</section>
+
+					<section data-state="dim-background">
+						What if we just look at unsaturated pixels?
+					</section>
+
+					<section data-state="dim-background">
+						<video width="480" height="480" controls autoplay loop>
+						<source src="./aldebaran.mp4" type="video/mp4">
+						</video>
+					</section>
+
+					<section data-state="dim-background">
+						Flux \(f_i \) at cadence i is a sum over j pixels \(p_{ij}\) with weights \(w_j\):
+						<br><br>
+						\[
+						f_i \equiv \sum\limits_i w_j p_{ij}
+						 \]
+					</section>
+
+					<section data-state="dim-background">
+						To find the appropriate weights, we minimize the Total Variation 
+						<!-- <br><br> -->
+						<p class="fragment">\[\begin{align}
+						TV \equiv \sum_i |f_i - f_{i-1}|
+						\end{align} \] subject to constraints  \[\begin{align}\forall_j w_j &> 0\\
+						\sum_{i=1}^{N} f_i  &= N.\end{align} \]
+						</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>This is the <a href="https://en.wikipedia.org/wiki/Taxicab_geometry">\(L_1\) norm</a> or 'taxicab metric' on the derivative of the time series.</p>
+						<p class="fragment">This has analytic derivatives you can compute with automatic differentiation - easy to optimize.</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p><a href="https://ui.adsabs.harvard.edu/abs/2019ApJS..245....8P/abstract">K2 Bright Star Survey</a>: 31 red giants and variability classifications for all 161 stars - a unique legacy sample.</p>
+						<p class='fragment'>K2 Halo data of the 161 naked-eye stars are available as High Level Science Products on MAST <a href="https://archive.stsci.edu/hlsp/halo">archive.stsci.edu/hlsp/halo</a></p>
+						<p class='fragment'>Released pipeline as open source: <a href="https://github.com/benjaminpope/k2halo">github.com/benjaminpope/k2halo</a></p>
+					</section>
+
+				</section>
+
+				<section data-background="./pleiades.jpg">
+
+					<section>
+						<h3>Pleiades</h3>
+						<p>Πλειάδες, the Seven Sisters</p>
+						<p class="fragment">Alcyone, Atlas (dad), Electra, Maia, Merope, Taygeta, Pleione (mum)</p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width='800' height='390' data-src="combined.png" alt="Combined Figure">
+						<p>Atlas lightcurve: raw (top) and halo (bottom)</p>
+						<p><a href="http://adsabs.harvard.edu/abs/2017MNRAS.471.2882W">White, Pope et al., 2017</a></p>
+					</section>
+
+					<section data-state="dim-background">
+
+						<img width='288' height='432' data-src="timeseries.jpg" alt="Combined Figure"><img width='288' height='432' data-src="ampspec.jpg" alt="Combined Figure">
+						<p>Lightcurves of All Seven Bright Pleiades</p>
+						<p><a href="http://adsabs.harvard.edu/abs/2017MNRAS.471.2882W">White, Pope et al., 2017</a></p>
+						
+					</section>
+
+				</section>
+
+				<section data-background="./taurus.jpg" data-state="dim-background">
+						
+					<section data-state="dim-background">
+						<h2>Aldebaran</h2>
+						<p>α Tauri<p>
+						<p>الدبران ,<i>the follower</i></p>
+						<p class="fragment">... follows the Pleiades!</p>
+					</section>
+
+					<section data-state="dim-background">
+						<a href="http://adsabs.harvard.edu/abs/1993ApJ...413..339H">Hatzes & Cochran, 1993</a> claimed an early detection of a \(628.96 \pm 0.90\) d RV planet around Aldebaran - finally confirmed in <a href="http://adsabs.harvard.edu/abs/2015A%26A...580A..31H">Hatzes et al., 2015</a>!
+					</section>
+
+					<section data-state="dim-background">
+					<p>Detection of p-mode oscillations at 2.2 μHz</p>
+						<img width="600" height="450" data-src="aldebaran_lc.png" alt="Aldebaran K2 Light Curve">
+					</section>
+
+					<section data-state="dim-background">
+						<p>Without this asteroseismology, we have 
+						<br><br>
+						\[M = 1.27^{+0.24}_{-0.20} \, \mathrm{M_{\odot}}\]
+
+						 and age \(4.9^{+3.6}_{-2.0} \, \rm Gyr \)</p>
+						 <p class="fragment">With this new constraint, we have 
+						<br><br>
+						\[M = 1.16^{+0.07}_{-0.07} \, \mathrm{M_{\odot}}\]
+
+						 and age \(6.4^{+1.4}_{-1.1} \, \rm Gyr \)</p>
+					</section>
+
+					<section data-state="dim-background">
+					<p>Using MESA models, we find that on the main sequence Aldebaran b had a semi-major axis of \(1.50 \pm 0.03 \) AU and Aldebaran had a luminosity \(2.0 \pm 0.7 \, L_\odot \)...</p>
+
+					<p class="fragment">so Aldebaran b had an insolation comparable to Earth when its star was on the main sequence.</p>
+					</section>
+
+				</section>
+
+				<section data-background="jwst.jpg" data-state="dim-background">
+					<section>
+						<h2>Direct Imaging</h2>
+					</section>
+
+					<section data-state="dim-background">
+						<p>We are starting to detect planets at the epoch of formation - eg the accreting protoplanets PDS 70 bc.</p>
+						<img width=450 data-src="pds70.jpg" alt='ESO/A. Müller et al.'>
+						<p><small>(ESO/A. Müller et al.)</small></p>
+					</section>
+
+					<section data-state="dim-background">
+						JWST has an aperture masking instrument on NIRISS to achieve extreme angular resolution (\(0.5 λ/D\))
+						<p class='fragment'>and coronagraphs on NIRCAM to achieve high contrast.</p>
+						<p class="fragment">WFIRST will have a Hybrid Lyot Coronagraph with deformable mirrors to go even further.</p>
+					</section>
+
+					<section data-state="dim-background">
+						The main limitation on these is from wavefront errors which corrupt phase information.
+					</section>
+
+					<section data-state="dim-background">
+						In radio astronomy the idea of 'closure phase' was developed to be immune to phase noise: 
+						<p class='fragment'>Correlate baselines around a <i>triangle</i> of receivers</p>
+						<p class='fragment'>Same principle in triangles in the NIRISS aperture mask instrument</p>
+					</section>
+
+					<section data-state="dim-background">
+						Kernel phase is a generalization of aperture masking to arbitrary pupils. 
+						Linearize observed phase \(\mathbf{\Phi}_0 \) wrt phase noise \(\phi\)
+
+						\[\mathbf{\Phi} = \mathbf{\Phi}_0 + \mathbf{A}_\phi \cdot \phi\]
+						
+						<p class='fragment'>and find an operator \(\mathbf{K}\) such that \[\mathbf{K}\cdot\mathbf{A}_\phi = 0\]</p>
+					</section>	
+
+					<section>
+						Then your kernel phases are immune to phase noise: 
+
+						<p class="fragment">\[\begin{align}
+						\mathbf{K}\cdot\mathbf{\Phi} &= \mathbf{K}\cdot\mathbf{\Phi}_0 + \mathbf{K}\cdot\mathbf{A}_\phi\cdot\phi \\
+    					&= \mathbf{K}\cdot\mathbf{\Phi}_0.\end{align} \]
+						</p>
+					</section>
+
+					<section data-state="dim-background">
+						This linearization can be applied to arbitrary optical systems
+
+						<p class="fragment">Optics is the same as machine learning: matrix multiplications and simple nonlinear functions</p>
+
+						<p class="fragment">Can use automatic differentiation!</p>
+					</section>
+
+
+					<section>
+						
+					</section>
+				</section>
+
+
+				<section data-background="exoplanet.jpg" data-state="dim-background">
+					<section>
+						<h2>The Future</h2>
+					</section>
+					
+					<section data-state="dim-background">
+						We have looked at all the bright stars in Kepler and K2 - but the TESS mission will deliver hundreds more. Can we find our nearest neighbours?
+					</section>
+
+					<section data-state="dim-background">
+						What can we do with open data and open software more broadly in astronomy?
+					</section>
+
+
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+					math: {
+						mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+						config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					},
+
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
