@@ -234,18 +234,17 @@
 					<section data-state="dim-background">
 						In radio astronomy the idea of 'closure phase' was developed to be immune to phase noise: 
 						<p class='fragment'>Correlate baselines around a <i>triangle</i> of receivers</p>
-						<p class='fragment'>Same principle in triangles in the NIRISS aperture mask instrument</p>
 					</section>
 
 					<section data-state="dim-background">
-						<p>JWST has an aperture masking instrument on NIRISS</p>
+						<p>JWST has an aperture masking instrument on NIRISS to obtain closure phases</p>
 						<img width=450 data-src="jwst_mask.jpg" alt="JWST Aperture Mask">
 					</section>
 
 					<section data-state="dim-background">
-						Kernel phase is a generalization of aperture masking to arbitrary pupils. 
+						Kernel phase is a generalization of closure phase to arbitrary pupils. 
 						<p class='fragment'>Linearize response to phase noise: suitable for stable high Strehl images, with point-source calibrators</p>
-						<p class='fragment'>Then construct linear combinations of Fourier components for which phase noise is minimized a priori</p>
+						<p class='fragment'>Separate out linear subspaces of Fourier components that are immune to phase noise vs susceptible</p>
 					</section>
 
 					<section data-state="dim-background">
@@ -253,8 +252,8 @@
 					</section>
 
 					<section data-state="dim-background">
-						Same linear phase response can be used for wavefront sensing (eg <a href="https://ui.adsabs.harvard.edu/abs/2014MNRAS.440..125P/abstract">Pope+2014</a>)
-						<p class='fragment'>Can use this to cophase JWST mirror segments just given science images</p>
+						The other subspace can be used for wavefront sensing (eg <a href="https://ui.adsabs.harvard.edu/abs/2014MNRAS.440..125P/abstract">Pope+2014</a>)
+						<p class='fragment'>Every point source image gives you a free wavefront measurement in the instrument pupil!</p>
 					</section>
 
 					<section data-state="dim-background">
