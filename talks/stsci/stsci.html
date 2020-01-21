@@ -245,24 +245,17 @@
 
 					<section data-state="dim-background">
 						Kernel phase is a generalization of aperture masking to arbitrary pupils. 
-						Linearize observed phase \(\mathbf{\Phi}_0 \) wrt phase noise \(\phi\)
-
-						\[\mathbf{\Phi} = \mathbf{\Phi}_0 + \mathbf{A}_\phi \cdot \phi\]
-						
-						<p class='fragment'>and find an operator \(\mathbf{K}\) such that \[\mathbf{K}\cdot\mathbf{A}_\phi = 0\]</p>
-					</section>	
-
-					<section data-state="dim-background">
-						Then your kernel phases are immune to phase noise: 
-
-						<p class="fragment">\[\begin{align}
-						\mathbf{K}\cdot\mathbf{\Phi} &= \mathbf{K}\cdot\mathbf{\Phi}_0 + \mathbf{K}\cdot\mathbf{A}_\phi\cdot\phi \\
-    					&= \mathbf{K}\cdot\mathbf{\Phi}_0.\end{align} \]
-						</p>
+						<p class='fragment'>Linearize response to phase noise: suitable for stable high Strehl images, with point-source calibrators</p>
+						<p class='fragment'>Then construct linear combinations of Fourier components for which phase noise is minimized a priori</p>
 					</section>
 
 					<section data-state="dim-background">
 						Used this in <a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...767..110P/abstract">Pope et al, 2013</a> to revisit the Reid et al 2006, 2008 volume-limited brown dwarf surveys and discover 5 additional tight binaries.
+					</section>
+
+					<section data-state="dim-background">
+						Same linear phase response can be used for wavefront sensing (eg <a href="https://ui.adsabs.harvard.edu/abs/2014MNRAS.440..125P/abstract">Pope+2014</a>)
+						<p class='fragment'>Can use this to cophase JWST mirror segments just given science images</p>
 					</section>
 
 					<section data-state="dim-background">
