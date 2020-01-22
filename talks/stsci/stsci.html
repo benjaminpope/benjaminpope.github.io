@@ -78,6 +78,7 @@
 
 
 					<section data-state="dim-background">
+						Space telescopes are stable
 						Methods from data science can be applied with concrete physical meaning to space telescope data to get the best sensitivity to exoplanets.
 					</section>
 
@@ -116,7 +117,7 @@
 					</section>
 
 					<section data-state="dim-background"> 
-					<i>Kepler</i> saturates on stars brighter than ~ 11th mag (log scale: 5 mag = factor of 100) - but we want to look at stars 10k times brighter.
+						<i>Kepler</i> saturates on stars brighter than ~ 11th mag - but we want to look at 1st mag stars: 10k times brighter!
 					</section>
 
 				</section>
@@ -142,12 +143,12 @@
 						Flux \(f_i \) at cadence i is a sum over j pixels \(p_{ij}\) with weights \(w_j\):
 						<br><br>
 						\[
-						f_i \equiv \sum\limits_i w_j p_{ij}
+						f_i \equiv \sum\limits_j w_j p_{ij}
 						 \]
 					</section>
 
 					<section data-state="dim-background">
-						To find the appropriate weights, we minimize the Total Variation 
+						To find the appropriate weights, minimize the Total Variation 
 						<!-- <br><br> -->
 						<p class="fragment">\[\begin{align}
 						TV \equiv \sum_i |f_i - f_{i-1}|
@@ -162,7 +163,7 @@
 					</section>
 
 					<section data-state="dim-background">
-						<p><a href="https://ui.adsabs.harvard.edu/abs/2019ApJS..245....8P/abstract">K2 Bright Star Survey</a>: 31 red giants and variability classifications for all 161 stars - a unique legacy sample.</p>
+						<p>I led the <a href="https://ui.adsabs.harvard.edu/abs/2019ApJS..245....8P/abstract">K2 Bright Star Survey</a>: asteroseismology and variability classifications for all 161 stars - a unique legacy sample.</p>
 						<p class='fragment'>K2 Halo data of the 161 naked-eye stars are available as High Level Science Products on MAST <a href="https://archive.stsci.edu/hlsp/halo">archive.stsci.edu/hlsp/halo</a></p>
 						<p class='fragment'>Released pipeline as open source: <a href="https://github.com/benjaminpope/k2halo">github.com/benjaminpope/k2halo</a></p>
 					</section>
@@ -209,7 +210,7 @@
 						\[M = 1.27^{+0.24}_{-0.20} \, \mathrm{M_{\odot}}\]
 
 						 and age \(4.9^{+3.6}_{-2.0} \, \rm Gyr \)</p>
-						 <p class="fragment">With this new constraint, we have 
+						 <p class="fragment">With this new constraint, I calculated 
 						<br><br>
 						\[M = 1.16^{+0.07}_{-0.07} \, \mathrm{M_{\odot}}\]
 
@@ -217,13 +218,12 @@
 					</section>
 
 					<section data-state="dim-background">
-					<p>Using MESA models, we find that on the main sequence Aldebaran b had a semi-major axis of \(1.50 \pm 0.03 \) AU and Aldebaran had a luminosity \(2.0 \pm 0.7 \, L_\odot \)...</p>
-
-					<p class="fragment">so Aldebaran b had an insolation comparable to Earth when its star was on the main sequence.</p>
+					<p>Using MESA models, I found that on the main sequence Aldebaran b had a semi-major axis of \(1.50 \pm 0.03 \) AU and Aldebaran had a luminosity \(2.0 \pm 0.7 \, L_\odot \)...</p>
+					<p class="fragment">so Aldebaran b had an insolation comparable to Earth when its star was on the main sequence. First dead planet!</p>
 					</section>
 
-					<section>
-						This halo method is now successfully being applied to TESS - debunking a transit candidate around τ Ceti (<a href="https://ui.adsabs.harvard.edu/abs/2019RNAAS...3..145E/abstract">Eisner, Pope et al 2019</a>) and for asteroseismology of many bright stars such as α Cen AB and β Hyi (in prep!)
+					<section data-state="dim-background">
+						This halo method is now successfully being applied to TESS - debunking a spurious transit candidate around τ Ceti (<a href="https://ui.adsabs.harvard.edu/abs/2019RNAAS...3..145E/abstract">Eisner, Pope et al 2019</a>) and for asteroseismology of many bright stars such as α Cen AB and β Hyi (in prep!)
 					</section>
 				</section>
 
@@ -239,7 +239,8 @@
 					</section>
 
 					<section data-state="dim-background">
-						The main limitation on direct imaging is from wavefront aberrations which corrupt phase information.
+						<p>The main limitation on direct imaging is from wavefront aberrations which corrupt phase information. </p>
+						<img width=650 data-src="good_and_bad.png" alt='Good and Bad PSFs' border="0">
 					</section>
 
 					<section data-state="dim-background">
@@ -259,7 +260,7 @@
 					</section>
 
 					<section data-state="dim-background">
-						Used this in <a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...767..110P/abstract">Pope et al, 2013</a> to revisit the Reid et al 2006, 2008 volume-limited brown dwarf surveys and discover 5 additional tight binaries.
+						Used this in <a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...767..110P/abstract">Pope et al, 2013</a> to revisit the Reid et al 2006, 2008 HST NICMOS volume-limited brown dwarf surveys and discover 5 additional tight binaries.
 					</section>
 
 					<section data-state="dim-background">
@@ -268,7 +269,7 @@
 					</section>
 
 					<section data-state="dim-background">
-						This linearization can be applied to arbitrary optical systems - eg coronagraphs such as JWST/NIRCAM and WFIRST.
+						This linearization can be applied to arbitrary optical systems - eg coronagraphs such as JWST-NIRCAM/MIRI and WFIRST.
 
 						<p class="fragment">Optics is mathematically like machine learning: matrix multiplications and simple nonlinear functions</p>
 
@@ -278,6 +279,11 @@
 					<section data-state="dim-background">
 						Extending kernel phase to coronagraphy has the same feature of a noise-corrupted space and a kernel space
 						<img width=450 data-src="all_singular.jpg" alt='Singular values'>
+					</section>
+
+
+					<section data-state="dim-background">
+						Slide about coronagraphic design and optimization?
 					</section>
 
 				</section>
@@ -290,6 +296,11 @@
 					
 					<section data-state="dim-background">
 						We have looked at all the bright stars in Kepler and K2 - but the TESS mission will deliver hundreds more. Can we find our nearest neighbours?
+					</section>
+
+
+					<section data-state="dim-background">
+						Slide about JWST? Kernel phase mining NICMOS archive?
 					</section>
 
 					<section data-state="dim-background">

@@ -50,6 +50,7 @@ body {
   html.dim-background .slide-background {
     opacity: 0.4 !important;
 }
+img { border-style: none; }
 
 /*********************************************
  * VIEW FRAGMENTS
