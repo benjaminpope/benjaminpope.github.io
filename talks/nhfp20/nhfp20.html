@@ -41,7 +41,7 @@
 			<div class="slides">
 				<section data-background="./giacometti.jpg" data-state="dim-background">
 
-					<section>
+					<section data-state="dim-background">
 					<h2>All Downhill from Here</h2> 
 					<h2>What Automatic Differentiation can Do for Exoplanet Science</h2>
 					<h3>Benjamin Pope, NYU</h3>
@@ -113,12 +113,12 @@
 						<p class="fragment">Can use automatic differentiation!</p>
 					</section>
 
-					<section>
+					<section data-state="dim-background">
 						<p>Autodiff is the enabling technology for deep neural networks - you use the chain rule to take derivatives of nearly-arbitrary numerical functions.</p>
 						<p class='fragment'>Implementations in TensorFlow, PyTorch, Julia native...</p>
 					</section>
 
-					<section>
+					<section data-state="dim-background">
 						<p>Here we use <a href="https://github.com/google/jax">Google Jax</a>, which resembles NumPy, to rewrite the Fourier/Fresnel optics code <a href="https://github.com/mperrin/poppy">poppy</a> to take derivatives</p>
 						<p class='fragment'><a href="https://github.com/benjaminpope/morphine">Morphine</a>!</p>
 					</section>
@@ -146,7 +146,7 @@
 
 					<section data-state="dim-background">
 						<p>Work by Alison Wong - phase retrieval by gradient descent</p>
-						<img width=450 data-src="epochs.jpg" alt="Alison Wong figure">
+						<img width=600 data-src="epochs.jpg" alt="Alison Wong figure">
 					</section>
 
 
