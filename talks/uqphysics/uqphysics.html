@@ -50,6 +50,9 @@
 					<section data-state="dim-background">
 						Slides available at <br><a href="benjaminpope.github.io/talks/uqphysics/uqphysics.html">benjaminpope.github.io/talks/uqphysics/uqphysics.html</a>
 					</section>
+					<section data-state="dim-background">
+						Work in collaboration with Sydney students <a href="https://github.com/alipwong">Alison Wong</a> (PhD) and <a href="https://github.com/LouisDesdoigts">Louis Desdoigts</a> (Honours) and faculty <a href="http://www.physics.usyd.edu.au/~gekko/">Peter Tuthill</a> (Sydney)/<a href="https://www.stsci.edu/~pueyo/">Laurent Pueyo</a> (STScI).
+					</section>
 				</section>
 
 				</section>
@@ -68,6 +71,129 @@
 					<section data-state="dim-background">
 						<p>The main limitation on direct imaging is from wavefront aberrations which corrupt phase information. </p>
 						<img width=650 data-src="good_and_bad.png" alt='Good and Bad PSFs' border="0">
+					</section>
+
+					<section data-state="dim-background">
+						<h3>Coronagraphs</h3>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=650 data-src="lyot.jpeg" alt='Lyot and his coronagraph' border="0">
+						<p><small>Lyot Coronagraph - Credit: Rebecca Oppenheimer, Lyot Project</small></p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=650 data-src="lyot_diagram.jpeg" alt='Lyot Diagram' border="0">
+						<p><small>Credit: Rebecca Oppenheimer, Lyot Project</small></p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=650 data-src="por_coronagraph.png" alt='Emiel Por Coronagraph' border="0">
+						<p><small>Phase Apodized Coronagraph: Por, 2019, <a href="https://arxiv.org/abs/1908.02585">arXiv:1908.02585</a></small></p>
+					</section>
+
+				</section>
+
+				<section data-background="alpha_cen.jpeg" data-state="dim-background">
+
+					<section data-state="dim-background">
+						<h3>Toliman Space Telescope</h3>
+					</section>
+
+					<section data-state="dim-background">
+						<img height=650 data-src="book_of_fixed_stars.jpeg" alt='Book of Fixed Stars' border="0">
+					</section>
+
+					<section data-state="dim-background">
+						<img width=650 data-src="toliman_pupil_and_stars.jpg" alt='Toliman Pupil and Stars' border="0">
+						<p><small>Early pupil design & simulation</small></p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=650 data-src="toliman_mask.jpg" alt='Toliman Mask' border="0">
+						<p><small>TOLIMAN lab test phase mask</small></p>
+					</section>
+
+				</section>
+
+
+				<section data-background="giacometti.jpg" data-state="dim-background">
+	
+					<section data-state="dim-background">
+						<h2>Automatic Differentiation</h2>
+					</section>
+
+					<section data-state="dim-background">
+						So how do we design such complicated optical systems in a principled way?
+					</section>
+
+					<section data-state="dim-background">
+						<p>What if we want to linearize an arbitrary optical system?</p>
+
+						<p class="fragment">Optics is mathematically like machine learning: matrix multiplications and simple nonlinear functions</p>
+
+						<p class="fragment">Can use automatic differentiation!</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Autodiff is the enabling technology for deep neural networks - you use the chain rule to take derivatives of nearly-arbitrary numerical functions.</p>
+						<p class='fragment'>Implementations in TensorFlow, PyTorch, Julia native...</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Here we use <a href="https://github.com/google/jax">Google Jax</a>, which resembles NumPy, to rewrite the Fourier/Fresnel optics code <a href="https://github.com/mperrin/poppy">poppy</a> to take derivatives</p>
+						<p class='fragment'><a href="https://github.com/benjaminpope/morphine">Morphine</a>!</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Louis Desdoigts - sensitivity of Toliman telescope design to Zernike modes</p>
+						<img width=475 data-src="tol.png" alt="Toliman Image">
+					</section>
+<!-- 
+					<section data-state="dim-background">
+						<p>Differentiable optics allows fast gradient descent for optical design - eg coronagraph pupils</p>
+						<img width=450 data-src="ndiaye.jpg" alt="Mamadou N'Diaye Image">
+						<p><small><a href="https://arxiv.org/abs/1601.02614">N'Diaye et al 2018</a></small></p>
+					</section>
+ -->
+					<section data-state="dim-background">
+						<p>Alison Wong - phase retrieval and design by gradient descent</p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=650 data-src="gradient_descent.jpg" alt='Phase Retrieval' border="0">
+						<p>Phase Retrieval</p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=650 data-src="coronagraph.jpg" alt='Coronagraph Designs' border="0">
+						<p>Coronagraph Phase Mask Design</p>
+					</section>
+
+					<section data-state="dim-background">
+					    <video width=300 data-autoplay src="new.mp4"></video>
+					    <video width=300 data-autoplay src="10fold.mp4"></video>
+					    <p>Continuous Latent-Image Mask Binarization (CLIMB)</p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=600 data-src="basis.jpg" alt='Basis' border="0">
+						<p>Basis used in CLIMB</p>
+					</section>
+
+
+					<section data-state="dim-background">
+						<img width=850 data-src="tinytol.jpg" alt='Toliman Designs' border="0">
+						<p>Toliman Phase Mask Designs</p>
+					</section>
+
+				</section>
+
+
+				<section data-background="jwst.jpg" data-state="dim-background">
+
+					<section data-state="dim-background">
+						<h2>Kernel Phase</h2>
 					</section>
 
 					<section data-state="dim-background">
@@ -100,32 +226,6 @@
 						<img width=500 data-src="loop_3_15_19.gif" alt="Cophasing">
 					</section>
 
-				</section>
-
-				<section data-background="giacometti.jpg" data-state="dim-background">
-	
-					<section data-state="dim-background">
-						<h2>Automatic Differentiation</h2>
-					</section>
-
-					<section data-state="dim-background">
-						<p>What if we want to linearize an arbitrary optical system?</p>
-
-						<p class="fragment">Optics is mathematically like machine learning: matrix multiplications and simple nonlinear functions</p>
-
-						<p class="fragment">Can use automatic differentiation!</p>
-					</section>
-
-					<section data-state="dim-background">
-						<p>Autodiff is the enabling technology for deep neural networks - you use the chain rule to take derivatives of nearly-arbitrary numerical functions.</p>
-						<p class='fragment'>Implementations in TensorFlow, PyTorch, Julia native...</p>
-					</section>
-
-					<section data-state="dim-background">
-						<p>Here we use <a href="https://github.com/google/jax">Google Jax</a>, which resembles NumPy, to rewrite the Fourier/Fresnel optics code <a href="https://github.com/mperrin/poppy">poppy</a> to take derivatives</p>
-						<p class='fragment'><a href="https://github.com/benjaminpope/morphine">Morphine</a>!</p>
-					</section>
-
 					<section data-state="dim-background">
 						<p>Jacobian of Palomar PHARO camera wrt phase</p>
 						<img width=450 data-src="pharo_jacobian.jpg" alt="Pharo Jacobian">
@@ -134,22 +234,6 @@
 					<section data-state="dim-background">
 						Extending kernel phase to coronagraphy has the same feature of a noise-corrupted space and a kernel space
 						<img width=450 data-src="all_singular.jpg" alt='Singular values'>
-					</section>
-
-					<section data-state="dim-background">
-						<p>Differentiable optics also allows fast gradient descent for optical design - eg coronagraph pupils</p>
-						<img width=450 data-src="ndiaye.jpg" alt="Mamadou N'Diaye Image">
-						<p><small><a href="https://arxiv.org/abs/1601.02614">N'Diaye et al 2018</a></small></p>
-					</section>
-
-					<section data-state="dim-background">
-						<p>Work by Louis Desdoigts - sensitivity of Toliman telescope design to Zernike modes</p>
-						<img width=475 data-src="tol.png" alt="Toliman Image">
-					</section>
-
-					<section data-state="dim-background">
-						<p>Work by Alison Wong - phase retrieval by gradient descent</p>
-						<img width=650 data-src="epochs.jpg" alt="Alison Wong figure">
 					</section>
 
 				</section>
@@ -163,9 +247,14 @@
 						Get using <a href="https://github.com/benjaminpope/morphine">morphine</a> and read <a href="https://www.overleaf.com/read/xpwmzsjybchv">the paper</a>!
 					</section>
 
+					<section data-state="dim-background">
+						<p>What else can we use this for?</p>
+						<p class='fragment'>Spatial light modulator enabled technology!</p>
+						<p class='fragment'>Particle beams?</p>
+					</section>
 
 					<section data-state="dim-background">
-						What else can we use this for?
+						<h3>Questions!</h3>
 					</section>
 
 
