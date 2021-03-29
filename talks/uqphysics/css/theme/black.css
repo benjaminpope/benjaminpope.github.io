@@ -204,7 +204,55 @@ body {
 
 .reveal small * {
   vertical-align: top; }
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.rigel {
+  position: absolute;
+  bottom: 32%;
+  right: 24%;
+}
+
+/* Bottom right text */
+.astrolabe {
+  position: absolute;
+  bottom: 24%;
+  right: 8%;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /*********************************************
  * LINKS
