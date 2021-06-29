@@ -217,13 +217,13 @@
 
 					<section data-state="dim-background">
 						<img width=650 data-src="coronagraph.jpg" alt='Coronagraph Designs' border="0">
-						<p><a href='https://colab.research.google.com/drive/1drVFcbicCYvO9d7uMRpe8-t90r23aIoi?usp=sharing'>Coronagraph Phase Mask Design</a> - try it yourself!</p>
+						<p>Coronagraph Phase Mask Design - <a href='https://colab.research.google.com/drive/1drVFcbicCYvO9d7uMRpe8-t90r23aIoi?usp=sharing'>try it yourself</a>!</p>
 					</section>
 
 					<section data-state="dim-background">
 						<video width=300 data-autoplay src="new.mp4"></video>
 						<video width=300 data-autoplay src="10fold.mp4"></video>
-						<p>Continuous Latent-Image Mask Binarization (CLIMB)</p>
+						<p><a href="https://github.com/alipwong/phase_retrieval_and_design/blob/main/phase_design/Toliman/TinyTol_paper.ipynb">Continuous Latent-Image Mask Binarization (CLIMB)</a></p>
 					</section>
 
 					<section data-state="dim-background">
@@ -252,18 +252,18 @@
 					</section>
 
 					<section data-state="dim-background">
-						<p>JWST has an aperture masking instrument on NIRISS to obtain closure phases</p>
-						<img width=450 data-src="jwst_mask.jpg" alt="JWST Aperture Mask">
-					</section>
-
-					<section data-state="dim-background">
 						Kernel phase is a generalization of closure phase to arbitrary pupils. 
 						<p class='fragment'>Linearize response to phase noise: suitable for stable high Strehl images, with point-source calibrators</p>
 						<p class='fragment'>Separate out linear subspaces of Fourier components that are immune to phase noise vs susceptible</p>
 					</section>
 
 					<section data-state="dim-background">
-						How do we use autodiff to improve kernel phase?
+						The Martinache 2010 kernel phase transfer matrix is an analytically determined Jacobian mapping pupil phases to <i>u, v</i> effects.
+						<img width=450 data-src="martinache2010_fig1.png" alt='Martinache, 2010'>
+					</section>
+
+					<section data-state="dim-background">
+						How do we use autodiff to generalize kernel phase?
 						<p class='fragment'>Check out <a href='https://github.com/benjaminpope/morphine/blob/stable/notebooks/morphine-fizeau-workshop.ipynb'>this notebook</a>!</p>
 					</section>
 
@@ -280,8 +280,6 @@
 
 					<section data-state="dim-background">
 						<p>What else can we use this for?</p>
-						<p class='fragment'>Spatial light modulator enabled technology!</p>
-						<p class='fragment'>Particle beams?</p>
 					</section>
 
 					<section data-state="dim-background">
