@@ -39,7 +39,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="./giacometti.jpg" data-state="dim-background">
+				<section data-background="./starry.jpg" data-state="dim-background">
 
 					<section data-state="dim-background">
 					<h2><i>morphine</i></h2> 
@@ -63,38 +63,25 @@
 
 				<section data-background="jwst.jpg" data-state="dim-background">
 					<section data-state="dim-background">
-						<h2>Direct Imaging</h2>
-					</section>
-
-					<section data-state="dim-background">
-						<p>We are starting to detect planets at the epoch of formation - eg the accreting protoplanets PDS 70 bc.</p>
-						<img width=450 data-src="pds70.jpg" alt='ESO/A. Müller et al.'>
-						<p><small>(ESO/A. Müller et al.)</small></p>
-					</section>
-
-					<section data-state="dim-background">
-						<p>Candidate around our nearest neighbour, α Cen!</p>
-						<img width=650 data-src="wagner_alpha_cen.png" alt='Wagner et al'>
-						<p><small>(<a href="https://www.nature.com/articles/s41467-021-21176-6">Wagner et al., 2021</a>)</small></p>
+						<h2>Phase Problems in Direct Imaging</h2>
 					</section>
 
 					<section data-state="dim-background">
 						<p>The main limitation on direct imaging is from wavefront aberrations which corrupt phase information. </p>
+					</section>
+
+					<section data-state="dim-background">
 						<img width=650 data-src="good_and_bad.png" alt='Good and Bad PSFs' border="0">
 					</section>
 
 					<section data-state="dim-background">
-						<h3>Coronagraphs</h3>
+						<h3>Problem 1: Phase Retrieval</h3>
+						<p>Given an image, what were the aberrations in the telescope?</p>
 					</section>
 
 					<section data-state="dim-background">
-						<img width=650 data-src="lyot.jpeg" alt='Lyot and his coronagraph' border="0">
-						<p><small>Lyot Coronagraph - Credit: Rebecca Oppenheimer, Lyot Project</small></p>
-					</section>
-
-					<section data-state="dim-background">
-						<img width=650 data-src="lyot_diagram.jpeg" alt='Lyot Diagram' border="0">
-						<p><small>Credit: Rebecca Oppenheimer, Lyot Project</small></p>
+						<h3>Problem 2: Phase Design</h3>
+						<p>Given an objective, how do we engineer an optimal PSF?</p>
 					</section>
 
 					<section data-state="dim-background">
@@ -102,51 +89,24 @@
 						<p><small>Phase Apodized Coronagraph: Por, 2019, <a href="https://arxiv.org/abs/1908.02585">arXiv:1908.02585</a></small></p>
 					</section>
 
+					<section data-state="dim-background">
+						<h3>Problem 3: Kernel Phase</h3>
+						<p class='fragment'>How do we correct phase errors in postprocessing?</p>
+					</section>
+<!-- 
+					<section data-state="dim-background">
+						<h3>Coronagraphs</h3>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=650 data-src="lyot.jpeg" alt='Lyot and his coronagraph' border="0">
+						<p><small>Lyot Coronagraph - Credit: Rebecca Oppenheimer, Lyot Project</small></p>
+					</section> -->
+
+
+
 				</section>
 
-				<section data-background="alpha_cen.jpeg" data-state="dim-background">
-
-					<section data-state="dim-background">
-						<h3>Toliman Space Telescope</h3>
-					</section>
-
-					<section data-state="dim-background">
-							<div class="container">
-								<img height=600 src="book_of_fixed_stars.jpeg" alt="Book of Fixed Stars" border="0" >
-								<div class="top-right"><small><i>Book of Fixed Stars</i>, <br>'Abd al-Rahman al-Sufi, <br>MS. Marsh 144,<br> Bodleian Library</small></div>
-	 						</div>					
-					</section>
-
-					<section data-state="dim-background" data-transition="none">
-						<div class="container">
-							<img height=600 src="book_of_fixed_stars.jpeg" alt="Book of Fixed Stars" border="0" >
-							<!-- <div class="bottom-left">Bottom Left</div>
-							<div class="top-left">Top Left</div>
-							<div class="top-right">Top Right</div> -->
-							<div class="rigel"><small>rijl qanturis</small></div>
-							<div class="astrolabe"><small>which is the one drawn<br> on the southern astrolabe</small></div>
-							<!-- <div class="centered">Centered</div> -->
-	 					</div>					
-					</section>
-
-					<section data-state="dim-background">
-						<p>Detect planets with μ-arcsec astrometry</p>
-						<p class='fragment'>Astrometric precision proportional to gradient energy</p>
-						<p class='fragment'>Use diffractive optic to maximize this subject to constraints</p>
-					</section>
-
-
-					<section data-state="dim-background">
-						<img width=650 data-src="toliman_pupil_and_stars.jpg" alt='Toliman Pupil and Stars' border="0">
-						<p><small>Early pupil design & simulation</small></p>
-					</section>
-
-					<section data-state="dim-background">
-						<img width=500 data-src="toliman_mask.jpg" alt='Toliman Mask' border="0">
-						<p><small>TOLIMAN lab test phase mask</small></p>
-					</section>
-
-				</section>
 
 
 				<section data-background="giacometti.jpg" data-state="dim-background">
@@ -168,8 +128,13 @@
 					</section>
 
 					<section data-state="dim-background">
+						<p>Autodiff is not finite differences, and it is not symbolic differentiation.</p>
+						<p class='fragment'>Using the chain rule you can decompose almost-arbitrary code!</p>
+					</section>
+
+					<section data-state="dim-background">
 						<p>Autodiff is the enabling technology for deep neural networks - you use the chain rule to take derivatives of nearly-arbitrary numerical functions.</p>
-						<p class='fragment'>Implementations in TensorFlow, PyTorch, Julia native...</p>
+						<p class='fragment'>Implementations in TensorFlow, Theano, PyTorch, Julia...</p>
 					</section>
 
 					<section data-state="dim-background">
@@ -190,36 +155,62 @@
 						<p>Comparable work in the <a href="https://vsitzmann.github.io/deepoptics/">DeepOptics group</a> at Stanford</p>
 					</section>
 
+				</section>
+
+				<section data-background="monet.jpg" data-state="dim-background">
+	
 					<section data-state="dim-background">
-						<p>Louis Desdoigts - <a href="https://github.com/benjaminpope/morphine/blob/stable/notebooks/toliman_morphine_zernikes.ipynb">sensitivity of Toliman to Zernike modes</a></p>
-						<img width=475 data-src="tol.png" alt="Toliman Image">
+						<h2>Phase Retrieval</h2>
 					</section>
-<!-- 
-					<section data-state="dim-background">
-						<p>Differentiable optics allows fast gradient descent for optical design - eg coronagraph pupils</p>
-						<img width=450 data-src="ndiaye.jpg" alt="Mamadou N'Diaye Image">
-						<p><small><a href="https://arxiv.org/abs/1601.02614">N'Diaye et al 2018</a></small></p>
-					</section>
- -->
+
 					<section data-state="dim-background">
 						<p>Alison Wong - phase retrieval and design by gradient descent</p>
 					</section>
 
 					<section data-state="dim-background">
-						<img width=550 data-src="gradient_descent.png" alt='Phase Retrieval' border="0">
-						<p>Phase Retrieval</p>
+						<img width=600 data-src="gradient_descent.png" alt='Phase Retrieval' border="0">
 					</section>
-
 
 					<section data-state="dim-background">
 						<img width=650 data-src="saturation.png" alt='Phase Retrieval with Saturation' border="0">
-						<p>Phase Retrieval with Saturation</p>
 					</section>
 
+				</section>
+
+				<section data-background="alpha_cen.jpeg" data-state="dim-background">
+
+					<section data-state="dim-background">
+						<h3>Phase Design</h3>
+					</section>
 
 					<section data-state="dim-background">
 						<img width=650 data-src="coronagraph.png" alt='Coronagraph Designs' border="0">
 						<p>Coronagraph Phase Mask Design - <a href='https://colab.research.google.com/drive/1drVFcbicCYvO9d7uMRpe8-t90r23aIoi?usp=sharing'>try it yourself</a>!</p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=850 data-src="tinytol.jpg" alt='Toliman Designs' border="0">
+						<p>Toliman Phase Mask Designs</p>
+					</section>
+					
+					<section data-state="dim-background">
+						<p>Detect planets with μ-arcsec astrometry</p>
+						<p class='fragment'>Astrometric precision proportional to gradient energy</p>
+						<p class='fragment'>Use diffractive optic to maximize this subject to constraints</p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=700 data-src="toliman_pupil_and_stars.jpg" alt='Toliman Pupil and Stars' border="0">
+					</section>
+
+					<section data-state="dim-background">
+						<img width=600 data-src="toliman_mask.jpg" alt='Toliman Mask' border="0">
+						<p><small>TOLIMAN lab test phase mask</small></p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Louis Desdoigts - <a href="https://github.com/benjaminpope/morphine/blob/stable/notebooks/toliman_morphine_zernikes.ipynb">sensitivity of Toliman to Zernike modes</a></p>
+						<img width=475 data-src="tol.png" alt="Toliman Image">
 					</section>
 
 					<section data-state="dim-background">
@@ -233,14 +224,7 @@
 						<p>Basis used in CLIMB</p>
 					</section>
 
-
-					<section data-state="dim-background">
-						<img width=850 data-src="tinytol.jpg" alt='Toliman Designs' border="0">
-						<p>Toliman Phase Mask Designs</p>
-					</section>
-
 				</section>
-
 
 				<section data-background="jwst.jpg" data-state="dim-background">
 
@@ -256,7 +240,7 @@
 					<section data-state="dim-background">
 						Kernel phase is a generalization of closure phase to arbitrary pupils. 
 						<p class='fragment'>Linearize response to phase noise - need gradient</p>
-						<p class='fragment'>Jacobian matrix is gradient of vector function \(\mathbf{y}\) wrt inputs \(\mathbf{\theta}\) </p>
+						<p class='fragment'>Jacobian matrix is gradient of vector function \(\mathbf{y}(\mathbf{\theta})\):</p>
 						<p class='fragment'>\[
 															  J_{i,j} \equiv \frac{\partial{y_i}}{\partial{\theta_j}} \\
 															  \]
