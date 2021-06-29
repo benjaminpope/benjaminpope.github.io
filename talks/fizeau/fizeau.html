@@ -255,12 +255,17 @@
 
 					<section data-state="dim-background">
 						Kernel phase is a generalization of closure phase to arbitrary pupils. 
-						<p class='fragment'>Linearize response to phase noise: suitable for stable high Strehl images, with point-source calibrators</p>
-						<p class='fragment'>Separate out linear subspaces of Fourier components that are immune to phase noise vs susceptible</p>
+						<p class='fragment'>Linearize response to phase noise</p>
+						<p class='fragment'>Jacobian matrix of outputs \(\mathbf{y}\) wrt inputs \(\mathbf{\theta}\) </p>
+						<p class='fragment'>\[
+															  J_{i,j} \equiv \frac{\partial{y_i}}{\partial{\theta_j}} \\
+															  \]
+						</p>
+
 					</section>
 
 					<section data-state="dim-background">
-						The Martinache 2010 kernel phase transfer matrix is an analytically determined Jacobian mapping pupil phases to <i>u, v</i> effects.
+						<p>The Martinache 2010 kernel phase transfer matrix is an analytically determined Jacobian mapping pupil phases to <i>u, v</i> effects.</p>
 						<img width=450 data-src="martinache2010_fig1.png" alt='Martinache, 2010'>
 					</section>
 
