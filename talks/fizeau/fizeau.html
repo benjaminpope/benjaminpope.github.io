@@ -80,6 +80,10 @@
 					</section>
 
 					<section data-state="dim-background">
+						<img width=900 data-src="hst_fix.jpeg" alt='HST Servicing Mission' border="0">
+					</section>
+
+					<section data-state="dim-background">
 						<h3>Problem 2: Phase Design</h3>
 						<p>Given an objective, how do we engineer an optimal PSF?</p>
 					</section>
@@ -93,17 +97,6 @@
 						<h3>Problem 3: Kernel Phase</h3>
 						<p class='fragment'>How do we correct phase errors in postprocessing?</p>
 					</section>
-<!-- 
-					<section data-state="dim-background">
-						<h3>Coronagraphs</h3>
-					</section>
-
-					<section data-state="dim-background">
-						<img width=650 data-src="lyot.jpeg" alt='Lyot and his coronagraph' border="0">
-						<p><small>Lyot Coronagraph - Credit: Rebecca Oppenheimer, Lyot Project</small></p>
-					</section> -->
-
-
 
 				</section>
 
@@ -191,7 +184,6 @@
 						<p class='fragment'>Use diffractive optic to maximize this subject to constraints</p>
 					</section>
 
-
 					<section data-state="dim-background">
 						<img width=700 data-src="toliman_pupil_and_stars.jpg" alt='Toliman Pupil and Stars' border="0">
 					</section>
@@ -199,7 +191,6 @@
 					<section data-state="dim-background">
 						<img width=900 data-src="tinytol.jpg" alt='Toliman Designs' border="0">
 					</section>
-					
 
 					<section data-state="dim-background">
 						<img width=600 data-src="toliman_mask.jpg" alt='Toliman Mask' border="0">
@@ -231,7 +222,37 @@
 
 					<section data-state="dim-background">
 						In radio astronomy the idea of 'closure phase' was developed to be immune to phase noise: 
-						<p class='fragment'>Correlate baselines around a <i>triangle</i> of receivers</p>
+						<p >Correlate baselines around a <i>triangle</i> of receivers</p>
+						<img width=300 data-src="triangle.png" alt='Basis' border="0">
+					</section>
+
+					<section data-state="dim-background">
+						A baseline phase \(\Phi_{12}\) affected by errors \(\phi_1\) and \(\phi_2\) is observed as
+						\[\Phi'_{12} \equiv \Phi_{12} + \phi_1 - \phi_2.
+						\]
+					</section>
+
+					<section data-state="dim-background">
+						In matrix form,
+						\[\left(\begin{array}{c}
+							\Phi_{12}^\prime\\ 
+							\Phi_{23}^\prime\\ 
+							\Phi_{31}^\prime
+							\end{array}\right) = \left(\begin{array}{ccc}
+							1&-1&0\\
+							0&1&-1\\
+							-1&0&1
+							\end{array}\right) \cdot \left(\begin{array}{c}
+							\phi_1\\ 
+							\phi_2\\ 
+							\phi_3
+							\end{array}\right) + \left(\begin{array}{c}
+							\Phi_{12}\\ 
+							\Phi_{23}\\ 
+							\Phi_{31}
+							\end{array}\right)
+
+						\]
 					</section>
 
 					<section data-state="dim-background">
