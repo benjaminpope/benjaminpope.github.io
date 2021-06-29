@@ -234,25 +234,34 @@
 
 					<section data-state="dim-background">
 						In matrix form,
-						\[\left(\begin{array}{c}
+						\[\underbrace{\left(\begin{array}{c}
 							\Phi_{12}^\prime\\ 
 							\Phi_{23}^\prime\\ 
 							\Phi_{31}^\prime
-							\end{array}\right) = \left(\begin{array}{ccc}
+							\end{array}\right)}_{\text{observed}} = \underbrace{\left(\begin{array}{ccc}
 							1&-1&0\\
 							0&1&-1\\
 							-1&0&1
-							\end{array}\right) \cdot \left(\begin{array}{c}
+							\end{array}\right)}_{\text{'transfer matrix' } \mathbf{A}_\phi} \cdot \underbrace{\left(\begin{array}{c}
 							\phi_1\\ 
 							\phi_2\\ 
 							\phi_3
-							\end{array}\right) + \left(\begin{array}{c}
+							\end{array}\right)}_\text{noise} + \underbrace{\left(\begin{array}{c}
 							\Phi_{12}\\ 
 							\Phi_{23}\\ 
 							\Phi_{31}
-							\end{array}\right)
+							\end{array}\right)}_\text{true}
 
 						\]
+					</section>
+
+					<section data-state="dim-background">
+						The closure phase operator
+						\[C_\phi \equiv \left(\begin{array}{ccc}
+							1&1&1
+							\end{array}\right)
+						\]
+						annihilates this matrix as \(C_\phi \cdot \mathbf{A}_\phi = \mathbf{0}\), leaving zero phase error!
 					</section>
 
 					<section data-state="dim-background">
