@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fizeau Workshop: Benjamin Pope</title>
+
+		<meta name="description" content="Fizeau Workshop Talk: 30 June 2021">
+		<meta name="author" content="Benjamin Pope">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/black.css" id="theme"> -->
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="./giacometti.jpg" data-state="dim-background">
+
+					<section data-state="dim-background">
+					<h2><i>morphine</i></h2> 
+					<h2>Kernel Phase and Coronagraphy with Automatic Differentiation</h2>
+					<h3>Benjamin Pope, UQ</h3>
+					</section>
+
+					<section data-state="dim-background">
+						Slides available at <br><a href="benjaminpope.github.io/talks/fizeau/fizeau.html">benjaminpope.github.io/talks/fizeau/fizeau.html</a>
+					</section>
+					<section data-state="dim-background">
+						<p>Work in collaboration with Sydney students <a href="https://github.com/alipwong">Alison Wong</a> (PhD)</p> 
+						<p>and <a href="https://github.com/LouisDesdoigts">Louis Desdoigts</a> (Honours)</p>
+						<p>and faculty <a href="http://www.physics.usyd.edu.au/~gekko/">Peter Tuthill</a> (Sydney)/<a href="https://www.stsci.edu/~pueyo/">Laurent Pueyo</a> (STScI).</p>
+					</section>
+				</section>
+
+				</section>
+
+				<section data-background="jwst.jpg" data-state="dim-background">
+					<section data-state="dim-background">
+						<h2>Direct Imaging</h2>
+					</section>
+
+					<section data-state="dim-background">
+						<p>We are starting to detect planets at the epoch of formation - eg the accreting protoplanets PDS 70 bc.</p>
+						<img width=450 data-src="pds70.jpg" alt='ESO/A. Müller et al.'>
+						<p><small>(ESO/A. Müller et al.)</small></p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Candidate around our nearest neighbour, α Cen!</p>
+						<img width=650 data-src="wagner_alpha_cen.png" alt='Wagner et al'>
+						<p><small>(<a href="https://www.nature.com/articles/s41467-021-21176-6">Wagner et al., 2021</a>)</small></p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>The main limitation on direct imaging is from wavefront aberrations which corrupt phase information. </p>
+						<img width=650 data-src="good_and_bad.png" alt='Good and Bad PSFs' border="0">
+					</section>
+
+					<section data-state="dim-background">
+						<h3>Coronagraphs</h3>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=650 data-src="lyot.jpeg" alt='Lyot and his coronagraph' border="0">
+						<p><small>Lyot Coronagraph - Credit: Rebecca Oppenheimer, Lyot Project</small></p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=650 data-src="lyot_diagram.jpeg" alt='Lyot Diagram' border="0">
+						<p><small>Credit: Rebecca Oppenheimer, Lyot Project</small></p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=650 data-src="por_coronagraph.png" alt='Emiel Por Coronagraph' border="0">
+						<p><small>Phase Apodized Coronagraph: Por, 2019, <a href="https://arxiv.org/abs/1908.02585">arXiv:1908.02585</a></small></p>
+					</section>
+
+				</section>
+
+				<section data-background="alpha_cen.jpeg" data-state="dim-background">
+
+					<section data-state="dim-background">
+						<h3>Toliman Space Telescope</h3>
+					</section>
+
+					<section data-state="dim-background">
+							<div class="container">
+								<img height=600 src="book_of_fixed_stars.jpeg" alt="Book of Fixed Stars" border="0" >
+								<div class="top-right"><small><i>Book of Fixed Stars</i>, <br>'Abd al-Rahman al-Sufi, <br>MS. Marsh 144,<br> Bodleian Library</small></div>
+	 						</div>					
+					</section>
+
+					<section data-state="dim-background" data-transition="none">
+						<div class="container">
+							<img height=600 src="book_of_fixed_stars.jpeg" alt="Book of Fixed Stars" border="0" >
+							<!-- <div class="bottom-left">Bottom Left</div>
+							<div class="top-left">Top Left</div>
+							<div class="top-right">Top Right</div> -->
+							<div class="rigel"><small>rijl qanturis</small></div>
+							<div class="astrolabe"><small>which is the one drawn<br> on the southern astrolabe</small></div>
+							<!-- <div class="centered">Centered</div> -->
+	 					</div>					
+					</section>
+
+					<section data-state="dim-background">
+						<p>Detect planets with μ-arcsec astrometry</p>
+						<p class='fragment'>Astrometric precision proportional to gradient energy</p>
+						<p class='fragment'>Use diffractive optic to maximize this subject to constraints</p>
+					</section>
+
+
+					<section data-state="dim-background">
+						<img width=650 data-src="toliman_pupil_and_stars.jpg" alt='Toliman Pupil and Stars' border="0">
+						<p><small>Early pupil design & simulation</small></p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=500 data-src="toliman_mask.jpg" alt='Toliman Mask' border="0">
+						<p><small>TOLIMAN lab test phase mask</small></p>
+					</section>
+
+				</section>
+
+
+				<section data-background="giacometti.jpg" data-state="dim-background">
+	
+					<section data-state="dim-background">
+						<h2>Automatic Differentiation</h2>
+					</section>
+
+					<section data-state="dim-background">
+						So how do we design such complicated optical systems in a principled way?
+					</section>
+
+					<section data-state="dim-background">
+						<p>What if we want to linearize an arbitrary optical system?</p>
+
+						<p class="fragment">Optics is mathematically like machine learning: matrix multiplications and simple nonlinear functions</p>
+
+						<p class="fragment">Can use automatic differentiation!</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Autodiff is the enabling technology for deep neural networks - you use the chain rule to take derivatives of nearly-arbitrary numerical functions.</p>
+						<p class='fragment'>Implementations in TensorFlow, PyTorch, Julia native...</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Here we use <a href="https://github.com/google/jax">Google Jax</a>, which resembles NumPy, to rewrite the Fourier/Fresnel optics code <a href="https://github.com/mperrin/poppy">poppy</a> to take derivatives</p>
+						<p class='fragment'><a href="https://github.com/benjaminpope/morphine">Morphine</a>!</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Jax permits </p>
+						<ul>
+							<li><a href="https://colab.research.google.com/drive/14j3hoRYldg0O7Gski4F2e6NWkx9reY8F?usp=sharing">Just-in-time 'jit' compilation</a> - so faster than normal poppy.</li>
+							<li>Accelerated Linear Algebra (XLA) - including on GPUs</li>
+							<li>Automatic differentiation!</li>
+						</ul>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Comparable work in the <a href="https://vsitzmann.github.io/deepoptics/">DeepOptics group</a> at Stanford</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Louis Desdoigts - <a href="https://github.com/benjaminpope/morphine/blob/stable/notebooks/toliman_morphine_zernikes.ipynb">sensitivity of Toliman to Zernike modes</a></p>
+						<img width=475 data-src="tol.png" alt="Toliman Image">
+					</section>
+<!-- 
+					<section data-state="dim-background">
+						<p>Differentiable optics allows fast gradient descent for optical design - eg coronagraph pupils</p>
+						<img width=450 data-src="ndiaye.jpg" alt="Mamadou N'Diaye Image">
+						<p><small><a href="https://arxiv.org/abs/1601.02614">N'Diaye et al 2018</a></small></p>
+					</section>
+ -->
+					<section data-state="dim-background">
+						<p>Alison Wong - phase retrieval and design by gradient descent</p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=650 data-src="gradient_descent.jpg" alt='Phase Retrieval' border="0">
+						<p>Phase Retrieval</p>
+					</section>
+
+
+					<section data-state="dim-background">
+						<img width=650 data-src="saturation.jpg" alt='Phase Retrieval with Saturation' border="0">
+						<p>Phase Retrieval with Saturation</p>
+					</section>
+
+
+					<section data-state="dim-background">
+						<img width=650 data-src="coronagraph.jpg" alt='Coronagraph Designs' border="0">
+						<p><a href='https://colab.research.google.com/drive/1drVFcbicCYvO9d7uMRpe8-t90r23aIoi?usp=sharing'>Coronagraph Phase Mask Design</a> - try it yourself!</p>
+					</section>
+
+					<section data-state="dim-background">
+						<video width=300 data-autoplay src="new.mp4"></video>
+						<video width=300 data-autoplay src="10fold.mp4"></video>
+						<p>Continuous Latent-Image Mask Binarization (CLIMB)</p>
+					</section>
+
+					<section data-state="dim-background">
+						<img width=600 data-src="basis.jpg" alt='Basis' border="0">
+						<p>Basis used in CLIMB</p>
+					</section>
+
+
+					<section data-state="dim-background">
+						<img width=850 data-src="tinytol.jpg" alt='Toliman Designs' border="0">
+						<p>Toliman Phase Mask Designs</p>
+					</section>
+
+				</section>
+
+
+				<section data-background="jwst.jpg" data-state="dim-background">
+
+					<section data-state="dim-background">
+						<h2>Kernel Phase</h2>
+					</section>
+
+					<section data-state="dim-background">
+						In radio astronomy the idea of 'closure phase' was developed to be immune to phase noise: 
+						<p class='fragment'>Correlate baselines around a <i>triangle</i> of receivers</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>JWST has an aperture masking instrument on NIRISS to obtain closure phases</p>
+						<img width=450 data-src="jwst_mask.jpg" alt="JWST Aperture Mask">
+					</section>
+
+					<section data-state="dim-background">
+						Kernel phase is a generalization of closure phase to arbitrary pupils. 
+						<p class='fragment'>Linearize response to phase noise: suitable for stable high Strehl images, with point-source calibrators</p>
+						<p class='fragment'>Separate out linear subspaces of Fourier components that are immune to phase noise vs susceptible</p>
+					</section>
+
+					<section data-state="dim-background">
+						How do we use autodiff to improve kernel phase?
+						<p class='fragment'>Check out <a href='https://github.com/benjaminpope/morphine/blob/stable/notebooks/morphine-fizeau-workshop.ipynb'>this notebook</a>!</p>
+					</section>
+
+				</section>
+
+				<section data-background="wanderer.jpg" data-state="dim-background">
+					<section data-state="dim-background">
+						<h2>The Future</h2>
+					</section>
+
+					<section data-state="dim-background">
+						Get using <a href="https://github.com/benjaminpope/morphine">morphine</a> and read <a href="https://www.overleaf.com/read/xpwmzsjybchv">the paper</a>!
+					</section>
+
+					<section data-state="dim-background">
+						<p>What else can we use this for?</p>
+						<p class='fragment'>Spatial light modulator enabled technology!</p>
+						<p class='fragment'>Particle beams?</p>
+					</section>
+
+					<section data-state="dim-background">
+						<h3>Questions!</h3>
+					</section>
+
+
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+					math: {
+						mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+						config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					},
+
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
