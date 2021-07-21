@@ -43,7 +43,7 @@
 
 					<section data-state="dim-background">
 					<h2><i>morphine</i></h2> 
-					<h2>Phase Retrieval, Design, and Kernel Phase with Automatic Differentiation</h2>
+					<h2>Phase Retrieval and Design with Automatic Differentiation</h2>
 					<h3>Benjamin Pope, UQ</h3>
 					</section>
 
@@ -97,6 +97,7 @@
 					<section data-state="dim-background">
 						<h3>Problem 3: Kernel Phase</h3>
 						<p class='fragment'>How do we correct phase errors in postprocessing?</p>
+						<p class='fragment'>See our paper: <a href="https://arxiv.org/abs/2011.09780">arXiv:2011.09780</a>!</p>
 					</section>
 
 				</section>
@@ -215,82 +216,6 @@
 
 				</section>
 
-				<section data-background="jwst.jpg" data-state="dim-background">
-
-					<section data-state="dim-background">
-						<h2>Kernel Phase</h2>
-					</section>
-
-					<section data-state="dim-background">
-						In radio astronomy the idea of 'closure phase' was developed to be immune to phase noise: 
-						<p >Correlate baselines around a <i>triangle</i> of receivers</p>
-						<img width=300 data-src="triangle.png" alt='Basis' border="0">
-					</section>
-
-					<section data-state="dim-background">
-						A baseline phase \(\Phi_{12}\) affected by errors \(\phi_1\) and \(\phi_2\) is observed as
-						\[\Phi'_{12} \equiv \Phi_{12} + \phi_1 - \phi_2.
-						\]
-					</section>
-
-					<section data-state="dim-background">
-						In matrix form,
-						\[\underbrace{\left(\begin{array}{c}
-							\Phi_{12}^\prime\\ 
-							\Phi_{23}^\prime\\ 
-							\Phi_{31}^\prime
-							\end{array}\right)}_{\text{observed}} = \underbrace{\left(\begin{array}{ccc}
-							1&-1&0\\
-							0&1&-1\\
-							-1&0&1
-							\end{array}\right)}_{\text{'transfer matrix' } \mathbf{A}_\phi} \cdot \underbrace{\left(\begin{array}{c}
-							\phi_1\\ 
-							\phi_2\\ 
-							\phi_3
-							\end{array}\right)}_\text{noise} + \underbrace{\left(\begin{array}{c}
-							\Phi_{12}\\ 
-							\Phi_{23}\\ 
-							\Phi_{31}
-							\end{array}\right)}_\text{true}
-
-						\]
-					</section>
-
-					<section data-state="dim-background">
-						The closure phase operator
-						\[C_\phi \equiv \left(\begin{array}{ccc}
-							1&1&1
-							\end{array}\right)
-						\]
-						annihilates this matrix as \(C_\phi \cdot \mathbf{A}_\phi = \mathbf{0}\), leaving zero phase error!
-					</section>
-
-					<section data-state="dim-background">
-						<p>Kernel phase is a generalization of closure phase to arbitrary pupils.</p>
-						<p>Take the SVD of a phase error transfer matrix - separate into good and bad observables</p>	
-					</section>
-
-					<section data-state="dim-background">
-						<p>Linearize response to phase noise - need derivative</p>
-						<p class='fragment'>Jacobian matrix is gradient of vector function \(\mathbf{y}(\mathbf{\theta})\):</p>
-						<p class='fragment'>\[
-															  J_{i,j} \equiv \frac{\partial{y_i}}{\partial{\theta_j}} \\
-															  \]
-						</p>
-
-					</section>
-
-					<section data-state="dim-background">
-						<p>The Martinache 2010 phase transfer matrix \(\mathbf{A}_\phi\) is an analytically determined Jacobian, mapping pupil phases to their <i>u, v</i> effects.</p>
-						<img width=500 data-src="martinache2010_fig1.png" alt='Martinache, 2010'>
-					</section>
-
-					<section data-state="dim-background">
-						How do we use autodiff to generalize kernel phase?
-						<p class='fragment'>Check out <a href='https://github.com/benjaminpope/morphine/blob/stable/notebooks/morphine-dsi-workshop.ipynb'>this notebook</a>!</p>
-					</section>
-
-				</section>
 
 				<section data-background="wanderer.jpg" data-state="dim-background">
 					<section data-state="dim-background">
