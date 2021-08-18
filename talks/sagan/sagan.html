@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>CMU Seminar: Benjamin Pope</title>
+		<title>Sagan Symposium 2017: Benjamin Pope</title>
 
-		<meta name="description" content="Math and Data Talk">
+		<meta name="description" content="Sagan Symposium 2017: Finding Exoplanets around Naked-Eye Stars">
 		<meta name="author" content="Benjamin Pope">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -39,126 +39,46 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="../images/pleiades.jpg">
+				<section data-background="../images/./pleiades.jpg">
 
 					<section>
-					<h1>Finding Transiting Exoplanets</h2>
-					<h2>The Data Challenge</h2>
+					<h1>Finding Exoplanets</h2>
+					<h2>Transiting Naked-Eye Stars</h2>
 					<h3>Benjamin Pope, NYU</h3>
-					<h4>CMU Seminar</h4>
+					<h4>Sagan Fellows Symposium</h4>
 					<!-- <p>
 						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
 					</p> -->
 					</section>
 
 					<section data-state="dim-background">
-						Slides available at <br><a href="benjaminpope.github.io/talks/mad/mad">benjaminpope.github.io/talks/cmu/cmu</a>
+						Slides available at <br><a href="benjaminpope.github.io/talks/sagan/sagan.html">benjaminpope.github.io/talks/sagan/sagan.html</a>
 					</section>
 				</section>
 
-				<section data-background="../images/kep444.jpg">
+
+				<section data-background="../images/./pleiades.jpg" data-state="dim-background">
+
 					<section>
-						<h2>Transiting Planets</h2>
+						My <a href="nexsci.caltech.edu/sagan/fellowship.shtml">Sagan Fellowship</a> project is to search for planets transiting naked-eye stars (V mag &lt 6.5) in order to find ideal targets for characterization with <a href="https://jwst.nasa.gov/">JWST</a>.
 					</section>
 
-					<section data-state="dim-background">
-						<iframe src="https://player.vimeo.com/video/89418853" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						<p><small><a href="https://vimeo.com/89418853">Exoplanet-style transit light curve of Venus</a> from <a href="https://vimeo.com/user13009721">James Gilbert</a> on <a href="https://vimeo.com">Vimeo</a>.</small></p>
-					</section>
-
-					<section data-state="dim-background"> 
+					<section> 
 						Large searches for exoplanets like the <a href="https://keplerscience.arc.nasa.gov"><i>Kepler</i></a> mission have shown planets to be common in our Galaxy - now we want to learn about their atmospheres and compositions. 
-						<p class="fragment"> The best options are those around bright stars, like <a href="http://adsabs.harvard.edu/abs/2016Natur.532..207D">55 Cancri e</a> - subject of 367 papers in the last decade! </p>
+						<p class="fragment"> The best options are those around bright stars, like <a href="http://adsabs.harvard.edu/abs/2016Natur.532..207D">55 Cnc e</a> - subject of 367 papers in the last decade! </p>
 					</section>
 
-					<section data-state="dim-background">
-					My <a href="nexsci.caltech.edu/sagan/fellowship.shtml">Sagan Fellowship</a> project is to search for planets transiting naked-eye stars (V mag &lt 6.5) in order to find ideal targets for characterization with the upcoming <a href="https://jwst.nasa.gov/">James Webb Space Telescope</a>.
+					<section> 
+						<i>Kepler</i> saturates on stars brighter than ~ 11th mag, but with <a href="http://users-phys.au.dk/white/">Tim White</a> we have recovered light curves of stars as bright as first mag by using the unsaturated scattered light halo.
 					</section>
 
-				</section>
-
-				<section data-background="../images/flare.jpg">
-					
-					<section>
-						<h2>Asteroseismology</h2>
-					</section>
-
-					<section data-state="dim-background">
-						Stars ring like bells, with acoustic and buoyancy oscillations. 
-						<p><img width="288" height="288" data-src="../images/l2m2.gif" alt="l=2, m=2 oscillation"></p>
-						<p class="fragment">Their frequencies tell us about stellar interior structure.</p>
-					</section>
-
-					<section data-state="dim-background">
-						<p>Power spectrum of the Sun's 5-minute oscillations</p>
-						<img width='654' height='513' data-src="../images/helio.jpg" alt="Helioseismic Power Spectrum">
-					</section>
-
+					<!-- <p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p> -->
 				</section>
 
 
-				<section data-background="../images/k2concept.jpg">
-					<section>
-						<h2><i>Kepler</i> Photometry</h2>
-					</section>
-
-					<section data-state="dim-background">
-						The <a href="https://www.nasa.gov/mission_pages/kepler/main/index.html"><i>Kepler Space Telescope</i></a>, launched in 2009, looks for planets by the transit method, and also does asteroseismology.
-					</section>
-
-					<section data-state="dim-background">
-						After the failure of a reaction wheel in 2012, it is now operating as the '<a href="https://www.nasa.gov/feature/ames/nasas-k2-mission-the-kepler-space-telescopes-second-chance-to-shine/">K2 Mission</a>', with very unstable pointing (hence the shaking in the <a href="https://github.com/KeplerGO/k2flix" title="made using Geert Barentsen's code here">videos</a> you'll see).
-					</section>
-
-					<section data-state="dim-background">
-						<video width="480" height="480" controls autoplay loop>
-						<source src="../images/epic_212521166.mp4" type="video/mp4">
-						</video>					
-					</section>
-
-					<section data-state="dim-background">
-						To get the photometry, you can just sum the pixel values in a window containing the whole PSF...
-						<p class="fragment">but the pixels have different gains ("inter- and intra-pixel sensitivity variation")... </p>
-						<p class="fragment">and the pixel window doesn't necessarily track the whole PSF perfectly ("aperture losses").</p>
-					</section>
-
-					<section data-state="dim-background">
-						In <a href="http://adsabs.harvard.edu/abs/2016MNRAS.459.2408A">our group's pipeline</a> we use Gaussian Process models to detrend the flux time series with respect to the position of the star.
-					</section>
-
-					<section data-state="dim-background">
-						<p>Raw - GP in position - GP in time</p>
-						<img width='681' height='502' data-src="../images/k2sc.jpg" alt="K2SC Figure">
-					</section>
-
-					<section data-state="dim-background">
-						<p>By subtracting the GP time and spatial components, we can find a transiting planet!</p>
-						<img width='708' height='353' data-src="../images/transit.jpg" alt="K2SC Figure 2">
-					</section>
-
-					<section data-state="dim-background">
-						Alternatively, the <a href="https://github.com/rodluger/everest">EVEREST</a> model (<a href="http://adsabs.harvard.edu/abs/2016AJ....152..100L">Luger et al, 2016</a>) does 'pixel-level decorrelation', fitting a linear combination of pixel time series to the data, getting excellent photometry. 
-						<p class="fragment">We will be motivated by this here.</p>
-					</section>
-
-					<section data-state="dim-background">
-						For sufficiently bright stars, though, light fills the CCD wells with electrons that spill up and down the column, ruining the photometry as they leave the aperture.
-					</section>
-
-					<section data-state="dim-background">
-						<video width="480" height="480" controls autoplay loop>
-						<source src="../images/bright.mp4" type="video/mp4">
-						</video>			
-					</section>
-
-					<section data-state="dim-background"> 
-					<i>Kepler</i> saturates on stars brighter than ~ 11th mag (log scale: 5 mag = factor of 100) - but we want to look at stars 10k times brighter.
-					</section>
-
-				</section>
-
-				<section data-background="../images/starry.jpg">
-
+				<section data-background="../images/./starry.jpg">
 					<section>
 						<h2>Halo Photometry</h2>
 					</section>
@@ -174,36 +94,35 @@
 					</section>
 
 					<section data-state="dim-background">
-						Flux \(f_i \) at cadence i is a sum over j pixels \(p_{ij}\) with weights \(w_j\):
-						<br><br>
-						\[
-						f_i \equiv \sum\limits_i w_j p_{ij}
-						 \]
+					Flux \(f_i \) at cadence i is a sum over j pixels \(p_{ij}\) with weights \(w_j\):
+					<br><br>
+					\[
+					f_i \equiv \sum\limits_i w_j p_{ij}
+					 \]
+
 					</section>
 
 					<section data-state="dim-background">
 						In the <a href="https://github.com/davidwhogg/OWL">OWL</a> method (Hogg & Foreman-Mackey), you choose weights to minimize variance of the final light curve - but this has limited success.
 					</section>
-
 					<section data-state="dim-background">
-						To find the appropriate weights, we instead minimize the Total Variation 
+						To find the appropriate weights, we minimize the Total Variation 
 						<!-- <br><br> -->
 						<p class="fragment">\[\begin{align}
-						TV \equiv \dfrac{\sum_i |f_i - f_{i-1}|} {\sum_i f_i }
-						\end{align} \]
+						TV \equiv \sum_i |f_i - f_{i-1}|
+						\end{align} \] subject to constraints  \[\begin{align}\forall_j w_j &> 0\\
+						\sum_{i=1}^{N} f_i  &= N.\end{align} \]
 						</p>
-						<p class="fragment">This is the L1 norm on the derivative of the time series.</p>
-						<p class="fragment">This has analytic derivatives you can compute with autograd - easy to optimize.</p>
 					</section>
 
 					<section data-state="dim-background">
-						Note that these light curves are basically a sum of sine waves - anything but sparse in the derivative! 
-						<p class="fragment">But they're sparse in the Fourier domain... perhaps this is relevant?</p>
+						<p>This is the <a href="https://en.wikipedia.org/wiki/Taxicab_geometry">\(L_1\) norm</a> or 'taxicab metric' on the derivative of the time series.</p>
+						<p class="fragment">This has analytic derivatives you can compute with autodiff - easy to optimize.</p>
 					</section>
 				
 				</section>
 
-				<section data-background="../images/pleiades.jpg">
+				<section data-background="../images/./pleiades.jpg">
 
 					<section>
 						<h3>Pleiades</h3>
@@ -217,9 +136,11 @@
 					<p><a href="http://adsabs.harvard.edu/abs/2017MNRAS.471.2882W">White, Pope et al., 2017</a></p>
 					</section>
 
+
 					<section data-state="dim-background">
 
 						<img width='288' height='432' data-src="../images/timeseries.jpg" alt="Combined Figure"><img width='288' height='432' data-src="../images/ampspec.jpg" alt="Combined Figure">
+
 						<p>Lightcurves of All Seven Bright Pleiades</p>
 						<p><a href="http://adsabs.harvard.edu/abs/2017MNRAS.471.2882W">White, Pope et al., 2017</a></p>
 						
@@ -228,10 +149,11 @@
 					<section data-state="dim-background">
 						<p>I am currently searching all bright stars in K2 for transiting planets - none so far, but plenty of asteroseismology!</p>
 					</section>
+              	
 
 				</section>
 
-								<section data-background="../images/taurus.jpg">
+				<section data-background="../images/./taurus.jpg">
 						
 					<section data-state="dim-background">
 						<h2>Aldebaran</h2>
@@ -254,7 +176,7 @@
 					</section>
 
 					<section data-state="dim-background">
-						<img width="691" height="475" data-src="../images/psd.png" alt="GP PSD">
+						<img width="691" height="475" data-src="../images/psds.jpg" alt="GP PSDs">
 					</section>
 
 					<section data-state="dim-background">
@@ -286,28 +208,47 @@
 
 				</section>
 
-
-
 				<section data-background="../images/exoplanet.jpg" data-state="dim-background">
 					<section>
 						<h2>The Future</h2>
 					</section>
 					
 					<section>
-						The method generalizes well to simulated data for the upcoming <a href="https://tess.gsfc.nasa.gov/">TESS mission</a>. We have many K2 halo datasets and are working our way through them - between these missions we should cover the whole sky.
+						Thanks to the K2 GO office, we have more than a hundred halo light curves and are working our way through them.
 					</section>
+
+					<section>
+						The method generalizes well to simulated TESS data - which saturates at ~ 6th mag.
+
+					</section>
+
+					<section data-markdown>
+		                <script type="text/template">
+						Predicted Yields from all 906 FGK stars with V mag < 6.5 (using <a href="http://adsabs.harvard.edu/abs/2013ApJ...766...81F">Fressin et al., 2013</a> rates)
+
+						| Type    	    | E[n]       
+						| ------------- | -------------
+						| Giants    	| 0.31 ± 0.55
+						| Large Neptunes| 0.24 ± 0.47   
+						| All Neptunes  | 3.42 ± 1.89     
+						| Super-Earths  | 4.11 ± 2.10      
+
+		                </script>
+		                Numbers from Fressin et al., 2013.
+              		</section>
+
 
 					<section>
 						We still don't have an explanation for the unreasonable effectiveness of the L1 norm in this algorithm - help us understand!
 					</section>
 
 					<section>
-						All our code is open source at <a href="https://github.com/hvidy/halophot">github.com/hvidy/halophot</a> - play with it!
+						All our code is open source at <a href="github.com/hvidy/halophot">github.com/hvidy/halophot</a> - play with it!
 					</section>
 
 					<section>
 						We have a solution looking for problems - we want to extend this to TESS, JWST, and even ground-based missions. 
-						<p class="fragment">We need your help to be able to understand and improve photometry tools.</p>
+						<p class="fragment">Let us know if we can help.</p>
 					</section>
 
 
