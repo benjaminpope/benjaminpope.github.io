@@ -51,9 +51,10 @@
 						Slides available at <br><a href="benjaminpope.github.io/talks/swinburne/swinburne.html">benjaminpope.github.io/talks/swinburne/swinburne.html</a>
 					</section>
 					<section data-state="dim-background">
-						<p>Work in collaboration with Sydney students <a href="https://github.com/alipwong">Alison Wong</a> (PhD)</p> 
-						<p>and <a href="https://github.com/LouisDesdoigts">Louis Desdoigts</a> (Honours)</p>
-						<p>and faculty <a href="http://www.physics.usyd.edu.au/~gekko/">Peter Tuthill</a> (Sydney)/<a href="https://www.stsci.edu/~pueyo/">Laurent Pueyo</a> (STScI).</p>
+						<p>Work in collaboration with Sydney students</p>
+						<p><a href="https://github.com/alipwong">Alison Wong</a> and <a href="https://github.com/LouisDesdoigts">Louis Desdoigts</a>,</p>
+						<p>and faculty <a href="http://www.physics.usyd.edu.au/~gekko/">Peter Tuthill</a> (Sydney)</p>
+						<p>and <a href="https://www.stsci.edu/~pueyo/">Laurent Pueyo</a> (STScI).</p>
 					</section>
 				</section>
 
@@ -257,10 +258,6 @@
 					</section>
 
 					<section data-state="dim-background">
-						<img width=900 data-src="../images/tinytol.jpg" alt='Toliman Designs' border="0">
-					</section>
-
-					<section data-state="dim-background">
 						<p>Louis Desdoigts - <a href="https://github.com/benjaminpope/morphine/blob/stable/notebooks/toliman_morphine_zernikes.ipynb">sensitivity of Toliman to Zernike modes</a></p>
 						<img width=475 data-src="../images/tol.png" alt="Toliman Image">
 					</section>
@@ -272,9 +269,14 @@
 					</section>
 
 					<section data-state="dim-background">
+						<img width=900 data-src="../images/tinytol.jpg" alt='Toliman Designs' border="0">
+					</section>
+
+<!-- 
+					<section data-state="dim-background">
 						<img width=600 data-src="../images/basis.jpg" alt='Basis' border="0">
 						<p>Basis used in CLIMB</p>
-					</section>
+					</section> -->
 
 				</section>
 
@@ -296,9 +298,57 @@
 					</section>
 
 					<section data-state="dim-background">
+						A baseline phase \(\Phi_{12}\) affected by errors \(\phi_1\) and \(\phi_2\) is observed as
+						\[\Phi'_{12} \equiv \Phi_{12} + \phi_1 - \phi_2.
+						\]
+					</section>
+
+					<section data-state="dim-background">
+						In matrix form,
+						\[\underbrace{\left(\begin{array}{c}
+							\Phi_{12}^\prime\\ 
+							\Phi_{23}^\prime\\ 
+							\Phi_{31}^\prime
+							\end{array}\right)}_{\text{observed}} = \underbrace{\left(\begin{array}{ccc}
+							1&-1&0\\
+							0&1&-1\\
+							-1&0&1
+							\end{array}\right)}_{\text{'transfer matrix' } \mathbf{A}_\phi} \cdot \underbrace{\left(\begin{array}{c}
+							\phi_1\\ 
+							\phi_2\\ 
+							\phi_3
+							\end{array}\right)}_\text{noise} + \underbrace{\left(\begin{array}{c}
+							\Phi_{12}\\ 
+							\Phi_{23}\\ 
+							\Phi_{31}
+							\end{array}\right)}_\text{true}
+
+						\]
+					</section>
+
+					<section data-state="dim-background">
+						The closure phase operator
+						\[C_\phi \equiv \left(\begin{array}{ccc}
+							1&1&1
+							\end{array}\right)
+						\]
+						annihilates this matrix as \(C_\phi \cdot \mathbf{A}_\phi = \mathbf{0}\), leaving zero phase error!
+					</section>
+
+					<section data-state="dim-background">
 						Kernel phase is a generalization of closure phase to arbitrary pupils. 
 						<p class='fragment'>Linearize response to phase noise: suitable for stable high Strehl images, with point-source calibrators</p>
 						<p class='fragment'>Separate out linear subspaces of Fourier components that are immune to phase noise vs susceptible</p>
+					</section>
+
+					<section data-state="dim-background">
+						<p>Linearize response to phase noise - need derivative</p>
+						<p class='fragment'>Jacobian matrix is gradient of vector function \(\mathbf{y}(\mathbf{\theta})\):</p>
+						<p class='fragment'>\[
+															  J_{i,j} \equiv \frac{\partial{y_i}}{\partial{\theta_j}} \\
+															  \]
+						</p>
+
 					</section>
 
 					<section data-state="dim-background">
@@ -313,6 +363,11 @@
 					<section data-state="dim-background">
 						<p>Cophasing segmented mirror in the lab (<a href="https://ui.adsabs.harvard.edu/abs/2014MNRAS.440..125P/abstract">Pope+2014</a>)</p>
 						<img width=500 data-src="../images/loop_3_15_19.gif" alt="Cophasing">
+					</section>
+					
+					<section data-state="dim-background">
+						<p>The Martinache 2010 phase transfer matrix \(\mathbf{A}_\phi\) is an analytically determined Jacobian, mapping pupil phases to their <i>u, v</i> effects.</p>
+						<img width=500 data-src="../images/martinache2010_fig1.png" alt='Martinache, 2010'>
 					</section>
 
 					<section data-state="dim-background">
