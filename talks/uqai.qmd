@@ -3,21 +3,95 @@
 # author: "Benjamin Pope"
 format: 
     revealjs: 
-        theme: dark
+        theme: black
+        fig-align: center
 ---
 
-## Astronomical Imaging and Hardware Design with Differentiable Optical Models {background-image="./images/giacometti.jpg"}
+## Astronomical Imaging and Hardware Design with Differentiable Optical Models {background-image="images/giacometti.jpg"}
 
 [Benjamin Pope](https://benjaminpope.github.io), University of Queensland 
 
 with PhD student [Louis Desdoigts](https://github.com/LouisDesdoigts) (University of Sydney)
 
----
+--- 
+
+## {background-image="./images/giacometti.jpg"}
 
 Slides available online at 
 
 [benjaminpope.github.io/talks/uqai](https://benjaminpope.github.io/talks/uqai)
 
+
 --- 
 
-JWST 
+## Imaging Exoplanets 
+
+![](images/good_and_bad.png)
+
+--- 
+
+## Computational Imaging in Astronomy {background-image="./images/monet.jpg"}
+
+::: {.incremental} 
+-  Image Analysis
+    - phase retrieval
+-  Optical design
+    - coronagraphs
+:::
+---
+
+## Optics as analogy to neural networks {background-image="./images/pleiades.jpg"}
+
+-  Optical systems are made of layers
+-  Each layer is a global linear transformation (propagation) 
+    - or elementwise operation (eg a mask)
+
+![](./images/lyot_diagram.jpeg)
+
+--- 
+
+## Simulation-Based Inference {background-image="./images/matrix.jpg"}
+
+::: {.incremental}
+- ![](./images/simulation_intelligence.jpg)
+:::
+
+---
+
+## dLux - Differentiable Optical Models in Jax 
+
+![](./images/dlux.jpeg)
+
+Define an optical system just like a neural network:
+
+```{.python}
+
+optical_layers = [
+    dl.CreateWavefront    (wf_npix, aperture),
+    dl.TiltWavefront      (),
+    dl.CircularAperture   (wf_npix),
+    dl.NormaliseWavefront (),
+    dl.PhysicalMFT        (det_npix, fl, det_pixsize)]
+
+```
+
+--- 
+
+## Examples {background-image="./images/monet.jpg"}
+
+With [Louis Desdoigts](https://github.com/LouisDesdoigts) we have been working on a few examples: see the [docs](https://louisdesdoigts.github.io/dLux/)!
+
+::: {.incremental}
+- HMC for simultaneous phase retrieval and deconvolution
+- Designing toward an optimal Fisher Information Matrix
+:::
+
+--- 
+
+## Future {background-image="./images/wanderer.jpg"}
+
+- Submitting v1.0 soon
+- Want to collaborate!
+    -  with astronomers
+    -  with hardware designers
+    -  with other AI researchers
