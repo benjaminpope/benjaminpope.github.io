@@ -19,11 +19,17 @@ with PhD student [Louis Desdoigts](https://github.com/LouisDesdoigts) (Universit
 
 --- 
 
-## {background-image="./images/jwst.jpg" background-opacity="0.5"}
+## {background-image="./images/jwst.jpg" background-opacity="0.25"}
 
 Slides available online at 
 
-[benjaminpope.github.io/talks/uqai](https://benjaminpope.github.io/talks/uqai)
+<br><br>
+
+::: {style="text-align: center"}
+**[benjaminpope.github.io/talks/uqai](https://benjaminpope.github.io/talks/uqai)**
+
+![](images/qrcode_benjaminpope.github.io.png)
+:::
 
 --- 
 
@@ -104,9 +110,17 @@ With [Louis Desdoigts](https://github.com/LouisDesdoigts) we have been working o
 --- 
 
 ## Future {background-image="./images/wanderer.jpg" background-opacity="0.5"}
+<br>
+Submitting v1.0 soon
 
-- Submitting v1.0 soon
+::: {.incremental}
 - Want to collaborate!
     -  with astronomers
     -  with hardware designers
     -  with other AI researchers
+<br>
+- Applications in:
+    -  microscopy
+    -  laser physics
+    -  your science?
+:::
