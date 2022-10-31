@@ -35,24 +35,27 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="./" class="image avatar"><img src="images/profilepic.jpg" alt="" /></a>
+				<a href="./index.html" class="image avatar"><img src="images/profilepic.jpg" alt="" /></a>
 				<h1><strong>Dr Benjamin Pope</strong><br/>
 				University of Queensland</h1>
 			</header>
-			
+
 		<!-- Main -->
 			<div id="main">
 
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Bayesian Inference</h2>
+							<h2>Direct Imaging</h2>
 						</header>
-						<p>Bayesian methods underpin modern astronomy's big data revolution, and we want to use them properly, efficiently and painlessly. This is why I have been developing  <a href = "http://www.github.com/benjaminpope/pysco">MCMC-based interferometry and image reconstruction code</a> and <a href="http://adsabs.harvard.edu/abs/2015MNRAS.447.2880A">Gaussian Process</a> code for exoplanets and asteroseismology. Watch this space as I push more of this to public repos!</p>
 
-						<p>If you have cool Bayesian ideas you want to collaborate on, <a href="mailto:b.pope@uq.edu.au">send me an email</a>, and let's get stuck in.</p>
+						<p>My Honours and Masters research was on kernel-phase interferometry, working with <a href=http://www.physics.usyd.edu.au/~gekko/>Peter Tuthill</a> (Sydney) and <a href=http://frantzmartinache.eu/>Frantz Martinache</a> (Observatoire de la Côte d'Azur). This is a generalization of the idea of non-redundant aperture masking, which constructs self-calibrating, closure-phase like quantities from redundant apertures. Using this, we are able to achieve high angular resolution, high-contrast detection of faint companions from <a href="http://adsabs.harvard.edu/abs/2015arXiv151006406P">ground-based AO</a> and <a href="http://adsabs.harvard.edu/abs/2013ApJ...767..110P">space telescope data</a>, and also for <a href="http://adsabs.harvard.edu/abs/2014MNRAS.440..125P">wavefront sensing</a>.</p>
 
-						<p>Most of my research is powered by the awesome Python packages <a href="https://github.com/dfm/emcee">emcee</a>, <a href="https://github.com/dfm/george">george</a> and <a href="https://github.com/JohannesBuchner/PyMultiNest">MultiNest/PyMultiNest</a>. Do check them out!</p>
+						<p>I have long been interested in whether this idea has more general extensions, proposing <a href="https://ui.adsabs.harvard.edu/abs/2016MNRAS.463.3573P/abstract">kernel amplitudes</a>, and using <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...907...40P/abstract">automatic differentiation to show that coronagraphs possess a kernel too</a>.</p>
+
+						<p>Automatic differentiation software developed for neural networks turns out to be <i>very well</i> suited to optics, and with recently-submitted PhD <a href="https://www.sydney.edu.au/business/about/our-people/academic-staff/a-wong.html">Alison Wong</a> we have shown it can be used for <a href="https://ui.adsabs.harvard.edu/abs/2021JOSAB..38.2465W/abstract">phase retrieval and hardware design</a> - coronagraphs, astrometric pupils, you name it! </p>
+
+						<p>I have recently been working with PhD student <a href="https://github.com/LouisDesdoigts/">Louis Desdoigts</a> on <a href="https://louisdesdoigts.github.io/dLux/">dLux</a>, a GPU-accelerated and automatically-differentiable physical optics code built on <a href="https://github.com/google/jax">Jax</a>  and <a href="https://github.com/patrick-kidger/equinox">equinox</a>. We're looking forward to the first official release, and the first papers built on dLux!</p>
 
 					</section>
 
@@ -65,8 +68,8 @@
 								<h3><a href=./kepler.html>Kepler/K2 Bright Stars</a></h3>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="./kernelphase.html" class="image fit thumb"><img src="images/kernel.jpg" alt="Direct Imaging" /></a>
-								<h3><a href = ./kernelphase.html>Direct Imaging</a></h3>
+								<a href="./directimaging.html" class="image fit thumb"><img src="images/kernel.jpg" alt="Direct Imaging" /></a>
+								<h3><a href = ./directimaging.html>Direct Imaging</a></h3>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
 								<a href="./radio.html" class="image fit thumb"><img src="images/radio.jpg" alt="Radio Astronomy" /></a>
@@ -454,8 +457,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				</ul>
 
 				<ul class="copyright">
-					<li>Text/Photos &copy; Benjamin Pope</li> <li>JWST/Pleiades Images &copy; NASA</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>Text/Photos &copy; Benjamin Pope</li> <li>JWST/Pleiades Images &copy; NASA</li> <li>GJ 1151 Illustration &copy; Danielle Futselaar</li> <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
+
 			</footer>
 
 		<!-- Scripts -->
