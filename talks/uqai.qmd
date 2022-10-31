@@ -3,30 +3,39 @@
 # author: "Benjamin Pope"
 format: 
     revealjs: 
-        theme: black
-        fig-align: center
+        theme: [dark, custom.scss]
+        footer: "[github.com/benjaminpope](https://github.com/benjaminpope)&nbsp;&nbsp;&nbsp;"
+
 ---
 
-## Astronomical Imaging and Hardware Design with Differentiable Optical Models {background-image="images/giacometti.jpg"}
+## Astronomical Imaging and <br> Hardware Design with <br> Differentiable Optical Models {background-image="images/jwst.jpg" background-opacity="0.5"}
 
-[Benjamin Pope](https://benjaminpope.github.io), University of Queensland 
+
+<br>
+
+### [Benjamin Pope](https://benjaminpope.github.io), University of Queensland 
 
 with PhD student [Louis Desdoigts](https://github.com/LouisDesdoigts) (University of Sydney)
 
 --- 
 
-## {background-image="./images/giacometti.jpg"}
+## {background-image="./images/jwst.jpg" background-opacity="0.5"}
 
 Slides available online at 
 
 [benjaminpope.github.io/talks/uqai](https://benjaminpope.github.io/talks/uqai)
 
+--- 
+
+## {background-image="./images/carina.jpg"}
 
 --- 
 
-## Imaging Exoplanets 
+## Imaging Exoplanets
 
-![](images/good_and_bad.png)
+::: {style="text-align: center"}
+![Simulated images of a star with JWST: ideal (left) and with misaligned mirrors (right).](images/good_and_bad.png)
+:::
 
 --- 
 
@@ -38,34 +47,38 @@ Slides available online at
 -  Optical design
     - coronagraphs
 :::
+
 ---
 
-## Optics as analogy to neural networks {background-image="./images/pleiades.jpg"}
+## Optics as analogy to neural networks {background-image="./images/pleiades.jpg" background-opacity="0.5"}
 
--  Optical systems are made of layers
+-  Optical systems are made of layers:
 -  Each layer is a global linear transformation (propagation) 
     - or elementwise operation (eg a mask)
 
+::: {style="text-align: center"}
 ![](./images/lyot_diagram.jpeg)
+:::
 
 --- 
 
-## Simulation-Based Inference {background-image="./images/matrix.jpg"}
+## Physics-Informed Neural Networks {background-image="./images/matrix.jpg" background-opacity="0.5"}
 
-::: {.incremental}
-- ![](./images/simulation_intelligence.jpg)
+::: {style="text-align: center"}
+![](./images/simulation_intelligence.jpg)
 :::
 
 ---
 
 ## dLux - Differentiable Optical Models in Jax 
 
-![](./images/dlux.jpeg)
+::: {style="text-align: center"}
+[](./images/dlux.jpeg)
+:::
 
 Define an optical system just like a neural network:
 
 ```{.python}
-
 optical_layers = [
     dl.CreateWavefront    (wf_npix, aperture),
     dl.TiltWavefront      (),
@@ -74,6 +87,8 @@ optical_layers = [
     dl.PhysicalMFT        (det_npix, fl, det_pixsize)]
 
 ```
+
+Built in `Jax` and [`equinox`](https://github.com/patrick-kidger/equinox). 
 
 --- 
 
@@ -88,7 +103,7 @@ With [Louis Desdoigts](https://github.com/LouisDesdoigts) we have been working o
 
 --- 
 
-## Future {background-image="./images/wanderer.jpg"}
+## Future {background-image="./images/wanderer.jpg" background-opacity="0.5"}
 
 - Submitting v1.0 soon
 - Want to collaborate!
