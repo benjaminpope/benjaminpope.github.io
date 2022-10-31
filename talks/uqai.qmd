@@ -1,0 +1,23 @@
+---
+# title: "UQ AI Symposium 2022"
+# author: "Benjamin Pope"
+format: 
+    revealjs: 
+        theme: dark
+---
+
+## Astronomical Imaging and Hardware Design with Differentiable Optical Models {background-image="./images/giacometti.jpg"}
+
+[Benjamin Pope](https://benjaminpope.github.io), University of Queensland 
+
+with PhD student [Louis Desdoigts](https://github.com/LouisDesdoigts) (University of Sydney)
+
+---
+
+Slides available online at 
+
+[benjaminpope.github.io/talks/uqai](https://benjaminpope.github.io/talks/uqai)
+
+--- 
+
+JWST 
