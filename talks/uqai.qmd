@@ -5,7 +5,6 @@ format:
     revealjs: 
         theme: [dark, custom.scss]
         footer: "[github.com/benjaminpope](https://github.com/benjaminpope)&nbsp;&nbsp;&nbsp;"
-
 ---
 
 ## Astronomical Imaging and <br> Hardware Design with <br> Differentiable Optical Models {background-image="images/jwst.jpg" background-opacity="0.5"}
@@ -23,7 +22,7 @@ with PhD student [Louis Desdoigts](https://github.com/LouisDesdoigts) (Universit
 
 Slides available online at 
 
-<br><br>
+<br>
 
 ::: {style="text-align: center"}
 **[benjaminpope.github.io/talks/uqai](https://benjaminpope.github.io/talks/uqai)**
@@ -58,20 +57,28 @@ Slides available online at
 
 ## Optics as analogy to neural networks {background-image="./images/pleiades.jpg" background-opacity="0.5"}
 
+:::: {.columns}
+
+::: {.column width="35%"}
 -  Optical systems are made of layers:
 -  Each layer is a global linear transformation (propagation) 
     - or elementwise operation (eg a mask)
+:::
 
-::: {style="text-align: center"}
+::: {.column width="65%"}
 ![](./images/lyot_diagram.jpeg)
 :::
 
+::::
 --- 
 
 ## Physics-Informed Neural Networks {background-image="./images/matrix.jpg" background-opacity="0.5"}
 
+
+::: {.absolute top="10%" left="0" height="100"}
 ::: {style="text-align: center"}
 ![](./images/simulation_intelligence.jpg)
+:::
 :::
 
 ---
@@ -110,17 +117,26 @@ With [Louis Desdoigts](https://github.com/LouisDesdoigts) we have been working o
 --- 
 
 ## Future {background-image="./images/wanderer.jpg" background-opacity="0.5"}
-<br>
+
 Submitting v1.0 soon
 
+:::: {.columns}
+
+::: {.column width="50%"}
 ::: {.incremental}
-- Want to collaborate!
-    -  with astronomers
-    -  with hardware designers
-    -  with other AI researchers
-<br>
+-  Optical systems are made of layers:
+-  Each layer is a global linear transformation (propagation) 
+    - or elementwise operation (eg a mask)
+:::
+:::
+
+::: {.column width="50%"}
+::: {.incremental}
 - Applications in:
     -  microscopy
     -  laser physics
     -  your science?
 :::
+:::
+
+::::
