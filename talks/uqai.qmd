@@ -124,9 +124,10 @@ Submitting v1.0 soon
 
 ::: {.column width="50%"}
 ::: {.incremental}
--  Optical systems are made of layers:
--  Each layer is a global linear transformation (propagation) 
-    - or elementwise operation (eg a mask)
+- Want to collaborate!
+    -  with astronomers
+    -  with hardware designers
+    -  with other AI researchers
 :::
 :::
 
