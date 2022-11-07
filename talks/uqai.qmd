@@ -3,21 +3,141 @@
 # author: "Benjamin Pope"
 format: 
     revealjs: 
-        theme: dark
+        theme: [dark, custom.scss]
+        footer: "[github.com/benjaminpope](https://github.com/benjaminpope)&nbsp;&nbsp;&nbsp;"
 ---
 
-## Astronomical Imaging and Hardware Design with Differentiable Optical Models {background-image="./images/giacometti.jpg"}
+## Astronomical Imaging and <br> Hardware Design with <br> Differentiable Optical Models {background-image="images/jwst.jpg" background-opacity="0.5"}
 
-[Benjamin Pope](https://benjaminpope.github.io), University of Queensland 
+
+<br>
+
+### [Benjamin Pope](https://benjaminpope.github.io), University of Queensland 
 
 with PhD student [Louis Desdoigts](https://github.com/LouisDesdoigts) (University of Sydney)
 
----
+--- 
+
+## {background-image="./images/jwst.jpg" background-opacity="0.25"}
 
 Slides available online at 
 
-[benjaminpope.github.io/talks/uqai](https://benjaminpope.github.io/talks/uqai)
+<br>
+
+::: {style="text-align: center"}
+**[benjaminpope.github.io/talks/uqai](https://benjaminpope.github.io/talks/uqai)**
+
+![](images/qrcode_benjaminpope.github.io.png)
+:::
 
 --- 
 
-JWST 
+## {background-image="./images/carina.jpg"}
+
+--- 
+
+## Imaging Exoplanets
+
+::: {style="text-align: center"}
+![Simulated images of a star with JWST: ideal (left) and with misaligned mirrors (right).](images/good_and_bad.png)
+:::
+
+--- 
+
+## Computational Imaging in Astronomy {background-image="./images/monet.jpg"}
+
+::: {.incremental} 
+-  Image Analysis
+    - phase retrieval
+-  Optical design
+    - coronagraphs
+:::
+
+---
+
+## Optics as analogy to neural networks {background-image="./images/pleiades.jpg" background-opacity="0.5"}
+
+:::: {.columns}
+
+::: {.column width="35%"}
+-  Optical systems are made of layers:
+-  Each layer is a global linear transformation (propagation) 
+    - or elementwise operation (eg a mask)
+:::
+
+::: {.column width="65%"}
+![](./images/lyot_diagram.jpeg)
+:::
+
+::::
+--- 
+
+## Physics-Informed Neural Networks {background-image="./images/matrix.jpg" background-opacity="0.5"}
+
+
+::: {.absolute top="10%" left="0" height="100"}
+::: {style="text-align: center"}
+![](./images/simulation_intelligence.jpg)
+:::
+:::
+
+---
+
+## dLux - Differentiable Optical Models in Jax 
+
+::: {style="text-align: center"}
+[](./images/dlux.jpeg)
+:::
+
+Define an optical system just like a neural network:
+
+```{.python}
+optical_layers = [
+    dl.CreateWavefront    (wf_npix, aperture),
+    dl.TiltWavefront      (),
+    dl.CircularAperture   (wf_npix),
+    dl.NormaliseWavefront (),
+    dl.PhysicalMFT        (det_npix, fl, det_pixsize)]
+
+```
+
+Built in `Jax` and [`equinox`](https://github.com/patrick-kidger/equinox). 
+
+--- 
+
+## Examples {background-image="./images/monet.jpg"}
+
+With [Louis Desdoigts](https://github.com/LouisDesdoigts) we have been working on a few examples: see the [docs](https://louisdesdoigts.github.io/dLux/)!
+
+::: {.incremental}
+- HMC for simultaneous phase retrieval and deconvolution
+- Designing toward an optimal Fisher Information Matrix
+:::
+
+--- 
+
+## Future {background-image="./images/wanderer.jpg" background-opacity="0.5"}
+
+Submitting v1.0 soon
+
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {.incremental}
+- Want to collaborate!
+    -  with astronomers
+    -  with hardware designers
+    -  with other AI researchers
+:::
+:::
+
+::: {.column width="50%"}
+::: {.incremental}
+- Applications in:
+    -  microscopy
+    -  laser physics
+    -  your science?
+:::
+:::
+
+::::
