@@ -1,0 +1,1656 @@
+# Site Audit Report
+
+## Summary
+- HTML files: 787
+- Image files: 577
+- Top-level images: 2
+- Slide decks (Reveal.js detected): 776
+
+## Orphan Pages (not linked from index.html)
+- data/cmd_halo.html
+- data/cmd_smear.html
+- planets.html
+- rps.html
+- sagan_slides/plugin/markdown/example.html
+- sagan_slides/plugin/notes-server/notes.html
+- sagan_slides/plugin/notes/notes.html
+- sagan_slides/sagan.html
+- sagan_slides/symposium.html
+- sagan_slides/test/examples/barebones.html
+- sagan_slides/test/examples/embedded-media.html
+- sagan_slides/test/examples/math.html
+- sagan_slides/test/examples/slide-backgrounds.html
+- sagan_slides/test/examples/slide-transitions.html
+- sagan_slides/test/test-markdown-element-attributes.html
+- sagan_slides/test/test-markdown-external.html
+- sagan_slides/test/test-markdown-options.html
+- sagan_slides/test/test-markdown-slide-attributes.html
+- sagan_slides/test/test-markdown.html
+- sagan_slides/test/test-pdf.html
+- sagan_slides/test/test.html
+- talks.html
+- talks/aaq24/aaq24.html
+- talks/aaq24/plugin/markdown/example.html
+- talks/aaq24/plugin/notes-server/notes.html
+- talks/aaq24/plugin/notes/notes.html
+- talks/aaq24/test/examples/barebones.html
+- talks/aaq24/test/examples/embedded-media.html
+- talks/aaq24/test/examples/math.html
+- talks/aaq24/test/examples/slide-backgrounds.html
+- talks/aaq24/test/examples/slide-transitions.html
+- talks/aaq24/test/test-markdown-element-attributes.html
+- talks/aaq24/test/test-markdown-external.html
+- talks/aaq24/test/test-markdown-options.html
+- talks/aaq24/test/test-markdown-slide-attributes.html
+- talks/aaq24/test/test-markdown.html
+- talks/aaq24/test/test-pdf.html
+- talks/aaq24/test/test.html
+- talks/acamar7/acamar7.html
+- talks/acamar7/plugin/markdown/example.html
+- talks/acamar7/plugin/notes-server/notes.html
+- talks/acamar7/plugin/notes/notes.html
+- talks/aip22/aip22.html
+- talks/aip22/plugin/markdown/example.html
+- talks/aip22/plugin/notes-server/notes.html
+- talks/aip22/plugin/notes/notes.html
+- talks/aip22/test/examples/barebones.html
+- talks/aip22/test/examples/embedded-media.html
+- talks/aip22/test/examples/math.html
+- talks/aip22/test/examples/slide-backgrounds.html
+- talks/aip22/test/examples/slide-transitions.html
+- talks/aip22/test/test-markdown-element-attributes.html
+- talks/aip22/test/test-markdown-external.html
+- talks/aip22/test/test-markdown-options.html
+- talks/aip22/test/test-markdown-slide-attributes.html
+- talks/aip22/test/test-markdown.html
+- talks/aip22/test/test-pdf.html
+- talks/aip22/test/test.html
+- talks/ansto/ansto.html
+- talks/ansto/plugin/markdown/example.html
+- talks/ansto/plugin/notes-server/notes.html
+- talks/ansto/plugin/notes/notes.html
+- talks/ansto/test/examples/barebones.html
+- talks/ansto/test/examples/embedded-media.html
+- talks/ansto/test/examples/math.html
+- talks/ansto/test/examples/slide-backgrounds.html
+- talks/ansto/test/examples/slide-transitions.html
+- talks/ansto/test/test-markdown-element-attributes.html
+- talks/ansto/test/test-markdown-external.html
+- talks/ansto/test/test-markdown-options.html
+- talks/ansto/test/test-markdown-slide-attributes.html
+- talks/ansto/test/test-markdown.html
+- talks/ansto/test/test-pdf.html
+- talks/ansto/test/test.html
+- talks/aot/aot.html
+- talks/aot/plugin/markdown/example.html
+- talks/aot/plugin/notes-server/notes.html
+- talks/aot/plugin/notes/notes.html
+- talks/aot/test/examples/barebones.html
+- talks/aot/test/examples/embedded-media.html
+- talks/aot/test/examples/math.html
+- talks/aot/test/examples/slide-backgrounds.html
+- talks/aot/test/examples/slide-transitions.html
+- talks/aot/test/test-markdown-element-attributes.html
+- talks/aot/test/test-markdown-external.html
+- talks/aot/test/test-markdown-options.html
+- talks/aot/test/test-markdown-slide-attributes.html
+- talks/aot/test/test-markdown.html
+- talks/aot/test/test-pdf.html
+- talks/aot/test/test.html
+- talks/apep/apep.html
+- talks/apep/plugin/markdown/example.html
+- talks/apep/plugin/notes-server/notes.html
+- talks/apep/plugin/notes/notes.html
+- talks/apep/test/examples/barebones.html
+- talks/apep/test/examples/embedded-media.html
+- talks/apep/test/examples/math.html
+- talks/apep/test/examples/slide-backgrounds.html
+- talks/apep/test/examples/slide-transitions.html
+- talks/apep/test/test-markdown-element-attributes.html
+- talks/apep/test/test-markdown-external.html
+- talks/apep/test/test-markdown-options.html
+- talks/apep/test/test-markdown-slide-attributes.html
+- talks/apep/test/test-markdown.html
+- talks/apep/test/test-pdf.html
+- talks/apep/test/test.html
+- talks/astron/astron.html
+- talks/astron/plugin/markdown/example.html
+- talks/astron/plugin/notes-server/notes.html
+- talks/astron/plugin/notes/notes.html
+- talks/astron/test/examples/barebones.html
+- talks/astron/test/examples/embedded-media.html
+- talks/astron/test/examples/math.html
+- talks/astron/test/examples/slide-backgrounds.html
+- talks/astron/test/examples/slide-transitions.html
+- talks/astron/test/test-markdown-element-attributes.html
+- talks/astron/test/test-markdown-external.html
+- talks/astron/test/test-markdown-options.html
+- talks/astron/test/test-markdown-slide-attributes.html
+- talks/astron/test/test-markdown.html
+- talks/astron/test/test-pdf.html
+- talks/astron/test/test.html
+- talks/astron22/astron22.html
+- talks/astron22/plugin/markdown/example.html
+- talks/astron22/plugin/notes-server/notes.html
+- talks/astron22/plugin/notes/notes.html
+- talks/brisscience/brisscience.html
+- talks/brisscience/plugin/markdown/example.html
+- talks/brisscience/plugin/notes-server/notes.html
+- talks/brisscience/plugin/notes/notes.html
+- talks/brisscience/test/examples/barebones.html
+- talks/brisscience/test/examples/embedded-media.html
+- talks/brisscience/test/examples/math.html
+- talks/brisscience/test/examples/slide-backgrounds.html
+- talks/brisscience/test/examples/slide-transitions.html
+- talks/brisscience/test/test-markdown-element-attributes.html
+- talks/brisscience/test/test-markdown-external.html
+- talks/brisscience/test/test-markdown-options.html
+- talks/brisscience/test/test-markdown-slide-attributes.html
+- talks/brisscience/test/test-markdown.html
+- talks/brisscience/test/test-pdf.html
+- talks/brisscience/test/test.html
+- talks/capstone/capstone.html
+- talks/capstone/plugin/markdown/example.html
+- talks/capstone/plugin/notes-server/notes.html
+- talks/capstone/plugin/notes/notes.html
+- talks/capstone/test/examples/barebones.html
+- talks/capstone/test/examples/embedded-media.html
+- talks/capstone/test/examples/math.html
+- talks/capstone/test/examples/slide-backgrounds.html
+- talks/capstone/test/examples/slide-transitions.html
+- talks/capstone/test/test-markdown-element-attributes.html
+- talks/capstone/test/test-markdown-external.html
+- talks/capstone/test/test-markdown-options.html
+- talks/capstone/test/test-markdown-slide-attributes.html
+- talks/capstone/test/test-markdown.html
+- talks/capstone/test/test-pdf.html
+- talks/capstone/test/test.html
+- talks/ccafeb7/ccafeb7.html
+- talks/ccafeb7/plugin/markdown/example.html
+- talks/ccafeb7/plugin/notes-server/notes.html
+- talks/ccafeb7/plugin/notes/notes.html
+- talks/ccafeb7/test/examples/barebones.html
+- talks/ccafeb7/test/examples/embedded-media.html
+- talks/ccafeb7/test/examples/math.html
+- talks/ccafeb7/test/examples/slide-backgrounds.html
+- talks/ccafeb7/test/examples/slide-transitions.html
+- talks/ccafeb7/test/test-markdown-element-attributes.html
+- talks/ccafeb7/test/test-markdown-external.html
+- talks/ccafeb7/test/test-markdown-options.html
+- talks/ccafeb7/test/test-markdown-slide-attributes.html
+- talks/ccafeb7/test/test-markdown.html
+- talks/ccafeb7/test/test-pdf.html
+- talks/ccafeb7/test/test.html
+- talks/cmu/cmu.html
+- talks/cmu/plugin/markdown/example.html
+- talks/cmu/plugin/notes-server/notes.html
+- talks/cmu/plugin/notes/notes.html
+- talks/cmu/test/examples/barebones.html
+- talks/cmu/test/examples/embedded-media.html
+- talks/cmu/test/examples/math.html
+- talks/cmu/test/examples/slide-backgrounds.html
+- talks/cmu/test/examples/slide-transitions.html
+- talks/cmu/test/test-markdown-element-attributes.html
+- talks/cmu/test/test-markdown-external.html
+- talks/cmu/test/test-markdown-options.html
+- talks/cmu/test/test-markdown-slide-attributes.html
+- talks/cmu/test/test-markdown.html
+- talks/cmu/test/test-pdf.html
+- talks/cmu/test/test.html
+- talks/csiro/csiro.html
+- talks/csiro/plugin/markdown/example.html
+- talks/csiro/plugin/notes-server/notes.html
+- talks/csiro/plugin/notes/notes.html
+- talks/ctds/ctds.html
+- talks/ctds/plugin/markdown/example.html
+- talks/ctds/plugin/notes-server/notes.html
+- talks/ctds/plugin/notes/notes.html
+- talks/ctds/test/examples/barebones.html
+- talks/ctds/test/examples/embedded-media.html
+- talks/ctds/test/examples/math.html
+- talks/ctds/test/examples/slide-backgrounds.html
+- talks/ctds/test/examples/slide-transitions.html
+- talks/ctds/test/test-markdown-element-attributes.html
+- talks/ctds/test/test-markdown-external.html
+- talks/ctds/test/test-markdown-options.html
+- talks/ctds/test/test-markdown-slide-attributes.html
+- talks/ctds/test/test-markdown.html
+- talks/ctds/test/test-pdf.html
+- talks/ctds/test/test.html
+- talks/dh_solar/dh_solar.html
+- talks/dh_solar/plugin/markdown/example.html
+- talks/dh_solar/plugin/notes-server/notes.html
+- talks/dh_solar/plugin/notes/notes.html
+- talks/dh_solar/test/examples/barebones.html
+- talks/dh_solar/test/examples/embedded-media.html
+- talks/dh_solar/test/examples/math.html
+- talks/dh_solar/test/examples/slide-backgrounds.html
+- talks/dh_solar/test/examples/slide-transitions.html
+- talks/dh_solar/test/test-markdown-element-attributes.html
+- talks/dh_solar/test/test-markdown-external.html
+- talks/dh_solar/test/test-markdown-options.html
+- talks/dh_solar/test/test-markdown-slide-attributes.html
+- talks/dh_solar/test/test-markdown.html
+- talks/dh_solar/test/test-pdf.html
+- talks/dh_solar/test/test.html
+- talks/dsi/dsi.html
+- talks/dsi/plugin/markdown/example.html
+- talks/dsi/plugin/notes-server/notes.html
+- talks/dsi/plugin/notes/notes.html
+- talks/dsi/test/examples/barebones.html
+- talks/dsi/test/examples/embedded-media.html
+- talks/dsi/test/examples/math.html
+- talks/dsi/test/examples/slide-backgrounds.html
+- talks/dsi/test/examples/slide-transitions.html
+- talks/dsi/test/test-markdown-element-attributes.html
+- talks/dsi/test/test-markdown-external.html
+- talks/dsi/test/test-markdown-options.html
+- talks/dsi/test/test-markdown-slide-attributes.html
+- talks/dsi/test/test-markdown.html
+- talks/dsi/test/test-pdf.html
+- talks/dsi/test/test.html
+- talks/exoplanets/exoplanets.html
+- talks/exoplanets/plugin/markdown/example.html
+- talks/exoplanets/plugin/notes-server/notes.html
+- talks/exoplanets/plugin/notes/notes.html
+- talks/exoplanets/test/examples/barebones.html
+- talks/exoplanets/test/examples/embedded-media.html
+- talks/exoplanets/test/examples/math.html
+- talks/exoplanets/test/examples/slide-backgrounds.html
+- talks/exoplanets/test/examples/slide-transitions.html
+- talks/exoplanets/test/test-markdown-element-attributes.html
+- talks/exoplanets/test/test-markdown-external.html
+- talks/exoplanets/test/test-markdown-options.html
+- talks/exoplanets/test/test-markdown-slide-attributes.html
+- talks/exoplanets/test/test-markdown.html
+- talks/exoplanets/test/test-pdf.html
+- talks/exoplanets/test/test.html
+- talks/fizeau/fizeau.html
+- talks/fizeau/plugin/markdown/example.html
+- talks/fizeau/plugin/notes-server/notes.html
+- talks/fizeau/plugin/notes/notes.html
+- talks/fizeau/test/examples/barebones.html
+- talks/fizeau/test/examples/embedded-media.html
+- talks/fizeau/test/examples/math.html
+- talks/fizeau/test/examples/slide-backgrounds.html
+- talks/fizeau/test/examples/slide-transitions.html
+- talks/fizeau/test/test-markdown-element-attributes.html
+- talks/fizeau/test/test-markdown-external.html
+- talks/fizeau/test/test-markdown-options.html
+- talks/fizeau/test/test-markdown-slide-attributes.html
+- talks/fizeau/test/test-markdown.html
+- talks/fizeau/test/test-pdf.html
+- talks/fizeau/test/test.html
+- talks/flinders/flinders.html
+- talks/flinders/plugin/markdown/example.html
+- talks/flinders/plugin/notes-server/notes.html
+- talks/flinders/plugin/notes/notes.html
+- talks/flinders/test/examples/barebones.html
+- talks/flinders/test/examples/embedded-media.html
+- talks/flinders/test/examples/math.html
+- talks/flinders/test/examples/slide-backgrounds.html
+- talks/flinders/test/examples/slide-transitions.html
+- talks/flinders/test/test-markdown-element-attributes.html
+- talks/flinders/test/test-markdown-external.html
+- talks/flinders/test/test-markdown-options.html
+- talks/flinders/test/test-markdown-slide-attributes.html
+- talks/flinders/test/test-markdown.html
+- talks/flinders/test/test-pdf.html
+- talks/flinders/test/test.html
+- talks/gaiadr2/gaiadr2.html
+- talks/gaiadr2/plugin/markdown/example.html
+- talks/gaiadr2/plugin/notes-server/notes.html
+- talks/gaiadr2/plugin/notes/notes.html
+- talks/gaiadr2/test/examples/barebones.html
+- talks/gaiadr2/test/examples/embedded-media.html
+- talks/gaiadr2/test/examples/math.html
+- talks/gaiadr2/test/examples/slide-backgrounds.html
+- talks/gaiadr2/test/examples/slide-transitions.html
+- talks/gaiadr2/test/test-markdown-element-attributes.html
+- talks/gaiadr2/test/test-markdown-external.html
+- talks/gaiadr2/test/test-markdown-options.html
+- talks/gaiadr2/test/test-markdown-slide-attributes.html
+- talks/gaiadr2/test/test-markdown.html
+- talks/gaiadr2/test/test-pdf.html
+- talks/gaiadr2/test/test.html
+- talks/gps/gps.html
+- talks/gps/plugin/markdown/example.html
+- talks/gps/plugin/notes-server/notes.html
+- talks/gps/plugin/notes/notes.html
+- talks/gps/test/examples/barebones.html
+- talks/gps/test/examples/embedded-media.html
+- talks/gps/test/examples/math.html
+- talks/gps/test/examples/slide-backgrounds.html
+- talks/gps/test/examples/slide-transitions.html
+- talks/gps/test/test-markdown-element-attributes.html
+- talks/gps/test/test-markdown-external.html
+- talks/gps/test/test-markdown-options.html
+- talks/gps/test/test-markdown-slide-attributes.html
+- talks/gps/test/test-markdown.html
+- talks/gps/test/test-pdf.html
+- talks/gps/test/test.html
+- talks/greenwich/apep.html
+- talks/greenwich/plugin/markdown/example.html
+- talks/greenwich/plugin/notes-server/notes.html
+- talks/greenwich/plugin/notes/notes.html
+- talks/greenwich/test/examples/barebones.html
+- talks/greenwich/test/examples/embedded-media.html
+- talks/greenwich/test/examples/math.html
+- talks/greenwich/test/examples/slide-backgrounds.html
+- talks/greenwich/test/examples/slide-transitions.html
+- talks/greenwich/test/test-markdown-element-attributes.html
+- talks/greenwich/test/test-markdown-external.html
+- talks/greenwich/test/test-markdown-options.html
+- talks/greenwich/test/test-markdown-slide-attributes.html
+- talks/greenwich/test/test-markdown.html
+- talks/greenwich/test/test-pdf.html
+- talks/greenwich/test/test.html
+- talks/kepscicon/kepscicon.html
+- talks/kepscicon/plugin/markdown/example.html
+- talks/kepscicon/plugin/notes-server/notes.html
+- talks/kepscicon/plugin/notes/notes.html
+- talks/kepscicon/test/examples/barebones.html
+- talks/kepscicon/test/examples/embedded-media.html
+- talks/kepscicon/test/examples/math.html
+- talks/kepscicon/test/examples/slide-backgrounds.html
+- talks/kepscicon/test/examples/slide-transitions.html
+- talks/kepscicon/test/test-markdown-element-attributes.html
+- talks/kepscicon/test/test-markdown-external.html
+- talks/kepscicon/test/test-markdown-options.html
+- talks/kepscicon/test/test-markdown-slide-attributes.html
+- talks/kepscicon/test/test-markdown.html
+- talks/kepscicon/test/test-pdf.html
+- talks/kepscicon/test/test.html
+- talks/mad/mad.html
+- talks/mad/plugin/markdown/example.html
+- talks/mad/plugin/notes-server/notes.html
+- talks/mad/plugin/notes/notes.html
+- talks/mad/test/examples/barebones.html
+- talks/mad/test/examples/embedded-media.html
+- talks/mad/test/examples/math.html
+- talks/mad/test/examples/slide-backgrounds.html
+- talks/mad/test/examples/slide-transitions.html
+- talks/mad/test/test-markdown-element-attributes.html
+- talks/mad/test/test-markdown-external.html
+- talks/mad/test/test-markdown-options.html
+- talks/mad/test/test-markdown-slide-attributes.html
+- talks/mad/test/test-markdown.html
+- talks/mad/test/test-pdf.html
+- talks/mad/test/test.html
+- talks/mcmc/mcmc_lecture.html
+- talks/mcmc_lecture.html
+- talks/mqastro/mqastro.html
+- talks/mqastro/plugin/markdown/example.html
+- talks/mqastro/plugin/notes-server/notes.html
+- talks/mqastro/plugin/notes/notes.html
+- talks/mqastro/test/examples/barebones.html
+- talks/mqastro/test/examples/embedded-media.html
+- talks/mqastro/test/examples/math.html
+- talks/mqastro/test/examples/slide-backgrounds.html
+- talks/mqastro/test/examples/slide-transitions.html
+- talks/mqastro/test/test-markdown-element-attributes.html
+- talks/mqastro/test/test-markdown-external.html
+- talks/mqastro/test/test-markdown-options.html
+- talks/mqastro/test/test-markdown-slide-attributes.html
+- talks/mqastro/test/test-markdown.html
+- talks/mqastro/test/test-pdf.html
+- talks/mqastro/test/test.html
+- talks/nhfp/nhfp.html
+- talks/nhfp/plugin/markdown/example.html
+- talks/nhfp/plugin/notes-server/notes.html
+- talks/nhfp/plugin/notes/notes.html
+- talks/nhfp/test/examples/barebones.html
+- talks/nhfp/test/examples/embedded-media.html
+- talks/nhfp/test/examples/math.html
+- talks/nhfp/test/examples/slide-backgrounds.html
+- talks/nhfp/test/examples/slide-transitions.html
+- talks/nhfp/test/test-markdown-element-attributes.html
+- talks/nhfp/test/test-markdown-external.html
+- talks/nhfp/test/test-markdown-options.html
+- talks/nhfp/test/test-markdown-slide-attributes.html
+- talks/nhfp/test/test-markdown.html
+- talks/nhfp/test/test-pdf.html
+- talks/nhfp/test/test.html
+- talks/nhfp20/nhfp20.html
+- talks/nhfp20/plugin/markdown/example.html
+- talks/nhfp20/plugin/notes-server/notes.html
+- talks/nhfp20/plugin/notes/notes.html
+- talks/nhfp20/test/examples/barebones.html
+- talks/nhfp20/test/examples/embedded-media.html
+- talks/nhfp20/test/examples/math.html
+- talks/nhfp20/test/examples/slide-backgrounds.html
+- talks/nhfp20/test/examples/slide-transitions.html
+- talks/nhfp20/test/test-markdown-element-attributes.html
+- talks/nhfp20/test/test-markdown-external.html
+- talks/nhfp20/test/test-markdown-options.html
+- talks/nhfp20/test/test-markdown-slide-attributes.html
+- talks/nhfp20/test/test-markdown.html
+- talks/nhfp20/test/test-pdf.html
+- talks/nhfp20/test/test.html
+- talks/pint_solar/pint_solar.html
+- talks/pint_solar/plugin/markdown/example.html
+- talks/pint_solar/plugin/notes-server/notes.html
+- talks/pint_solar/plugin/notes/notes.html
+- talks/pint_solar/test/examples/barebones.html
+- talks/pint_solar/test/examples/embedded-media.html
+- talks/pint_solar/test/examples/math.html
+- talks/pint_solar/test/examples/slide-backgrounds.html
+- talks/pint_solar/test/examples/slide-transitions.html
+- talks/pint_solar/test/test-markdown-element-attributes.html
+- talks/pint_solar/test/test-markdown-external.html
+- talks/pint_solar/test/test-markdown-options.html
+- talks/pint_solar/test/test-markdown-slide-attributes.html
+- talks/pint_solar/test/test-markdown.html
+- talks/pint_solar/test/test-pdf.html
+- talks/pint_solar/test/test.html
+- talks/qbi/plugin/markdown/example.html
+- talks/qbi/plugin/notes-server/notes.html
+- talks/qbi/plugin/notes/notes.html
+- talks/qbi/qbi.html
+- talks/qbi/test/examples/barebones.html
+- talks/qbi/test/examples/embedded-media.html
+- talks/qbi/test/examples/math.html
+- talks/qbi/test/examples/slide-backgrounds.html
+- talks/qbi/test/examples/slide-transitions.html
+- talks/qbi/test/test-markdown-element-attributes.html
+- talks/qbi/test/test-markdown-external.html
+- talks/qbi/test/test-markdown-options.html
+- talks/qbi/test/test-markdown-slide-attributes.html
+- talks/qbi/test/test-markdown.html
+- talks/qbi/test/test-pdf.html
+- talks/qbi/test/test.html
+- talks/ranganath/plugin/markdown/example.html
+- talks/ranganath/plugin/notes-server/notes.html
+- talks/ranganath/plugin/notes/notes.html
+- talks/ranganath/ranganath.html
+- talks/ranganath/test/examples/barebones.html
+- talks/ranganath/test/examples/embedded-media.html
+- talks/ranganath/test/examples/math.html
+- talks/ranganath/test/examples/slide-backgrounds.html
+- talks/ranganath/test/examples/slide-transitions.html
+- talks/ranganath/test/test-markdown-element-attributes.html
+- talks/ranganath/test/test-markdown-external.html
+- talks/ranganath/test/test-markdown-options.html
+- talks/ranganath/test/test-markdown-slide-attributes.html
+- talks/ranganath/test/test-markdown.html
+- talks/ranganath/test/test-pdf.html
+- talks/ranganath/test/test.html
+- talks/sagan/plugin/markdown/example.html
+- talks/sagan/plugin/notes-server/notes.html
+- talks/sagan/plugin/notes/notes.html
+- talks/sagan/sagan.html
+- talks/sagan/test/examples/barebones.html
+- talks/sagan/test/examples/embedded-media.html
+- talks/sagan/test/examples/math.html
+- talks/sagan/test/examples/slide-backgrounds.html
+- talks/sagan/test/examples/slide-transitions.html
+- talks/sagan/test/test-markdown-element-attributes.html
+- talks/sagan/test/test-markdown-external.html
+- talks/sagan/test/test-markdown-options.html
+- talks/sagan/test/test-markdown-slide-attributes.html
+- talks/sagan/test/test-markdown.html
+- talks/sagan/test/test-pdf.html
+- talks/sagan/test/test.html
+- talks/sagan18/plugin/markdown/example.html
+- talks/sagan18/plugin/notes-server/notes.html
+- talks/sagan18/plugin/notes/notes.html
+- talks/sagan18/sagan.html
+- talks/sagan18/test/examples/barebones.html
+- talks/sagan18/test/examples/embedded-media.html
+- talks/sagan18/test/examples/math.html
+- talks/sagan18/test/examples/slide-backgrounds.html
+- talks/sagan18/test/examples/slide-transitions.html
+- talks/sagan18/test/test-markdown-element-attributes.html
+- talks/sagan18/test/test-markdown-external.html
+- talks/sagan18/test/test-markdown-options.html
+- talks/sagan18/test/test-markdown-slide-attributes.html
+- talks/sagan18/test/test-markdown.html
+- talks/sagan18/test/test-pdf.html
+- talks/sagan18/test/test.html
+- talks/seattle/plugin/markdown/example.html
+- talks/seattle/plugin/notes-server/notes.html
+- talks/seattle/plugin/notes/notes.html
+- talks/seattle/smear.html
+- talks/seattle/test/examples/barebones.html
+- talks/seattle/test/examples/embedded-media.html
+- talks/seattle/test/examples/math.html
+- talks/seattle/test/examples/slide-backgrounds.html
+- talks/seattle/test/examples/slide-transitions.html
+- talks/seattle/test/test-markdown-element-attributes.html
+- talks/seattle/test/test-markdown-external.html
+- talks/seattle/test/test-markdown-options.html
+- talks/seattle/test/test-markdown-slide-attributes.html
+- talks/seattle/test/test-markdown.html
+- talks/seattle/test/test-pdf.html
+- talks/seattle/test/test.html
+- talks/sifasolar/plugin/markdown/example.html
+- talks/sifasolar/plugin/notes-server/notes.html
+- talks/sifasolar/plugin/notes/notes.html
+- talks/sifasolar/sifasolar.html
+- talks/sifasolar/test/examples/barebones.html
+- talks/sifasolar/test/examples/embedded-media.html
+- talks/sifasolar/test/examples/math.html
+- talks/sifasolar/test/examples/slide-backgrounds.html
+- talks/sifasolar/test/examples/slide-transitions.html
+- talks/sifasolar/test/test-markdown-element-attributes.html
+- talks/sifasolar/test/test-markdown-external.html
+- talks/sifasolar/test/test-markdown-options.html
+- talks/sifasolar/test/test-markdown-slide-attributes.html
+- talks/sifasolar/test/test-markdown.html
+- talks/sifasolar/test/test-pdf.html
+- talks/sifasolar/test/test.html
+- talks/smear/plugin/markdown/example.html
+- talks/smear/plugin/notes-server/notes.html
+- talks/smear/plugin/notes/notes.html
+- talks/smear/smear.html
+- talks/smear/test/examples/barebones.html
+- talks/smear/test/examples/embedded-media.html
+- talks/smear/test/examples/math.html
+- talks/smear/test/examples/slide-backgrounds.html
+- talks/smear/test/examples/slide-transitions.html
+- talks/smear/test/test-markdown-element-attributes.html
+- talks/smear/test/test-markdown-external.html
+- talks/smear/test/test-markdown-options.html
+- talks/smear/test/test-markdown-slide-attributes.html
+- talks/smear/test/test-markdown.html
+- talks/smear/test/test-pdf.html
+- talks/smear/test/test.html
+- talks/solar/plugin/markdown/example.html
+- talks/solar/plugin/notes-server/notes.html
+- talks/solar/plugin/notes/notes.html
+- talks/solar/solar.html
+- talks/solar/test/examples/barebones.html
+- talks/solar/test/examples/embedded-media.html
+- talks/solar/test/examples/math.html
+- talks/solar/test/examples/slide-backgrounds.html
+- talks/solar/test/examples/slide-transitions.html
+- talks/solar/test/test-markdown-element-attributes.html
+- talks/solar/test/test-markdown-external.html
+- talks/solar/test/test-markdown-options.html
+- talks/solar/test/test-markdown-slide-attributes.html
+- talks/solar/test/test-markdown.html
+- talks/solar/test/test-pdf.html
+- talks/solar/test/test.html
+- talks/stsci/plugin/markdown/example.html
+- talks/stsci/plugin/notes-server/notes.html
+- talks/stsci/plugin/notes/notes.html
+- talks/stsci/stsci.html
+- talks/stsci/test/examples/barebones.html
+- talks/stsci/test/examples/embedded-media.html
+- talks/stsci/test/examples/math.html
+- talks/stsci/test/examples/slide-backgrounds.html
+- talks/stsci/test/examples/slide-transitions.html
+- talks/stsci/test/test-markdown-element-attributes.html
+- talks/stsci/test/test-markdown-external.html
+- talks/stsci/test/test-markdown-options.html
+- talks/stsci/test/test-markdown-slide-attributes.html
+- talks/stsci/test/test-markdown.html
+- talks/stsci/test/test-pdf.html
+- talks/stsci/test/test.html
+- talks/swinburne/plugin/markdown/example.html
+- talks/swinburne/plugin/notes-server/notes.html
+- talks/swinburne/plugin/notes/notes.html
+- talks/swinburne/swinburne.html
+- talks/swinburne/test/examples/barebones.html
+- talks/swinburne/test/examples/embedded-media.html
+- talks/swinburne/test/examples/math.html
+- talks/swinburne/test/examples/slide-backgrounds.html
+- talks/swinburne/test/examples/slide-transitions.html
+- talks/swinburne/test/test-markdown-element-attributes.html
+- talks/swinburne/test/test-markdown-external.html
+- talks/swinburne/test/test-markdown-options.html
+- talks/swinburne/test/test-markdown-slide-attributes.html
+- talks/swinburne/test/test-markdown.html
+- talks/swinburne/test/test-pdf.html
+- talks/swinburne/test/test.html
+- talks/toronto/plugin/markdown/example.html
+- talks/toronto/plugin/notes-server/notes.html
+- talks/toronto/plugin/notes/notes.html
+- talks/toronto/test/examples/barebones.html
+- talks/toronto/test/examples/embedded-media.html
+- talks/toronto/test/examples/math.html
+- talks/toronto/test/examples/slide-backgrounds.html
+- talks/toronto/test/examples/slide-transitions.html
+- talks/toronto/test/test-markdown-element-attributes.html
+- talks/toronto/test/test-markdown-external.html
+- talks/toronto/test/test-markdown-options.html
+- talks/toronto/test/test-markdown-slide-attributes.html
+- talks/toronto/test/test-markdown.html
+- talks/toronto/test/test-pdf.html
+- talks/toronto/test/test.html
+- talks/toronto/toronto.html
+- talks/ucr/plugin/markdown/example.html
+- talks/ucr/plugin/notes-server/notes.html
+- talks/ucr/plugin/notes/notes.html
+- talks/ucr/test/examples/barebones.html
+- talks/ucr/test/examples/embedded-media.html
+- talks/ucr/test/examples/math.html
+- talks/ucr/test/examples/slide-backgrounds.html
+- talks/ucr/test/examples/slide-transitions.html
+- talks/ucr/test/test-markdown-element-attributes.html
+- talks/ucr/test/test-markdown-external.html
+- talks/ucr/test/test-markdown-options.html
+- talks/ucr/test/test-markdown-slide-attributes.html
+- talks/ucr/test/test-markdown.html
+- talks/ucr/test/test-pdf.html
+- talks/ucr/test/test.html
+- talks/ucr/ucr.html
+- talks/umelb23/plugin/markdown/example.html
+- talks/umelb23/plugin/notes-server/notes.html
+- talks/umelb23/plugin/notes/notes.html
+- talks/umelb23/test/examples/barebones.html
+- talks/umelb23/test/examples/embedded-media.html
+- talks/umelb23/test/examples/math.html
+- talks/umelb23/test/examples/slide-backgrounds.html
+- talks/umelb23/test/examples/slide-transitions.html
+- talks/umelb23/test/test-markdown-element-attributes.html
+- talks/umelb23/test/test-markdown-external.html
+- talks/umelb23/test/test-markdown-options.html
+- talks/umelb23/test/test-markdown-slide-attributes.html
+- talks/umelb23/test/test-markdown.html
+- talks/umelb23/test/test-pdf.html
+- talks/umelb23/test/test.html
+- talks/umelb23/umelb23.html
+- talks/unsw24/plugin/markdown/example.html
+- talks/unsw24/plugin/notes-server/notes.html
+- talks/unsw24/plugin/notes/notes.html
+- talks/unsw24/test/examples/barebones.html
+- talks/unsw24/test/examples/embedded-media.html
+- talks/unsw24/test/examples/math.html
+- talks/unsw24/test/examples/slide-backgrounds.html
+- talks/unsw24/test/examples/slide-transitions.html
+- talks/unsw24/test/test-markdown-element-attributes.html
+- talks/unsw24/test/test-markdown-external.html
+- talks/unsw24/test/test-markdown-options.html
+- talks/unsw24/test/test-markdown-slide-attributes.html
+- talks/unsw24/test/test-markdown.html
+- talks/unsw24/test/test-pdf.html
+- talks/unsw24/test/test.html
+- talks/unsw24/unsw24.html
+- talks/uq/plugin/markdown/example.html
+- talks/uq/plugin/notes-server/notes.html
+- talks/uq/plugin/notes/notes.html
+- talks/uq/test/examples/barebones.html
+- talks/uq/test/examples/embedded-media.html
+- talks/uq/test/examples/math.html
+- talks/uq/test/examples/slide-backgrounds.html
+- talks/uq/test/examples/slide-transitions.html
+- talks/uq/test/test-markdown-element-attributes.html
+- talks/uq/test/test-markdown-external.html
+- talks/uq/test/test-markdown-options.html
+- talks/uq/test/test-markdown-slide-attributes.html
+- talks/uq/test/test-markdown.html
+- talks/uq/test/test-pdf.html
+- talks/uq/test/test.html
+- talks/uq/uq.html
+- talks/uq14c/plugin/markdown/example.html
+- talks/uq14c/plugin/notes-server/notes.html
+- talks/uq14c/plugin/notes/notes.html
+- talks/uq14c/test/examples/barebones.html
+- talks/uq14c/test/examples/embedded-media.html
+- talks/uq14c/test/examples/math.html
+- talks/uq14c/test/examples/slide-backgrounds.html
+- talks/uq14c/test/examples/slide-transitions.html
+- talks/uq14c/test/test-markdown-element-attributes.html
+- talks/uq14c/test/test-markdown-external.html
+- talks/uq14c/test/test-markdown-options.html
+- talks/uq14c/test/test-markdown-slide-attributes.html
+- talks/uq14c/test/test-markdown.html
+- talks/uq14c/test/test-pdf.html
+- talks/uq14c/test/test.html
+- talks/uq14c/uq14c.html
+- talks/uqai.html
+- talks/uqai_files/libs/revealjs/plugin/notes/speaker-view.html
+- talks/uqastro/plugin/markdown/example.html
+- talks/uqastro/plugin/notes-server/notes.html
+- talks/uqastro/plugin/notes/notes.html
+- talks/uqastro/test/examples/barebones.html
+- talks/uqastro/test/examples/embedded-media.html
+- talks/uqastro/test/examples/math.html
+- talks/uqastro/test/examples/slide-backgrounds.html
+- talks/uqastro/test/examples/slide-transitions.html
+- talks/uqastro/test/test-markdown-element-attributes.html
+- talks/uqastro/test/test-markdown-external.html
+- talks/uqastro/test/test-markdown-options.html
+- talks/uqastro/test/test-markdown-slide-attributes.html
+- talks/uqastro/test/test-markdown.html
+- talks/uqastro/test/test-pdf.html
+- talks/uqastro/test/test.html
+- talks/uqastro/uqastro.html
+- talks/uqpain/plugin/markdown/example.html
+- talks/uqpain/plugin/notes-server/notes.html
+- talks/uqpain/plugin/notes/notes.html
+- talks/uqpain/test/examples/barebones.html
+- talks/uqpain/test/examples/embedded-media.html
+- talks/uqpain/test/examples/math.html
+- talks/uqpain/test/examples/slide-backgrounds.html
+- talks/uqpain/test/examples/slide-transitions.html
+- talks/uqpain/test/test-markdown-element-attributes.html
+- talks/uqpain/test/test-markdown-external.html
+- talks/uqpain/test/test-markdown-options.html
+- talks/uqpain/test/test-markdown-slide-attributes.html
+- talks/uqpain/test/test-markdown.html
+- talks/uqpain/test/test-pdf.html
+- talks/uqpain/test/test.html
+- talks/uqpain/uqpain.html
+- talks/uqphysics/plugin/markdown/example.html
+- talks/uqphysics/plugin/notes-server/notes.html
+- talks/uqphysics/plugin/notes/notes.html
+- talks/uqphysics/test/examples/barebones.html
+- talks/uqphysics/test/examples/embedded-media.html
+- talks/uqphysics/test/examples/math.html
+- talks/uqphysics/test/examples/slide-backgrounds.html
+- talks/uqphysics/test/examples/slide-transitions.html
+- talks/uqphysics/test/test-markdown-element-attributes.html
+- talks/uqphysics/test/test-markdown-external.html
+- talks/uqphysics/test/test-markdown-options.html
+- talks/uqphysics/test/test-markdown-slide-attributes.html
+- talks/uqphysics/test/test-markdown.html
+- talks/uqphysics/test/test-pdf.html
+- talks/uqphysics/test/test.html
+- talks/uqphysics/uqphysics.html
+- talks/uqsa/plugin/markdown/example.html
+- talks/uqsa/plugin/notes-server/notes.html
+- talks/uqsa/plugin/notes/notes.html
+- talks/uqsa/test/examples/barebones.html
+- talks/uqsa/test/examples/embedded-media.html
+- talks/uqsa/test/examples/math.html
+- talks/uqsa/test/examples/slide-backgrounds.html
+- talks/uqsa/test/examples/slide-transitions.html
+- talks/uqsa/test/test-markdown-element-attributes.html
+- talks/uqsa/test/test-markdown-external.html
+- talks/uqsa/test/test-markdown-options.html
+- talks/uqsa/test/test-markdown-slide-attributes.html
+- talks/uqsa/test/test-markdown.html
+- talks/uqsa/test/test-pdf.html
+- talks/uqsa/test/test.html
+- talks/uqsa/uqsa.html
+- talks/usq/plugin/markdown/example.html
+- talks/usq/plugin/notes-server/notes.html
+- talks/usq/plugin/notes/notes.html
+- talks/usq/usq.html
+- talks/yale/plugin/markdown/example.html
+- talks/yale/plugin/notes-server/notes.html
+- talks/yale/plugin/notes/notes.html
+- talks/yale/test/examples/barebones.html
+- talks/yale/test/examples/embedded-media.html
+- talks/yale/test/examples/math.html
+- talks/yale/test/examples/slide-backgrounds.html
+- talks/yale/test/examples/slide-transitions.html
+- talks/yale/test/test-markdown-element-attributes.html
+- talks/yale/test/test-markdown-external.html
+- talks/yale/test/test-markdown-options.html
+- talks/yale/test/test-markdown-slide-attributes.html
+- talks/yale/test/test-markdown.html
+- talks/yale/test/test-pdf.html
+- talks/yale/test/test.html
+- talks/yale/yale.html
+- tauceti.html
+- teaching.html
+- uqai.html
+- uqai_files/libs/revealjs/plugin/notes/speaker-view.html
+
+## Image Reference Targets (top)
+- fake-url.png (94 refs)
+- ../images/rings.jpg (25 refs)
+- images/thumbs/01.jpg (20 refs)
+- images/thumbs/02.jpg (20 refs)
+- images/thumbs/03.jpg (20 refs)
+- images/avatar.jpg (20 refs)
+- ../images/miyake.jpg (14 refs)
+- ../images/carrington.jpg (14 refs)
+- ../images/bothmiyake.jpg (13 refs)
+- ../images/deefigure.png (13 refs)
+- ../images/maehara.jpg (13 refs)
+- ../images/magnetar_burst.jpg (12 refs)
+- https://live.staticflickr.com/8364/8263944907_fa5d0aecba_c.jpg (12 refs)
+- ../images/posterior_models.jpg (12 refs)
+- ../images/7176BCE.jpg (12 refs)
+- ../images/jupiter.gif (11 refs)
+- ../images/intcal20.png (11 refs)
+- ../images/nyt.png (11 refs)
+- ../images/guttler_flows.png (11 refs)
+- ../images/transit.jpg (11 refs)
+- ../images/combined.png (11 refs)
+- images/profilepic.jpg (10 refs)
+- images/fulls/05.jpg (10 refs)
+- images/thumbs/04.jpg (10 refs)
+- images/thumbs/05.jpg (10 refs)
+- images/thumbs/06.jpg (10 refs)
+- ../images/on_off.jpg (10 refs)
+- ../images/uusitalo.png (10 refs)
+- ../images/latitude_trees.png (10 refs)
+- ../images/miyake_amplitude_density.png (10 refs)
+- ../images/miyake_solar_cycle.png (10 refs)
+- ../images/k2sc.jpg (10 refs)
+- ../images/sensitivities.png (10 refs)
+- ../images/timeseries.jpg (10 refs)
+- ../images/ampspec.jpg (10 refs)
+- ../images/radiocarbon_team.jpg (9 refs)
+- ../images/miyake_durations.png (9 refs)
+- ../images/l2m2.gif (9 refs)
+- ../images/helio.jpg (9 refs)
+- ../images/aldebaran_lc.png (9 refs)
+- images/pleiades.jpg (7 refs)
+- images/kernel.jpg (7 refs)
+- images/about.jpg (7 refs)
+- ../images/active_stars_1_sector.jpg (7 refs)
+- ../images/quiescent_stars_1_sector.jpg (7 refs)
+- images/radio.jpg (6 refs)
+- ../images/bothmiyake2.jpg (6 refs)
+- ../images/gudel_benz_flares_context.jpg (6 refs)
+- ../images/all-data.jpg (6 refs)
+- ../images/good_and_bad.png (6 refs)
+
+## Image Locations by Top-Level Folder
+- talks: 474 files
+- images: 45 files
+- photos: 31 files
+- sagan_slides: 9 files
+- fonts: 8 files
+- tauceti: 6 files
+- assets: 2 files
+- palomar.jpg: 1 files
+- sydneypress.jpg: 1 files
+
+## Reveal.js Paths Referenced
+- https://github.com/hakimel/reveal.js/ (1 pages)
+
+## Affiliation Mentions
+- NYU: 33 pages
+- UQ: 39 pages
+- Macquarie: 787 pages
+- Sagan Fellow: 12 pages
+
+## Social Mentions
+- Twitter: 787 pages
+- Bluesky: 787 pages
+
+## Emails by Page
+- directimaging.html: b.pope@uq.edu.au, benjamin.pope@mq.edu.au
+- index.html: b.pope@uq.edu.au, benjamin.pope@mq.edu.au
+- about.html: b.pope@uq.edu.au, benjamin.pope@mq.edu.au
+- radio.html: b.pope@uq.edu.au, benjamin.pope@mq.edu.au
+- planets.html: b.pope@uq.edu.au, benjamin.pope@mq.edu.au
+- kepler.html: b.pope@uq.edu.au, benjamin.pope@mq.edu.au
+- uqai.html: benjamin.pope@mq.edu.au
+- teaching.html: b.pope@uq.edu.au, benjamin.pope@mq.edu.au
+- talks.html: b.pope@uq.edu.au, benjamin.pope@mq.edu.au
+- tauceti.html: b.pope@uq.edu.au, benjamin.pope@mq.edu.au
+- rps.html: b.pope@uq.edu.au, benjamin.pope@mq.edu.au
+- talks/mcmc_lecture.html: benjamin.pope@mq.edu.au, reveal.js@4.0.2
+- talks/uqai.html: benjamin.pope@mq.edu.au
+- talks/solar/solar.html: benjamin.pope@mq.edu.au
+- talks/solar/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/solar/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/solar/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/solar/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/solar/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/solar/test/test.html: benjamin.pope@mq.edu.au
+- talks/solar/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/solar/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/solar/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/solar/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/solar/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/solar/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/solar/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/solar/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/solar/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/gaiadr2.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/test/test.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/exoplanets.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/test/test.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/qbi/qbi.html: benjamin.pope@mq.edu.au
+- talks/qbi/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/qbi/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/qbi/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/qbi/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/qbi/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/qbi/test/test.html: benjamin.pope@mq.edu.au
+- talks/qbi/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/qbi/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/qbi/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/qbi/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/qbi/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/qbi/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/qbi/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/qbi/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/qbi/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/unsw24/unsw24.html: benjamin.pope@mq.edu.au
+- talks/unsw24/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/unsw24/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/unsw24/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/unsw24/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/unsw24/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/unsw24/test/test.html: benjamin.pope@mq.edu.au
+- talks/unsw24/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/unsw24/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/unsw24/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/unsw24/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/unsw24/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/unsw24/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/unsw24/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/unsw24/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/unsw24/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/apep/apep.html: benjamin.pope@mq.edu.au
+- talks/apep/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/apep/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/apep/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/apep/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/apep/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/apep/test/test.html: benjamin.pope@mq.edu.au
+- talks/apep/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/apep/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/apep/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/apep/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/apep/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/apep/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/apep/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/apep/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/apep/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/ranganath/ranganath.html: benjamin.pope@mq.edu.au
+- talks/ranganath/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/ranganath/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/ranganath/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/ranganath/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/ranganath/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/ranganath/test/test.html: benjamin.pope@mq.edu.au
+- talks/ranganath/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/ranganath/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/ranganath/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/ranganath/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/ranganath/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/ranganath/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/ranganath/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/ranganath/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/ranganath/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/gps/gps.html: benjamin.pope@mq.edu.au
+- talks/gps/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/gps/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/gps/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/gps/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/gps/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/gps/test/test.html: benjamin.pope@mq.edu.au
+- talks/gps/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/gps/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/gps/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/gps/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/gps/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/gps/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/gps/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/gps/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/gps/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/csiro/csiro.html: benjamin.pope@mq.edu.au
+- talks/csiro/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/csiro/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/csiro/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/ansto/ansto.html: benjamin.pope@mq.edu.au
+- talks/ansto/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/ansto/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/ansto/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/ansto/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/ansto/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/ansto/test/test.html: benjamin.pope@mq.edu.au
+- talks/ansto/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/ansto/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/ansto/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/ansto/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/ansto/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/ansto/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/ansto/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/ansto/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/ansto/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/seattle/smear.html: benjamin.pope@mq.edu.au
+- talks/seattle/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/seattle/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/seattle/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/seattle/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/seattle/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/seattle/test/test.html: benjamin.pope@mq.edu.au
+- talks/seattle/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/seattle/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/seattle/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/seattle/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/seattle/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/seattle/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/seattle/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/seattle/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/seattle/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/yale/yale.html: benjamin.pope@mq.edu.au
+- talks/yale/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/yale/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/yale/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/yale/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/yale/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/yale/test/test.html: benjamin.pope@mq.edu.au
+- talks/yale/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/yale/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/yale/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/yale/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/yale/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/yale/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/yale/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/yale/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/yale/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/umelb23/umelb23.html: benjamin.pope@mq.edu.au
+- talks/umelb23/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/umelb23/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/umelb23/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/umelb23/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/umelb23/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/umelb23/test/test.html: benjamin.pope@mq.edu.au
+- talks/umelb23/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/umelb23/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/umelb23/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/umelb23/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/umelb23/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/umelb23/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/umelb23/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/umelb23/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/umelb23/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/greenwich/apep.html: benjamin.pope@mq.edu.au
+- talks/greenwich/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/greenwich/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/greenwich/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/greenwich/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/greenwich/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/greenwich/test/test.html: benjamin.pope@mq.edu.au
+- talks/greenwich/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/greenwich/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/greenwich/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/greenwich/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/greenwich/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/greenwich/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/greenwich/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/greenwich/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/greenwich/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/uq14c/uq14c.html: benjamin.pope@mq.edu.au
+- talks/uq14c/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/uq14c/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/uq14c/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/uq14c/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/uq14c/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/uq14c/test/test.html: benjamin.pope@mq.edu.au
+- talks/uq14c/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/uq14c/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/uq14c/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/uq14c/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/uq14c/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/uq14c/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/uq14c/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/uq14c/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/uq14c/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/flinders/flinders.html: benjamin.pope@mq.edu.au
+- talks/flinders/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/flinders/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/flinders/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/flinders/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/flinders/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/flinders/test/test.html: benjamin.pope@mq.edu.au
+- talks/flinders/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/flinders/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/flinders/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/flinders/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/flinders/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/flinders/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/flinders/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/flinders/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/flinders/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/ccafeb7.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/test/test.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/nhfp/nhfp.html: benjamin.pope@mq.edu.au
+- talks/nhfp/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/nhfp/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/nhfp/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/nhfp/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/nhfp/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/nhfp/test/test.html: benjamin.pope@mq.edu.au
+- talks/nhfp/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/nhfp/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/nhfp/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/nhfp/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/nhfp/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/nhfp/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/nhfp/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/nhfp/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/nhfp/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/dsi/dsi.html: benjamin.pope@mq.edu.au
+- talks/dsi/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/dsi/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/dsi/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/dsi/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/dsi/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/dsi/test/test.html: benjamin.pope@mq.edu.au
+- talks/dsi/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/dsi/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/dsi/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/dsi/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/dsi/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/dsi/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/dsi/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/dsi/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/dsi/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/dh_solar.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/test/test.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/stsci/stsci.html: benjamin.pope@mq.edu.au
+- talks/stsci/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/stsci/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/stsci/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/stsci/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/stsci/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/stsci/test/test.html: benjamin.pope@mq.edu.au
+- talks/stsci/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/stsci/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/stsci/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/stsci/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/stsci/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/stsci/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/stsci/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/stsci/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/stsci/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/ctds/ctds.html: benjamin.pope@mq.edu.au
+- talks/ctds/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/ctds/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/ctds/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/ctds/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/ctds/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/ctds/test/test.html: benjamin.pope@mq.edu.au
+- talks/ctds/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/ctds/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/ctds/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/ctds/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/ctds/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/ctds/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/ctds/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/ctds/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/ctds/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/uqastro/uqastro.html: benjamin.pope@mq.edu.au
+- talks/uqastro/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/uqastro/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/uqastro/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/uqastro/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/uqastro/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/uqastro/test/test.html: benjamin.pope@mq.edu.au
+- talks/uqastro/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/uqastro/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/uqastro/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/uqastro/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/uqastro/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/uqastro/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/uqastro/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/uqastro/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/uqastro/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/uq/uq.html: benjamin.pope@mq.edu.au
+- talks/uq/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/uq/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/uq/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/uq/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/uq/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/uq/test/test.html: benjamin.pope@mq.edu.au
+- talks/uq/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/uq/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/uq/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/uq/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/uq/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/uq/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/uq/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/uq/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/uq/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/mad/mad.html: benjamin.pope@mq.edu.au
+- talks/mad/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/mad/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/mad/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/mad/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/mad/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/mad/test/test.html: benjamin.pope@mq.edu.au
+- talks/mad/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/mad/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/mad/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/mad/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/mad/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/mad/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/mad/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/mad/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/mad/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/cmu/cmu.html: benjamin.pope@mq.edu.au
+- talks/cmu/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/cmu/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/cmu/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/cmu/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/cmu/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/cmu/test/test.html: benjamin.pope@mq.edu.au
+- talks/cmu/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/cmu/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/cmu/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/cmu/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/cmu/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/cmu/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/cmu/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/cmu/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/cmu/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/usq/usq.html: benjamin.pope@mq.edu.au
+- talks/usq/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/usq/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/usq/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/capstone/capstone.html: benjamin.pope@mq.edu.au
+- talks/capstone/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/capstone/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/capstone/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/capstone/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/capstone/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/capstone/test/test.html: benjamin.pope@mq.edu.au
+- talks/capstone/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/capstone/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/capstone/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/capstone/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/capstone/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/capstone/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/capstone/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/capstone/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/capstone/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/aip22/aip22.html: benjamin.pope@mq.edu.au
+- talks/aip22/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/aip22/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/aip22/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/aip22/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/aip22/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/aip22/test/test.html: benjamin.pope@mq.edu.au
+- talks/aip22/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/aip22/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/aip22/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/aip22/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/aip22/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/aip22/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/aip22/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/aip22/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/aip22/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/smear/smear.html: benjamin.pope@mq.edu.au
+- talks/smear/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/smear/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/smear/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/smear/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/smear/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/smear/test/test.html: benjamin.pope@mq.edu.au
+- talks/smear/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/smear/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/smear/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/smear/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/smear/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/smear/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/smear/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/smear/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/smear/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/sagan/sagan.html: benjamin.pope@mq.edu.au
+- talks/sagan/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/sagan/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/sagan/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/sagan/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/sagan/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/sagan/test/test.html: benjamin.pope@mq.edu.au
+- talks/sagan/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/sagan/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/sagan/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/sagan/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/sagan/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/sagan/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/sagan/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/sagan/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/sagan/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/uqpain/uqpain.html: benjamin.pope@mq.edu.au
+- talks/uqpain/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/uqpain/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/uqpain/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/uqpain/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/uqpain/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/uqpain/test/test.html: benjamin.pope@mq.edu.au
+- talks/uqpain/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/uqpain/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/uqpain/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/uqpain/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/uqpain/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/uqpain/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/uqpain/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/uqpain/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/uqpain/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/fizeau/fizeau.html: benjamin.pope@mq.edu.au
+- talks/fizeau/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/fizeau/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/fizeau/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/fizeau/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/fizeau/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/fizeau/test/test.html: benjamin.pope@mq.edu.au
+- talks/fizeau/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/fizeau/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/fizeau/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/fizeau/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/fizeau/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/fizeau/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/fizeau/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/fizeau/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/fizeau/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/mcmc/mcmc_lecture.html: benjamin.pope@mq.edu.au, reveal.js@4.0.2
+- talks/nhfp20/nhfp20.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/test/test.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/nhfp20/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/uqsa/uqsa.html: benjamin.pope@mq.edu.au
+- talks/uqsa/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/uqsa/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/uqsa/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/uqsa/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/uqsa/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/uqsa/test/test.html: benjamin.pope@mq.edu.au
+- talks/uqsa/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/uqsa/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/uqsa/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/uqsa/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/uqsa/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/uqsa/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/uqsa/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/uqsa/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/uqsa/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/uqphysics.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/test/test.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/swinburne/swinburne.html: benjamin.pope@mq.edu.au
+- talks/swinburne/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/swinburne/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/swinburne/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/swinburne/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/swinburne/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/swinburne/test/test.html: benjamin.pope@mq.edu.au
+- talks/swinburne/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/swinburne/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/swinburne/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/swinburne/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/swinburne/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/swinburne/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/swinburne/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/swinburne/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/swinburne/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/kepscicon.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/test/test.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/toronto/toronto.html: benjamin.pope@mq.edu.au
+- talks/toronto/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/toronto/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/toronto/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/toronto/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/toronto/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/toronto/test/test.html: benjamin.pope@mq.edu.au
+- talks/toronto/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/toronto/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/toronto/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/toronto/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/toronto/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/toronto/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/toronto/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/toronto/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/toronto/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/ucr/ucr.html: benjamin.pope@mq.edu.au
+- talks/ucr/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/ucr/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/ucr/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/ucr/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/ucr/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/ucr/test/test.html: benjamin.pope@mq.edu.au
+- talks/ucr/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/ucr/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/ucr/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/ucr/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/ucr/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/ucr/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/ucr/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/ucr/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/ucr/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/mqastro/mqastro.html: benjamin.pope@mq.edu.au
+- talks/mqastro/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/mqastro/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/mqastro/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/mqastro/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/mqastro/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/mqastro/test/test.html: benjamin.pope@mq.edu.au
+- talks/mqastro/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/mqastro/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/mqastro/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/mqastro/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/mqastro/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/mqastro/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/mqastro/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/mqastro/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/mqastro/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/astron22/astron22.html: benjamin.pope@mq.edu.au
+- talks/astron22/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/astron22/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/astron22/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/sagan18/sagan.html: benjamin.pope@mq.edu.au
+- talks/sagan18/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/sagan18/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/sagan18/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/sagan18/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/sagan18/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/sagan18/test/test.html: benjamin.pope@mq.edu.au
+- talks/sagan18/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/sagan18/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/sagan18/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/sagan18/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/sagan18/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/sagan18/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/sagan18/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/sagan18/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/sagan18/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/aaq24/aaq24.html: benjamin.pope@mq.edu.au
+- talks/aaq24/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/aaq24/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/aaq24/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/aaq24/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/aaq24/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/aaq24/test/test.html: benjamin.pope@mq.edu.au
+- talks/aaq24/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/aaq24/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/aaq24/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/aaq24/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/aaq24/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/aaq24/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/aaq24/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/aaq24/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/aaq24/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/uqai_files/libs/revealjs/plugin/notes/speaker-view.html: benjamin.pope@mq.edu.au
+- talks/astron/astron.html: benjamin.pope@mq.edu.au
+- talks/astron/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/astron/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/astron/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/astron/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/astron/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/astron/test/test.html: benjamin.pope@mq.edu.au
+- talks/astron/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/astron/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/astron/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/astron/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/astron/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/astron/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/astron/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/astron/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/astron/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/pint_solar.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/test/test.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/sifasolar.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/test/test.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/brisscience/brisscience.html: benjamin.pope@mq.edu.au
+- talks/brisscience/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/brisscience/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/brisscience/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/brisscience/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/brisscience/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/brisscience/test/test.html: benjamin.pope@mq.edu.au
+- talks/brisscience/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/brisscience/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/brisscience/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/brisscience/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/brisscience/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/brisscience/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/brisscience/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/brisscience/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/brisscience/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/aot/aot.html: benjamin.pope@mq.edu.au
+- talks/aot/test/test-markdown.html: benjamin.pope@mq.edu.au
+- talks/aot/test/test-pdf.html: benjamin.pope@mq.edu.au
+- talks/aot/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- talks/aot/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- talks/aot/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- talks/aot/test/test.html: benjamin.pope@mq.edu.au
+- talks/aot/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- talks/aot/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- talks/aot/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- talks/aot/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- talks/aot/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- talks/aot/test/examples/math.html: benjamin.pope@mq.edu.au
+- talks/aot/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/aot/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/aot/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- talks/acamar7/acamar7.html: benjamin.pope@mq.edu.au
+- talks/acamar7/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- talks/acamar7/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- talks/acamar7/plugin/notes/notes.html: benjamin.pope@mq.edu.au
+- uqai_files/libs/revealjs/plugin/notes/speaker-view.html: benjamin.pope@mq.edu.au
+- data/cmd_smear.html: benjamin.pope@mq.edu.au
+- data/cmd_halo.html: benjamin.pope@mq.edu.au
+- sagan_slides/sagan.html: benjamin.pope@mq.edu.au
+- sagan_slides/symposium.html: benjamin.pope@mq.edu.au
+- sagan_slides/test/test-markdown.html: benjamin.pope@mq.edu.au
+- sagan_slides/test/test-pdf.html: benjamin.pope@mq.edu.au
+- sagan_slides/test/test-markdown-options.html: benjamin.pope@mq.edu.au
+- sagan_slides/test/test-markdown-slide-attributes.html: benjamin.pope@mq.edu.au
+- sagan_slides/test/test-markdown-element-attributes.html: benjamin.pope@mq.edu.au
+- sagan_slides/test/test.html: benjamin.pope@mq.edu.au
+- sagan_slides/test/test-markdown-external.html: benjamin.pope@mq.edu.au
+- sagan_slides/test/examples/slide-backgrounds.html: benjamin.pope@mq.edu.au
+- sagan_slides/test/examples/embedded-media.html: benjamin.pope@mq.edu.au
+- sagan_slides/test/examples/barebones.html: benjamin.pope@mq.edu.au
+- sagan_slides/test/examples/slide-transitions.html: benjamin.pope@mq.edu.au
+- sagan_slides/test/examples/math.html: benjamin.pope@mq.edu.au
+- sagan_slides/plugin/notes-server/notes.html: benjamin.pope@mq.edu.au
+- sagan_slides/plugin/markdown/example.html: benjamin.pope@mq.edu.au
+- sagan_slides/plugin/notes/notes.html: benjamin.pope@mq.edu.au
