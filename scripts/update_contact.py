@@ -130,7 +130,8 @@ def build_banner(config: dict):
 def build_footer_icons(config: dict):
     """Build normalized <li> items for a UL.icons block based on config.social.
 
-    Uses Font Awesome v6 classes for GitHub, Instagram, Bluesky, Email; optional ORCID via Academicons.
+    Uses Font Awesome v6 classes for GitHub, Bluesky, Email; optional ORCID via Academicons.
+    Instagram is intentionally omitted site-wide.
     """
     person = config.get("person", {})
     email = person.get("email") or DEFAULTS["person"]["email"]
@@ -144,11 +145,7 @@ def build_footer_icons(config: dict):
             f"  <li><a href=\"https://github.com/{gh}\" class=\"icon fa-brands fa-github\" aria-label=\"GitHub\"><span class=\"label\">GitHub</span></a></li>"
         )
 
-    ig = social.get("instagram")
-    if ig:
-        items.append(
-            f"  <li><a href=\"https://instagram.com/{ig}\" class=\"icon fa-brands fa-instagram\" aria-label=\"Instagram\"><span class=\"label\">Instagram</span></a></li>"
-        )
+    # Instagram intentionally not included
 
     bsky_handle, bsky_url = bluesky_handle_and_url(social.get("bluesky"))
     if bsky_url:

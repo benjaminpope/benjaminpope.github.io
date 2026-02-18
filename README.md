@@ -65,7 +65,7 @@ GitHub Homepage
 
 - Analytics: Removed legacy Universal Analytics (`analytics.js`, `UA-40227049-3`) from all pages. No GA4/Plausible/Matomo added.
 - Contact Injection Scope: Updated `scripts/update_contact.py` to skip vendor paths and talk `plugin/`/`test/` folders; added `--cleanup-markers` to strip stray markers from vendor HTMLs.
-- Slides Curation: `scripts/generate_slide_index.py` filters out plugin/test/example entries; homepage “Slides” now links to `slides/index.html`.
+- Slides Curation: `scripts/generate_slide_index.py` filters out plugin/test/example entries; homepage “Slides” now links to `talks/index.html`.
 - Demo/Template Pruning: Deleted `talks/*/plugin/` and `talks/*/test/` directories and removed local Font Awesome assets across talks.
 - Orphans to Resources: Added a Legacy & Side Projects section to `resources.html` linking older pages (e.g., `tauceti.html`, `planets.html`).
 

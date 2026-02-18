@@ -6,7 +6,7 @@
 <script src="../assets/vendor/quarto/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../assets/vendor/quarto/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../assets/vendor/quarto/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../assets/vendor/quarto/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../assets/vendor/quarto/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.253">
 
   <title>uqai</title>
@@ -387,22 +387,22 @@
     <div class="slides">
 
 
-<section id="astronomical-imaging-and-hardware-design-with-differentiable-optical-models" class="slide level2" data-background-image=\"/images/slides/jwst.jpg\" data-background-opacity="0.5">
+<section id="astronomical-imaging-and-hardware-design-with-differentiable-optical-models" class="slide level2" data-background-image="../images/slides/jwst.jpg" data-background-opacity="0.5">
 <h2>Astronomical Imaging and <br> Hardware Design with <br> Differentiable Optical Models</h2>
 <p><br></p>
 <h3 id="benjamin-pope-university-of-queensland"><a href="https://benjaminpope.github.io">Benjamin Pope</a>, University of Queensland</h3>
 <p>with PhD student <a href="https://github.com/LouisDesdoigts">Louis Desdoigts</a> (University of Sydney)</p>
 </section>
-<section id="section" class="slide level2" data-background-image="./images/jwst.jpg" data-background-opacity="0.25">
+<section id="section" class="slide level2" data-background-image=\"../images/slides/jwst.jpg\" data-background-opacity="0.25">
 <h2></h2>
 <p>Slides available online at</p>
 <p><br></p>
 <div style="text-align: center">
 <p><strong><a href="https://benjaminpope.github.io/talks/uqai">benjaminpope.github.io/talks/uqai</a></strong></p>
-<p><img data-src=\"/images/slides/qrcode_benjaminpope.github.io.png\"></p>
+<p><img data-src="../images/slides/qrcode_benjaminpope.github.io.png"></p>
 </div>
 </section>
-<section id="section-1" class="slide level2" data-background-image="./images/carina.jpg">
+<section id="section-1" class="slide level2" data-background-image=\"../images/slides/carina.jpg\">
 <h2></h2>
 </section>
 <section id="imaging-exoplanets" class="slide level2">
@@ -410,13 +410,13 @@
 <div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src=\"/images/slides/good_and_bad.png\"></p>
+<p><img data-src="../images/slides/good_and_bad.png"></p>
 <p></p><figcaption>Simulated images of a star with JWST: ideal (left) and with misaligned mirrors (right).</figcaption><p></p>
 </figure>
 </div>
 </div>
 </section>
-<section id="computational-imaging-in-astronomy" class="slide level2" data-background-image="./images/monet.jpg">
+<section id="computational-imaging-in-astronomy" class="slide level2" data-background-image=\"../images/slides/monet.jpg\">
 <h2>Computational Imaging in Astronomy</h2>
 <div>
 <ul>
@@ -431,7 +431,7 @@
 </ul>
 </div>
 </section>
-<section id="optics-as-analogy-to-neural-networks" class="slide level2" data-background-image="./images/pleiades.jpg" data-background-opacity="0.5">
+<section id="optics-as-analogy-to-neural-networks" class="slide level2" data-background-image=\"../images/slides/pleiades.jpg\" data-background-opacity="0.5">
 <h2>Optics as analogy to neural networks</h2>
 <div class="columns">
 <div class="column" style="width:35%;">
@@ -443,22 +443,22 @@
 </ul></li>
 </ul>
 </div><div class="column" style="width:65%;">
-<p><img data-src="./images/lyot_diagram.jpeg"></p>
+<p><img data-src=\"../images/slides/lyot_diagram.jpeg\"></p>
 </div>
 </div>
 </section>
-<section id="physics-informed-neural-networks" class="slide level2" data-background-image="./images/matrix.jpg" data-background-opacity="0.5">
+<section id="physics-informed-neural-networks" class="slide level2" data-background-image=\"../images/slides/matrix.jpg\" data-background-opacity="0.5">
 <h2>Physics-Informed Neural Networks</h2>
 <div class="absolute" style="top: 10%; left: 0px; height: 100px; ">
 <div style="text-align: center">
-<p><img data-src="./images/simulation_intelligence.jpg"></p>
+<p><img data-src=\"../images/slides/simulation_intelligence.jpg\"></p>
 </div>
 </div>
 </section>
 <section id="dlux---differentiable-optical-models-in-jax" class="slide level2">
 <h2>dLux - Differentiable Optical Models in Jax</h2>
 <div style="text-align: center">
-<p><a href="./images/dlux.jpeg"></a></p>
+<p><img data-src="../images/slides/dlux.jpeg"></p>
 </div>
 <p>Define an optical system just like a neural network:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>optical_layers <span class="op">=</span> [</span>
@@ -469,7 +469,7 @@
 <span id="cb1-6"><a href="#cb1-6"></a>    dl.PhysicalMFT        (det_npix, fl, det_pixsize)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Built in <code>Jax</code> and <a href="https://github.com/patrick-kidger/equinox"><code>equinox</code></a>.</p>
 </section>
-<section id="examples" class="slide level2" data-background-image="./images/monet.jpg">
+<section id="examples" class="slide level2" data-background-image=\"../images/slides/monet.jpg\">
 <h2>Examples</h2>
 <p>With <a href="https://github.com/LouisDesdoigts">Louis Desdoigts</a> we have been working on a few examples: see the <a href="https://louisdesdoigts.github.io/dLux/">docs</a>!</p>
 <div>
@@ -479,7 +479,7 @@
 </ul>
 </div>
 </section>
-<section id="future" class="slide level2" data-background-image="./images/wanderer.jpg" data-background-opacity="0.5">
+<section id="future" class="slide level2" data-background-image=\"../images/slides/wanderer.jpg\" data-background-opacity="0.5">
 <h2>Future</h2>
 <p>Submitting v1.0 soon</p>
 <div class="columns">
@@ -542,7 +542,7 @@
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class="fas fa-gear"></i>","content":"<ul class="slide-menu-items">\n<li class="slide-tool-item active" data-item="0"><a href="#" onclick="RevealMenuToolHandlers.fullscreen(event)"><kbd>f</kbd> Fullscreen</a></li>\n<li class="slide-tool-item" data-item="1"><a href="#" onclick="RevealMenuToolHandlers.speakerMode(event)"><kbd>s</kbd> Speaker View</a></li>\n<li class="slide-tool-item" data-item="2"><a href="#" onclick="RevealMenuToolHandlers.overview(event)"><kbd>o</kbd> Slide Overview</a></li>\n<li class="slide-tool-item" data-item="3"><a href="#" onclick="RevealMenuToolHandlers.overview(event)"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class="slide-tool-item" data-item="4"><a href="#" onclick="RevealMenuToolHandlers.keyboardHelp(event)"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
