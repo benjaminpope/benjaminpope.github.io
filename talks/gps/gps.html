@@ -40,23 +40,23 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="../images/kolmogorov.jpg">
+				<section data-background=\"../images/slides/kolmogorov.jpg\">
 					<h1>Gaussian Processes</h1>
 					<h3> for the General Practitioner</h3><br>
 					<a href="benjaminpope.github.io" style="color:#222222">Benjamin Pope</a> <br>
 
 					<!-- <p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / </small>
 					</p> -->
 				</section>
 
 				<section>
-					<section data-background="../images/kolmogorov.jpg">
+					<section data-background=\"../images/slides/kolmogorov.jpg\">
 						<h1>Interpolation</h1>
 						<!-- <p>
 							reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
 						</p> -->
-						<!-- <img width='480' height='288' data-src="../images/rings.jpg" alt="Tree rings"> -->
+						<!-- <img width='480' height='288' data-src=\"../images/slides/rings.jpg\" alt="Tree rings"> -->
 					</section>
 
 					<section>
@@ -83,12 +83,12 @@
 
 					<section data-transition="slide-in fade-out">
 						<!-- <h2>Two Miyake Events!</h2> -->
-						<img width='555' height='555' data-src="../images/spline_basic.jpg" alt="Good Spline">
+						<img width='555' height='555' data-src=\"../images/slides/spline_basic.jpg\" alt="Good Spline">
 					</section>
 
 
 					<section data-transition-speed="fast" data-transition="fade-in slide-out">
-						<img width='555' height='555' data-src="../images/spline_bad.jpg" alt="Bad Spline">
+						<img width='555' height='555' data-src=\"../images/slides/spline_bad.jpg\" alt="Bad Spline">
 					</section>
 
 					<section>
@@ -99,12 +99,12 @@
 
 				<section >
 
-					<section data-background="../images/kolmogorov.jpg">
+					<section data-background=\"../images/slides/kolmogorov.jpg\">
 						<h1>Gaussian Processes</h1>
 					</section>
 
 					<section>
-						<img width='258' height="418" data-src="../images/hippocrates.jpg"><br>
+						<img width='258' height="418" data-src=\"../images/slides/hippocrates.jpg\"><br>
 						<a href="https://en.wikipedia.org/wiki/Hippocrates">Hippocrates</a>: 'First, do no harm'.
 					</section>
 
@@ -149,7 +149,7 @@
 
 					<section>
 						<p>These can be simple 1D functions, like here where \(k(\Delta t) = \exp(-{\Delta t}/\tau)^2 \)</p>
-						<img class="fragment" width='450' height = '450' data-src='../images/exp2_kernel.jpg' alt='1d'>
+						<img class="fragment" width='450' height = '450' data-src=\"../images/slides/exp2_kernel.jpg\" alt='1d'>
 					</section>
 
 					<section>
@@ -159,19 +159,19 @@
 
 					<section>
 						which generates the Gaussian Random Field below.
-						<img class="fragment" width='555' height = '555' data-src='../images/kolmogorov.jpg' alt='Kolmogorov Turbulence'>
+						<img class="fragment" width='555' height = '555' data-src=\"../images/slides/kolmogorov.jpg\" alt='Kolmogorov Turbulence'>
 					</section>
 
 
 
 					<section data-transition="slide-in fade-out">
 						<p>You can use GPs to interpolate conservatively!</p>
-						<img class="fragment" width='450' height='450' data-src="../images/gpinterp.jpg" alt="GP">
+						<img class="fragment" width='450' height='450' data-src=\"../images/slides/gpinterp.jpg\" alt="GP">
 					</section>
 
 					<section data-transition-speed="fast" data-transition="fade-in slide-out">
 						<p>... and work better if you optimize the kernel.</p>
-						<img width='450' height='450' data-src="../images/gpfit_periodic.jpg" alt="Periodic GP">
+						<img width='450' height='450' data-src=\"../images/slides/gpfit_periodic.jpg\" alt="Periodic GP">
 					</section>
 
 				</section>
@@ -180,7 +180,7 @@
 
 				<section>
 
-					<section data-background="../images/kolmogorov.jpg">
+					<section data-background=\"../images/slides/kolmogorov.jpg\">
 						<h1>History</h1>
 					</section>
 
@@ -202,7 +202,7 @@
 
 					<section>
 						<p>This has also been used in meteorology, to interpolate between a few weather stations across a wide region (eg Switzerland below)</p>
-						<img class="fragment" width='400' height='318' data-src='../images/kriging_weather.jpg' alt='http://www.gitta.info/ContiSpatVar/en/html/Interpolatio_learningObject3.xhtml'> 
+						<img class="fragment" width='400' height='318' data-src=\"../images/slides/kriging_weather.jpg\" alt='http://www.gitta.info/ContiSpatVar/en/html/Interpolatio_learningObject3.xhtml'> 
 					</section>
 
 					<section>
@@ -213,12 +213,12 @@
 
 				<section>
 
-					<section data-background="../images/kolmogorov.jpg">
+					<section data-background=\"../images/slides/kolmogorov.jpg\">
 					<h2>So how does it work?</h2>
 					</section>
 
 					<section>
-						<img width='500' height='384' data-src="../images/covariance.jpg" alt="How Covariance Works">
+						<img width='500' height='384' data-src=\"../images/slides/covariance.jpg\" alt="How Covariance Works">
 						<p class="fragment">Information about \(x_1\) tells you more about \(x_2\) than just the marginal distribution - because they are correlated, learning \(x_1\) allows you to predict \(x_2\) more accurately.</p>
 					</section>
 
@@ -228,7 +228,7 @@
 
 					<section>
 						<p>This is characterized by a covariance matrix like this, for squared exponential correlation with \(\lambda = 100\).</p>
-						<img class="fragment" width='500' height='500' data-src='../images/covariance_matrix.jpg' style="border:none; box-shadow:none" alt="Matrix">
+						<img class="fragment" width='500' height='500' data-src=\"../images/slides/covariance_matrix.jpg\" style="border:none; box-shadow:none" alt="Matrix">
 					</section>
 
 					<section>
@@ -268,7 +268,7 @@
 					</section>
 
 					<section>
-						<img width='450' height='450' data-src="../images/sho_kernel.jpg" style="border:none; box-shadow:none" alt="SHO Kernel">
+						<img width='450' height='450' data-src=\"../images/slides/sho_kernel.jpg\" style="border:none; box-shadow:none" alt="SHO Kernel">
 					</section>
 
 					<section>
@@ -331,7 +331,7 @@
 
 				<section>
 					
-					<section data-background="../images/kolmogorov.jpg">
+					<section data-background=\"../images/slides/kolmogorov.jpg\">
 					<h1>Examples</h1>
 					</section>
 
@@ -352,7 +352,7 @@
 
 					<section>
 						<p>We have generated data with a real spectral line at 1.5 GHz, with depth 0.1, and \(\log(\sigma^2) =0.0005 \), buried in correlated noise from a GP with a squared-exponential kernel, \(\lambda=0.5\), amplitude 0.1. </p>					
-						<img class="fragment" width="400" height="400" data-src="../images/data_spectral.jpg" style="border:none; box-shadow:none"  alt="Toy Data">
+						<img class="fragment" width="400" height="400" data-src=\"../images/slides/data_spectral.jpg\" style="border:none; box-shadow:none"  alt="Toy Data">
 
 					</section>
 
@@ -362,18 +362,18 @@
 
 					<section data-transition-speed="fast" data-transition="slide-in fade-out">
 						<p>Using <a href="http://dan.iel.fm/emcee/current/">emcee</a>, an affine-invariant MCMC sampler, we fit the GP hyperparameters jointly with our Gaussian line model.</p>
-						<img class="fragment" width="400" height="400" data-src="../images/gpfit.jpg" style="border:none; box-shadow:none"  alt="Toy Data">
+						<img class="fragment" width="400" height="400" data-src=\"../images/slides/gpfit.jpg\" style="border:none; box-shadow:none"  alt="Toy Data">
 
 					</section>
 
 					<section data-transition-speed="fast" data-transition="fade-in slide-out">
 						<p>We can subtract the best model fit out to see how well the GP models the noise:</p>
-						<img width="400" height="400" data-src="../images/gpfit_gp.jpg" style="border:none; box-shadow:none"  alt="Toy Data">
+						<img width="400" height="400" data-src=\"../images/slides/gpfit_gp.jpg\" style="border:none; box-shadow:none"  alt="Toy Data">
 					</section>
 
 					<section>
 						<p>And we can make a <a href="http://corner.readthedocs.io/en/latest/">corner</a> plot to show the marginal distribution we get for the model parameters. We nail it pretty well in some tough noise! </p>
-						<img class="fragment" width="400" height="400" data-src="../images/posterior.jpg" style="border:none; box-shadow:none"  alt="Toy Data">
+						<img class="fragment" width="400" height="400" data-src=\"../images/slides/posterior.jpg\" style="border:none; box-shadow:none"  alt="Toy Data">
 					</section>
 
 					<section>
@@ -386,7 +386,7 @@
 					</section>
 
 					<section>
-					<img width="500" height="500" data-src="../images/asteroseismology.jpg" alt="Brewer &amp Stello">
+					<img width="500" height="500" data-src=\"../images/slides/asteroseismology.jpg\" alt="Brewer &amp Stello">
 					<p><a href="http://adsabs.harvard.edu/abs/2009MNRAS.395.2226B">Brewer &amp Stello, 2009.</a></p>
 					</section>
 
@@ -416,17 +416,17 @@
 					</section>
 
 					<section>
-					<img width="681" height="502" data-src="../images/k2sc.jpg" alt="K2 Lightcurves">
+					<img width="681" height="502" data-src=\"../images/slides/k2sc.jpg\" alt="K2 Lightcurves">
 					<p><a href="http://adsabs.harvard.edu/abs/2015MNRAS.447.2880A">Aigrain et al., 2015.</a>
 					</section>
 
 					<section>
 					<p>A planet - <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1606.01264">EPIC 212357477 b</a></p>
-					<img width="1063" height="530" data-src="../images/transit.jpg" alt="EPIC 212357477">
+					<img width="1063" height="530" data-src=\"../images/slides/transit.jpg\" alt="EPIC 212357477">
 					</section>
 
 					<section>
-						<img width="458" height="351" data-src="../images/planet_transit.jpg" style="border:none; box-shadow:none"  alt="http://www.robots.ox.ac.uk/~sjrob/Pubs/philTransA_2012.pdf">
+						<img width="458" height="351" data-src=\"../images/slides/planet_transit.jpg\" style="border:none; box-shadow:none"  alt="http://www.robots.ox.ac.uk/~sjrob/Pubs/philTransA_2012.pdf">
 						<p><a href="http://www.robots.ox.ac.uk/~sjrob/Pubs/philTransA_2012.pdf">Roberts et al., 2012</a> want to infer \(\mathbf{\theta}_\mu\) (orbital parameters, planet radius, etc) and marginalize over instrumental systematics as nuisance parameters.</p>
 					</section>
 
@@ -434,7 +434,7 @@
 					<section>
 						<h3>Traps</h3>
 						<p><a href="http://onlinelibrary.wiley.com/doi/10.1002/qj.2297/abstract">Cowtan &amp  Way (2013)</a> realised that there was very poor coverage of temperature maps near the poles – only 84% global coverage.</p>
-						<img width="530" height="285" data-src="../images/climate.jpg" alt="Bad Climate Data Modelling">
+						<img width="530" height="285" data-src=\"../images/slides/climate.jpg\" alt="Bad Climate Data Modelling">
 
 					</section>
 
@@ -446,7 +446,7 @@
 				</section>
 
 				<section>
-					<section  data-background="../images/kolmogorov.jpg"><h1>Conclusions</h1></section>
+					<section  data-background=\"../images/slides/kolmogorov.jpg\"><h1>Conclusions</h1></section>
 
 					<section>
 						<h3>Gaussian processes are awesome, and you should use them for statistically-robust non-parametric modelling.</h3>
@@ -467,7 +467,7 @@
 					</section>
 
 
-					<section data-background="../images/kolmogorov.jpg">
+					<section data-background=\"../images/slides/kolmogorov.jpg\">
 					<h1>Questions?</h1>
 					</section>
 
@@ -514,5 +514,17 @@
 
 		</script>
 
-	</body>
+	
+
+
+
+
+<!-- contact-banner:start -->
+<footer id="contact-banner" style="margin-top:2rem;padding:1rem 0;border-top:1px solid #ddd;font-size:0.95rem;">
+  <div><strong>Benjamin Pope</strong> — Associate Professor, School of Mathematical and Physical Sciences, Macquarie University</div>
+  <div>Email: <a href="mailto:benjamin.pope@mq.edu.au">benjamin.pope@mq.edu.au</a></div>
+  <div>Bluesky: <a href="https://bsky.app/profile/benjaminpope.bsky.social">@benjaminpope.bsky.social</a></div>
+</footer>
+<!-- contact-banner:end -->
+</body>
 </html>

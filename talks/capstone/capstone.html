@@ -39,7 +39,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="../images/exoplanet.jpg">
+				<section data-background=\"../images/slides/exoplanet.jpg\">
 
 					<section>
 					<h2>How to Find an Exoplanet</h2>
@@ -49,11 +49,11 @@
 
 					<section data-state="dim-background">
 						Slides available at <br><a href="https://benjaminpope.github.io/talks/capstone/capstone.html">benjaminpope.github.io/talks/capstone/capstone.html</a>
-						<img width='250' data-src="../images/qrcode_capstone.jpg" alt="QR Code">
+						<img width='250' data-src=\"../images/slides/qrcode_capstone.jpg\" alt="QR Code">
 					</section>
 				</section>
 
-				<section data-background="../images/kep444.jpg">
+				<section data-background=\"../images/slides/kep444.jpg\">
 					<section>
 						<h2>Transiting Planets</h2>
 					</section>
@@ -65,7 +65,7 @@
 
 				</section>
 
-				<section data-background="../images/k2concept.jpg">
+				<section data-background=\"../images/slides/k2concept.jpg\">
 					<section>
 						<h2><i>Kepler</i> Photometry</h2>
 					</section>
@@ -80,7 +80,7 @@
 
 					<section data-state="dim-background">
 						<video width="480" height="480" controls autoplay loop>
-						<source src="../images/epic_212521166.mp4" type="video/mp4">
+						<source src=\"../images/slides/epic_212521166.mp4\" type="video/mp4">
 						</video>					
 					</section>
 
@@ -96,12 +96,12 @@
 
 					<section data-state="dim-background">
 						<p>By subtracting the GP time and spatial components, we can find a transiting planet!</p>
-						<img width='708' height='353' data-src="../images/transit.jpg" alt="K2SC Figure 2">
+						<img width='708' height='353' data-src=\"../images/slides/transit.jpg\" alt="K2SC Figure 2">
 					</section>
 
 				</section>
 
-				<section data-background="../images/exoplanet.jpg">
+				<section data-background=\"../images/slides/exoplanet.jpg\">
 
 					<section data-state="dim-background">
 						So what are Gaussian Processes?
@@ -124,13 +124,13 @@
 					<section data-state="dim-background">
 						Splines are okay for non-parametric fitting...
 						<p class='fragment'>but they can blow up unrealistically.</p>
-						<img class='fragment' width='650' data-src="../images/splines.png" alt="Splines Figure">
+						<img class='fragment' width='650' data-src=\"../images/slides/splines.png\" alt="Splines Figure">
 						<p><small><a href="https://tinyurl.com/wohyqvj">Roberts et al 2012</a></small></p>
 					</section>
 
 					<section data-state="dim-background">
 						Consider a correlated Gaussian in 2D
-						<img width='500' data-src="../images/correlated.png" alt="Correlated Gaussian">
+						<img width='500' data-src=\"../images/slides/correlated.png\" alt="Correlated Gaussian">
 						<p><small><a href="https://tinyurl.com/wohyqvj">Roberts et al 2012</a></small></p>
 					</section>
 
@@ -169,7 +169,7 @@
 					</section>
 
 					<section data-state="dim-background">
-						<img width='600' data-src="../images/matrix_sqexp.png" alt="Squared Exponential kernel">
+						<img width='600' data-src=\"../images/slides/matrix_sqexp.png\" alt="Squared Exponential kernel">
 					</section>
 
 					<section data-state="dim-background">
@@ -178,12 +178,12 @@
 					</section>
 
 					<section data-state="dim-background">
-						<img width='600' data-src="../images/matrix_periodic.png" alt="Periodic Kernel">
+						<img width='600' data-src=\"../images/slides/matrix_periodic.png\" alt="Periodic Kernel">
 					</section>
 
 					<section data-state="dim-background">
 						Draws from GPs with vertical scale \(h=1\) and horizontal correlation length \(\lambda\) a) 0.1, b) 1, c) 10
-						<img width='600' data-src="../images/draws.png" alt="Draws">
+						<img width='600' data-src=\"../images/slides/draws.png\" alt="Draws">
 						<p><small><a href="https://tinyurl.com/wohyqvj">Roberts et al 2012</a></small></p>
 					</section>
 
@@ -205,7 +205,7 @@
 
 				</section>
 
-				<section data-background="../images/giacometti.jpg">
+				<section data-background=\"../images/slides/giacometti.jpg\">
 
 					<section data-state="dim-background">
 						<h2>Applying a GP to real data</h2>
@@ -214,7 +214,7 @@
 					<section data-state="dim-background">
 						Follow along in a Google Colab online: <br>
 						<a href="https://tinyurl.com/t5j2ncs">tinyurl.com/t5j2ncs</a><br>
-						<img width='250' data-src="../images/qr_colab.png" alt="QR Code">
+						<img width='250' data-src=\"../images/slides/qr_colab.png\" alt="QR Code">
 
 					</section>
 
@@ -259,5 +259,17 @@
 
 		</script>
 
-	</body>
+	
+
+
+
+
+<!-- contact-banner:start -->
+<footer id="contact-banner" style="margin-top:2rem;padding:1rem 0;border-top:1px solid #ddd;font-size:0.95rem;">
+  <div><strong>Benjamin Pope</strong> — Associate Professor, School of Mathematical and Physical Sciences, Macquarie University</div>
+  <div>Email: <a href="mailto:benjamin.pope@mq.edu.au">benjamin.pope@mq.edu.au</a></div>
+  <div>Bluesky: <a href="https://bsky.app/profile/benjaminpope.bsky.social">@benjaminpope.bsky.social</a></div>
+</footer>
+<!-- contact-banner:end -->
+</body>
 </html>
