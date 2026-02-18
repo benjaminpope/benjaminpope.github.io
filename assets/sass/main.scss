@@ -1,7 +1,7 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import url('font-awesome.min.css');
+// Removed legacy Font Awesome import; use FA6 CDN in HTML
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
 /*

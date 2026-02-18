@@ -1,0 +1,54 @@
+name: Site Audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - restructure/site-streamlining
+      - restructure/**
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Upgrade pip
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Run audit
+        run: |
+          python scripts/audit_site.py
+
+      - name: Summarize audit
+        run: |
+          python scripts/summarize_audit.py
+
+      - name: Generate slide index
+        run: |
+          python scripts/generate_slide_index.py
+
+      - name: Commit audit artifacts back to branch
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "CI: Update audit report and slides index"
+          file_pattern: |
+            scripts/audit_report.json
+            scripts/audit_report.md
+            slides/index.html
+
+      - name: Upload audit artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-audit
+          path: |
+            scripts/audit_report.json
+            scripts/audit_report.md
+            slides/index.html

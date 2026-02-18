@@ -1,0 +1,19 @@
+ {
+   "name": "benjaminpope-website-tools",
+   "version": "0.1.0",
+   "private": true,
+   "description": "Streamlining tools for consolidating images, slides, and contacts in the academic website.",
+   "scripts": {
+     "streamline:dry": "node tools/streamline/dry-run.js",
+     "streamline:apply": "node tools/streamline/apply.js",
+     "streamline:update-index": "node tools/streamline/update-index.js"
+   },
+   "dependencies": {
+     "cheerio": "^1.0.0",
+     "commander": "^12.0.0",
+     "fast-glob": "^3.3.2",
+     "fs-extra": "^11.2.0",
+     "mime": "^4.0.3",
+     "semver": "^7.6.3"
+   }
+ }

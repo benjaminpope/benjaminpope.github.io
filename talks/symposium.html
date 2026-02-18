@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="Astrostatistics research by Benjamin Pope, Associate Professor at Macquarie University." />
+		<meta name="author" content="Benjamin Pope">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../assets/js/revealjs/dist/reveal.css">
+		<!-- <link rel="stylesheet" href="../assets/js/revealjs/dist/theme/quarto.css" id="theme"> -->
+	<link rel="stylesheet" href="../assets/js/revealjs/dist/theme/quarto.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../assets/js/revealjs/plugin/highlight/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="../images/slides/pleiades.jpg">
+
+					<section>
+					<h1>Finding Exoplanets</h2>
+					<h2>Transiting Naked-Eye Stars</h2>
+					<h3>Benjamin Pope, NYU</h3>
+					<h4>Sagan Fellows' Symposium</h4>
+					<!-- <p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / </small>
+					</p> -->
+					</section>
+
+					<section data-state="dim-background">
+						Slides available at <br><a href="https://benjaminpope.github.io/talks/symposium.html">benjaminpope.github.io/talks/symposium.html</a>
+					</section>
+				</section>
+
+
+				<section data-background="../images/slides/pleiades.jpg" data-state="dim-background">
+
+				<section>
+				My <a href="https://nexsci.caltech.edu/sagan/fellowship.shtml">Sagan Fellowship</a> project is to search for planets transiting naked-eye stars (V mag &lt 6.5) in order to find ideal targets for characterization with <a href="https://jwst.nasa.gov/">JWST</a>.
+				</section>
+
+				<section> 
+				Large searches for exoplanets like the <a href="https://keplerscience.arc.nasa.gov"><i>Kepler</i></a> mission have shown planets to be common in our Galaxy -- now we want to learn about their atmospheres and compositions. The best options are those around bright stars, like <a href="http://adsabs.harvard.edu/abs/2016Natur.532..207D">55 Cnc e</a> - subject of 367 papers in the last decade! 
+				</section>
+
+				<section> 
+				<i>Kepler</i> can't look at bright stars easily, but with <a href="http://users-phys.au.dk/white/">Tim White</a> and we have found <a href="http://adsabs.harvard.edu/abs/2016MNRAS.455L..36P">ways around this</a>, by looking at collateral 'smear' data, or by using the unsaturated scattered light halo.
+				</section>
+
+					<!-- <p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / </small>
+					</p> -->
+				</section>
+
+				<section data-background-image="../images/slides/pleiades.jpg">
+
+				<section><h2>Smear Data</h2></section>
+					<section>
+						<center><div class="video">
+						<iframe width="630" height="468" src="https://www.youtube.com/embed/PbJ93YZQ9pg?rel=0" frameborder="0" allowfullscreen></iframe>
+						</div></center>
+						<i>Kepler</i>'s camera has the same 'smear' streaks as in this video of some cars transiting background headlights
+					</section>
+
+					<section>
+						<img width='1041' height='354' data-src="../images/slides/ffi_profile_hr8500_flat.png" alt="HR 8500">
+						You can <a href="http://adsabs.harvard.edu/abs/2016MNRAS.455L..36P">use this smear data to do photometry</a> of stars that are otherwise too bright!
+					</section>
+				</section>
+
+				<section data-background-image="../images/slides/pleiades.jpg">
+					<section>
+						<h2>Halo Photometry</h2>
+					</section>
+
+					<section data-state="dim-background">
+						What if we just look at unsaturated pixels?
+					</section>
+
+					<section data-state="dim-background">
+						<video width="480" height="480" controls autoplay loop>
+						<source src="../images/slides/aldebaran.mp4" type="video/mp4">
+						</video>
+					</section>
+
+					<section data-state="dim-background">
+					Flux \(f_i \) at cadence i is just sum over j pixels \(p_{ij}\) with weights \(w_j\):
+
+					\[
+					f_i \equiv \sum\limits_i w_j p_{ij}
+					 \]
+
+					</section>
+
+					<section data-state="dim-background">
+					We minimize the Total Variation 
+
+					\[\begin{align}
+					TV \equiv \dfrac{\sum_i |f_i - f_{i-1}|} {\sum_i f_i }
+					\end{align} \]
+
+					This is convex and has analytic derivatives in Theano - easy to optimize.
+					</section>
+
+
+					<section data-state="dim-background">
+					<img width='800' height='390' data-src="../images/slides/combined.png" alt="Combined Figure">
+					<h4>Atlas lightcurve: raw (top) and halo (bottom)</h4>
+					<h4><a href="http://adsabs.harvard.edu/abs/2017MNRAS.471.2882W">White, Pope et al., 2017</a></h4>
+					</section>
+
+
+					<section data-state="dim-background">
+
+						<img width='288' height='432' data-src="../images/slides/timeseries.jpg" alt="Combined Figure"><img width='288' height='432' data-src="../images/slides/ampspec.jpg" alt="Combined Figure">
+
+						<h4>Lightcurves of All Seven Bright Pleiades</h4>
+						<h4><a href="http://adsabs.harvard.edu/abs/2017MNRAS.471.2882W">White, Pope et al., 2017</a></h4>
+						
+					</section>
+              	
+	              	<section data-markdown data-state="dim-background">
+		                <script type="text/template">
+						#### Predicted Yields from all 906 FGK stars with V mag < 6.5 (using Fressin et al., 2013 rates)
+
+						| Type    	    | E[n]       
+						| ------------- | -------------
+						| Giants    	| 0.31 ± 0.55
+						| Large Neptunes| 0.24 ± 0.47   
+						| All Neptunes  | 3.42 ± 1.89     
+						| Super-Earths  | 4.11 ± 2.10      
+
+		                </script>
+		                Numbers from Fressin et al., 2013.
+              		</section>
+
+
+				</section>
+
+
+
+			</div>
+
+		</div>
+
+		<script src="../assets/js/revealjs/dist/reveal.js"></script>
+		<script src="../assets/js/revealjs/plugin/markdown/markdown.js"></script>
+		<script src="../assets/js/revealjs/plugin/highlight/highlight.js"></script>
+		<script src="../assets/js/revealjs/plugin/zoom/zoom.js"></script>
+		<script src="../assets/js/revealjs/plugin/notes/notes.js"></script>
+		<script src="../assets/js/revealjs/plugin/math/math.js"></script>
+
+		<script>
+
+			// Reveal.js v4 configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide',
+				math: {
+					mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+				plugins: [ RevealMarkdown, RevealHighlight, RevealZoom, RevealNotes, RevealMath ]
+			});
+
+		</script>
+
+	
+
+
+
+
+<!-- contact-banner:start -->
+<footer id="contact-banner" style="margin-top:2rem;padding:1rem 0;border-top:1px solid #ddd;font-size:0.95rem;">
+  <div><strong>Benjamin Pope</strong> — Associate Professor, School of Mathematical and Physical Sciences, Macquarie University</div>
+  <div>Email: <a href="mailto:benjamin.pope@mq.edu.au">benjamin.pope@mq.edu.au</a></div>
+  <div>Bluesky: <a href="https://bsky.app/profile/benjaminpope.bsky.social">@benjaminpope.bsky.social</a></div>
+</footer>
+<!-- contact-banner:end -->
+</body>
+</html>

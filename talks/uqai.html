@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="uqai_files/libs/clipboard/clipboard.min.js"></script>
-<script src="uqai_files/libs/quarto-html/tabby.min.js"></script>
-<script src="uqai_files/libs/quarto-html/popper.min.js"></script>
-<script src="uqai_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="uqai_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="uqai_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="uqai_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="../assets/vendor/quarto/libs/clipboard/clipboard.min.js"></script>
+<script src="../assets/vendor/quarto/libs/quarto-html/tabby.min.js"></script>
+<script src="../assets/vendor/quarto/libs/quarto-html/popper.min.js"></script>
+<script src="../assets/vendor/quarto/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../assets/vendor/quarto/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../assets/vendor/quarto/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../assets/vendor/quarto/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.253">
 
   <title>uqai</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="uqai_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="uqai_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../assets/vendor/quarto/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../assets/vendor/quarto/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -92,11 +92,11 @@
     code span.vs { color: #abe338; } /* VerbatimString */
     code span.wa { color: #dcc6e0; } /* Warning */
   </style>
-  <link rel="stylesheet" href="uqai_files/libs/revealjs/dist/theme/quarto.css" id="theme">
-  <link href="uqai_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="uqai_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="uqai_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="uqai_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/vendor/quarto/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link href="../assets/vendor/quarto/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../assets/vendor/quarto/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../assets/vendor/quarto/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../assets/vendor/quarto/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -387,22 +387,22 @@
     <div class="slides">
 
 
-<section id="astronomical-imaging-and-hardware-design-with-differentiable-optical-models" class="slide level2" data-background-image="images/jwst.jpg" data-background-opacity="0.5">
+<section id="astronomical-imaging-and-hardware-design-with-differentiable-optical-models" class="slide level2" data-background-image="../images/slides/jwst.jpg" data-background-opacity="0.5">
 <h2>Astronomical Imaging and <br> Hardware Design with <br> Differentiable Optical Models</h2>
 <p><br></p>
 <h3 id="benjamin-pope-university-of-queensland"><a href="https://benjaminpope.github.io">Benjamin Pope</a>, University of Queensland</h3>
 <p>with PhD student <a href="https://github.com/LouisDesdoigts">Louis Desdoigts</a> (University of Sydney)</p>
 </section>
-<section id="section" class="slide level2" data-background-image="./images/jwst.jpg" data-background-opacity="0.25">
+<section id="section" class="slide level2" data-background-image=\"../images/slides/jwst.jpg\" data-background-opacity="0.25">
 <h2></h2>
 <p>Slides available online at</p>
 <p><br></p>
 <div style="text-align: center">
 <p><strong><a href="https://benjaminpope.github.io/talks/uqai">benjaminpope.github.io/talks/uqai</a></strong></p>
-<p><img data-src="images/qrcode_benjaminpope.github.io.png"></p>
+<p><img data-src="../images/slides/qrcode_benjaminpope.github.io.png"></p>
 </div>
 </section>
-<section id="section-1" class="slide level2" data-background-image="./images/carina.jpg">
+<section id="section-1" class="slide level2" data-background-image=\"../images/slides/carina.jpg\">
 <h2></h2>
 </section>
 <section id="imaging-exoplanets" class="slide level2">
@@ -410,13 +410,13 @@
 <div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/good_and_bad.png"></p>
+<p><img data-src="../images/slides/good_and_bad.png"></p>
 <p></p><figcaption>Simulated images of a star with JWST: ideal (left) and with misaligned mirrors (right).</figcaption><p></p>
 </figure>
 </div>
 </div>
 </section>
-<section id="computational-imaging-in-astronomy" class="slide level2" data-background-image="./images/monet.jpg">
+<section id="computational-imaging-in-astronomy" class="slide level2" data-background-image=\"../images/slides/monet.jpg\">
 <h2>Computational Imaging in Astronomy</h2>
 <div>
 <ul>
@@ -431,7 +431,7 @@
 </ul>
 </div>
 </section>
-<section id="optics-as-analogy-to-neural-networks" class="slide level2" data-background-image="./images/pleiades.jpg" data-background-opacity="0.5">
+<section id="optics-as-analogy-to-neural-networks" class="slide level2" data-background-image=\"../images/slides/pleiades.jpg\" data-background-opacity="0.5">
 <h2>Optics as analogy to neural networks</h2>
 <div class="columns">
 <div class="column" style="width:35%;">
@@ -443,22 +443,22 @@
 </ul></li>
 </ul>
 </div><div class="column" style="width:65%;">
-<p><img data-src="./images/lyot_diagram.jpeg"></p>
+<p><img data-src=\"../images/slides/lyot_diagram.jpeg\"></p>
 </div>
 </div>
 </section>
-<section id="physics-informed-neural-networks" class="slide level2" data-background-image="./images/matrix.jpg" data-background-opacity="0.5">
+<section id="physics-informed-neural-networks" class="slide level2" data-background-image=\"../images/slides/matrix.jpg\" data-background-opacity="0.5">
 <h2>Physics-Informed Neural Networks</h2>
 <div class="absolute" style="top: 10%; left: 0px; height: 100px; ">
 <div style="text-align: center">
-<p><img data-src="./images/simulation_intelligence.jpg"></p>
+<p><img data-src=\"../images/slides/simulation_intelligence.jpg\"></p>
 </div>
 </div>
 </section>
 <section id="dlux---differentiable-optical-models-in-jax" class="slide level2">
 <h2>dLux - Differentiable Optical Models in Jax</h2>
 <div style="text-align: center">
-<p><a href="./images/dlux.jpeg"></a></p>
+<p><img data-src="../images/slides/dlux.jpeg"></p>
 </div>
 <p>Define an optical system just like a neural network:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>optical_layers <span class="op">=</span> [</span>
@@ -469,7 +469,7 @@
 <span id="cb1-6"><a href="#cb1-6"></a>    dl.PhysicalMFT        (det_npix, fl, det_pixsize)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Built in <code>Jax</code> and <a href="https://github.com/patrick-kidger/equinox"><code>equinox</code></a>.</p>
 </section>
-<section id="examples" class="slide level2" data-background-image="./images/monet.jpg">
+<section id="examples" class="slide level2" data-background-image=\"../images/slides/monet.jpg\">
 <h2>Examples</h2>
 <p>With <a href="https://github.com/LouisDesdoigts">Louis Desdoigts</a> we have been working on a few examples: see the <a href="https://louisdesdoigts.github.io/dLux/">docs</a>!</p>
 <div>
@@ -479,7 +479,7 @@
 </ul>
 </div>
 </section>
-<section id="future" class="slide level2" data-background-image="./images/wanderer.jpg" data-background-opacity="0.5">
+<section id="future" class="slide level2" data-background-image=\"../images/slides/wanderer.jpg\" data-background-opacity="0.5">
 <h2>Future</h2>
 <p>Submitting v1.0 soon</p>
 <div class="columns">
@@ -515,19 +515,19 @@
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="uqai_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="../assets/vendor/quarto/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="uqai_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="uqai_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="uqai_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="uqai_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="uqai_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../assets/vendor/quarto/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../assets/vendor/quarto/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../assets/vendor/quarto/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../assets/vendor/quarto/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../assets/vendor/quarto/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="uqai_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="uqai_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="uqai_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="uqai_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="../assets/vendor/quarto/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../assets/vendor/quarto/libs/revealjs/plugin/search/search.js"></script>
+  <script src="../assets/vendor/quarto/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../assets/vendor/quarto/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -542,7 +542,7 @@
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class="fas fa-gear"></i>","content":"<ul class="slide-menu-items">\n<li class="slide-tool-item active" data-item="0"><a href="#" onclick="RevealMenuToolHandlers.fullscreen(event)"><kbd>f</kbd> Fullscreen</a></li>\n<li class="slide-tool-item" data-item="1"><a href="#" onclick="RevealMenuToolHandlers.speakerMode(event)"><kbd>s</kbd> Speaker View</a></li>\n<li class="slide-tool-item" data-item="2"><a href="#" onclick="RevealMenuToolHandlers.overview(event)"><kbd>o</kbd> Slide Overview</a></li>\n<li class="slide-tool-item" data-item="3"><a href="#" onclick="RevealMenuToolHandlers.overview(event)"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class="slide-tool-item" data-item="4"><a href="#" onclick="RevealMenuToolHandlers.keyboardHelp(event)"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -856,4 +856,16 @@
     </script>
     
 
+
+
+
+
+
+<!-- contact-banner:start -->
+<footer id="contact-banner" style="margin-top:2rem;padding:1rem 0;border-top:1px solid #ddd;font-size:0.95rem;">
+  <div><strong>Benjamin Pope</strong> — Associate Professor, School of Mathematical and Physical Sciences, Macquarie University</div>
+  <div>Email: <a href="mailto:benjamin.pope@mq.edu.au">benjamin.pope@mq.edu.au</a></div>
+  <div>Bluesky: <a href="https://bsky.app/profile/benjaminpope.bsky.social">@benjaminpope.bsky.social</a></div>
+</footer>
+<!-- contact-banner:end -->
 </body></html>
