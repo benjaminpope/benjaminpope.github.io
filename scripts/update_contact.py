@@ -35,6 +35,7 @@ DEFAULTS = {
         "instagram": None,
         "bluesky": "benjaminpope.bsky.social",
         "orcid": None,
+        "linkedin": None,
     },
     "options": {
         "injectContact": False,
@@ -151,6 +152,12 @@ def build_footer_icons(config: dict):
     if bsky_url:
         items.append(
             f"  <li><a href=\"{bsky_url}\" class=\"icon fa-brands fa-bluesky\" aria-label=\"Bluesky\"><span class=\"label\">Bluesky</span></a></li>"
+        )
+
+    linkedin = social.get("linkedin")
+    if linkedin:
+        items.append(
+            f"  <li><a href=\"{linkedin}\" class=\"icon fa-brands fa-linkedin\" aria-label=\"LinkedIn\"><span class=\"label\">LinkedIn</span></a></li>"
         )
 
     if email:
