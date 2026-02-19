@@ -120,7 +120,7 @@ def build_banner(config: dict):
 
     banner_html = (
         f"\n{BANNER_MARKER_START}\n"
-        "<footer id=\"contact-banner\" style=\"margin-top:2rem;padding:1rem 0;border-top:1px solid #ddd;font-size:0.95rem;\">\n"
+        "<footer id=\"contact-banner\" style=\"margin-top:2rem;padding:1rem 4em;border-top:1px solid #ddd;font-size:0.95rem;background-color:#fff;margin-left:35%;\">\n"
         + "\n".join(banner_lines)
         + "\n</footer>\n"
         f"{BANNER_MARKER_END}\n"

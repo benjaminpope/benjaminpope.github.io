@@ -21,7 +21,7 @@
      "slidesReveal": "assets/js/revealjs"
    },
    "options": {
-     "injectContact": false,
+     "injectContact": true,
      "backupBeforeApply": true
    }
  }
