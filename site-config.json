@@ -1,0 +1,27 @@
+ {
+   "person": {
+     "name": "Benjamin Pope",
+     "title": "Associate Professor",
+     "affiliation": "Macquarie University",
+     "department": "School of Mathematical and Physical Sciences",
+    "email": "benjamin.pope@mq.edu.au",
+     "location": "Sydney, Australia"
+   },
+   "social": {
+     "bluesky": "benjaminpope.bsky.social",
+     "twitter": null,
+     "github": "benjaminpope",
+     "instagram": "benjaminpope",
+     "orcid": "0000-0003-2595-9114",
+     "linkedin": "https://au.linkedin.com/in/benjamin-pope-1656811a2"
+   },
+   "paths": {
+     "images": "images",
+     "slides": "slides",
+     "slidesReveal": "assets/js/revealjs"
+   },
+   "options": {
+     "injectContact": true,
+     "backupBeforeApply": true
+   }
+ }

@@ -1,41 +1,23 @@
 <!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-<link rel="icon" href="images/favicon.ico" type="image/x-icon" /> <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-40227049-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-<meta name="keywords" content="τ Ceti" />
-<meta name="robots" content="all" /> 
-<meta name="description" content="Blog about the non-discovery of transits across τ Ceti." /> 
-<!-- <meta name="author" content="Benjamin Pope" /> -->
 	<head>
 		<title>τ Ceti</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<meta name="keywords" content="τ Ceti" />
+		<meta name="robots" content="all" /> 
+		<meta name="description" content="Astrostatistics research by Benjamin Pope, Associate Professor at Macquarie University." /> 
+		<link rel="icon" href="https://www.mq.edu.au/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="https://www.mq.edu.au/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body id="top">
 
 		<!-- Header -->
 			<header id="header">
-				<a href="./" class="image avatar"><img src="images/profilepic.jpg" alt="" /></a>
+				<a href="./index.html" class="image avatar"><img src="images/profilepic.jpg" alt="" /></a>
 				<h1><strong>A/Prof Benjamin Pope</strong><br/>
 				Macquarie University</h1>
 			</header>
@@ -55,7 +37,7 @@
 					<p>When the data from the <a href="https://tess.mit.edu/">Transiting Exoplanet Survey Satellite</a> (TESS) covering τ Ceti came out two weeks ago, I received an email from <a href="https://www.asc.ox.ac.uk/person/284">Prof. Suzanne Aigrain</a> at Oxford, my former DPhil supervisor, saying that the <a href="https://blog.planethunters.org/2018/12/06/planet-hunters-tess/">Planet Hunters</a> team had noticed evidence of a transit in the light curve of τ Ceti and asking if I could check this - without knowing when the transit they found occurred, so that I had to replicate the result blind! One of the difficulties is that τ Ceti is very bright, a third magnitude star in a telescope that saturates (overexposes - just like in other cameras) on stars three magnitudes (fifteen times) fainter. In my DPhil, I had worked with <a href="https://rsaa.anu.edu.au/people/academics/dr-timothy-white">Dr Tim White</a> (ANU) to develop the method of 'halo photometry' (the code <a href="https://github.com/hvidy/halophot">halophot</a>) to deal with this problem for similar data obtained by the previous mission <a href="https://www.nasa.gov/mission_pages/kepler/overview/index.html"><i>Kepler</i></a>, which we used to look at the <a href="https://arxiv.org/abs/1708.07462">Seven Sisters</a> and the planet-hosting red giant <a href="https://arxiv.org/abs/1802.09812">Aldebaran</a>. The way it works is by discarding the unusable 'saturated' pixels but looking at the broader distribution of light (the 'halo') around the star and teasing out a signal from these many good pixels. So I used this code to look at τ Ceti (and if you want to see how it's used and the plots below were made, check out the Jupyter notebooks on <a href="https://github.com/benjaminpope/tauceti/tree/master/notebooks">the GitHub repo</a>!). Running halophot, it produces a huge signal that looks just like a transit (light curve on the left - standard 'PDC' pipeline in orange, new halo light curve in blue, halo map on the right): 
 					</p>
 
-					<p><img width="700" src="./tauceti/tau-Ceti-test.png" alt="light curves"></p>
+					<p><img width="700" src="images/blog/tauceti/tau-Ceti-test.png" alt="light curves"></p>
 
 					<p>When I told Suzanne, she confirmed this was exactly when they thought the transit was. So we were on: time to check if it's real! Suzanne's postdoc <a href="https://oscaribv.github.io/">Dr Oscar Barragán</a> modelled the transit signal in the standard PDC data, assuming the transit was equatorial, the planet was in a circular orbit and using the stellar mass and radius to try to estimate a range of valid periods. The depth of the transit signal gives you a planet to star ratio of 0.0108835, translating to a planet radius of 0.94 Earth radii. So this would be by far the closest Earth-sized planet to be known to transit. Meanwhile from the transit duration of ~ 11 hours we get that the minimum orbital period should be ~ 230 days, corresponding to an orbital radius of ~0.7 AU (though somewhat worryingly, not to the known periods of any of the planets found by radial velocity - though it could just be because it has too low a mass to detect). At this distance from the star the planet's equilibrium temperature would be ~225 K. At nearly fifty degrees C below freezing this is quite cold, but there is a lot of uncertainty about the effects of planetary atmospheres, and to me this is quite exciting - no cool transiting Earths are known around such a nearby star! </p>
 
@@ -63,7 +45,7 @@
 						Oscar produced this great visualization of his model:
 					</p>
 
-					<p><img width="700" src="./tauceti/Tau_Ceti.gif" alt="barragan model"></p>
+					<p><img width="700" src="images/blog/tauceti/Tau_Ceti.gif" alt="barragan model"></p>
 
 					<p>So with such high stakes we had to be very careful. In comparison to the PDC data, the transit in the halo light curve I made was much higher signal-to-noise, but seemed much deeper (a few percent rather than a fraction of a percent). This isn't necessarily a killer, in that neither the absolute normalization of PDC nor halo light curves of saturated stars is completely accurate, but they are usually much closer than this. First thing to check: halophot doesn't do anything obviously wrong, and generates a model (on the right of the figure above) that looks rather like the expected pattern of light from a star as seen by TESS. The light curve you get from this has a deep and clean transit, which is maybe a bit long and deep, but looks ok.</p>
 
@@ -75,7 +57,7 @@
 						To figure out what is going on with the Earthshine, we produce a 'background' light curve for τ Ceti using only pixels far away from where the star is contributing much light. Let's plot this with a vertical line to note the midpoint of the 'transit' we found earlier:
 					</p>
 
-					<p><img width="700" src="./tauceti/tau_ceti_background.png" alt="background"></p>
+					<p><img width="700" src="images/blog/tauceti/tau_ceti_background.png" alt="background"></p>
 
 					<p>Uh-oh! There is a 'transit' signal in the background light, a little later than the transit. This isn't an absolute killer - τ Ceti is very bright, and it isn't implausible that its light could have directly contaminated the background or done so via some electronic chip effect ('cross-talk'). It is also not quite at the same time as our putative planet. But it is pretty alarming.</p>
 
@@ -94,7 +76,7 @@
 					</p>
 
 					<video width="700" controls>
-					  <source src="./tauceti/tess_bg.mp4" type="video/mp4">
+					  <source src="images/blog/tauceti/tess_bg.mp4" type="video/mp4">
 					τ Ceti (blue star) and ζ Ceti (orange star) superimposed on the field of TESS TPFs from Camera-CCD 1-2, coloured by their log background flux.
 					</video>
 
@@ -102,7 +84,7 @@
 						As you can probably just make out, there is a lot of spatial structure there, mostly in the lower left. Just around the transit, there is a spur through the middle towards the top right that lights up a little, and then it switches back to the lower left, and then everything gets brighter overall towards perigee. When we contacted <a href="https://space.mit.edu/people/huang-chelsea">Dr Chelsea Huang</a> (MIT) about this, she was able to dig into the huge full frame images and make a 'difference image', subtracting one from the next to look for where the background might be changing. In her image below, τ Ceti is highlighted with a red arrow:
 					</p>
 
-					<p><img width="700" src="./tauceti/tau_ceti_diff.png" alt="difference image"></p>
+					<p><img width="700" src="images/blog/tauceti/tau_ceti_diff.png" alt="difference image"></p>
 
 					<p>
 						The fuzzy blobs pick out bright stars (e.g. τ Ceti itself, or ζ	Ceti top right). The vertical streaks are probably <a href="https://archive.stsci.edu/files/live/sites/mast/files/home/missions-and-data/active-missions/tess/_documents/TESS_Instrument_Handbook_v0.1.pdf#page=34">'straps'</a> on the back of the detector that reflect back some of the light that passes through. There is probably also some <a href="https://www.ptgrey.com/KB/10317">CCD smear</a> like you get with <a href="https://www.youtube.com/watch?v=PbJ93YZQ9pg">cheap cameras at night</a>, and it runs up and down every column with a sufficiently bright star in it (such as τ Ceti). But more importantly are the ripply concentric rings which are lens flare from the Earth just out of shot, and you can see τ Ceti lies smack bang in the middle of one of these rings. As the Earth seems to move and get brighter this ring runs over τ Ceti and causes this apparent transit effect.
@@ -113,339 +95,8 @@
 						<p><i>There was process: process was all. You could go in a promising direction or you could go wrong, but you did not set out with the expectation of ever stopping anywhere.</i></p>
 					</p>
 
-					</section>
+                
 
-
-				<!-- Three -->
-					<section id="two">
-						<h2>Get In Touch</h2>
-<!-- 						<div class="row">
-							<div class="8u 12u$(small)">
-								<form method="post" action="#">
-									<div class="row uniform 50%">
-										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div> -->
-							<div class="8u$ 12u$(small)">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon fa-home"><span class="label">Address</span></h3>
-										School of Mathematical and Physical Sciences<br /> 
-										Macquarie University<br />
-										Macquarie Park<br />
-										NSW 2113<br />
-										Australia
-									</li>
-
-									<li>
-										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-										<a href="#">benjamin.pope@mq.edu.au</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
-
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="6u 12u$(xsmall)">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button special">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button special small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="6u 12u$(small)">
-									<ul class="actions vertical">
-										<li><a href="#" class="button special">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="6u$ 12u$(small)">
-									<ul class="actions vertical small">
-										<li><a href="#" class="button special small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="6u 12u$(small)">
-									<ul class="actions vertical">
-										<li><a href="#" class="button special fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="6u$ 12u$(small)">
-									<ul class="actions vertical small">
-										<li><a href="#" class="button special small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button special">Special</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button big">Big</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button special fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button special fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button special icon fa-download">Icon</a></li>
-								<li><a href="#" class="button icon fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button special disabled">Special</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row uniform 50%">
-									<div class="6u 12u$(xsmall)">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="6u$ 12u$(xsmall)">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="12u$">
-										<div class="select-wrapper">
-											<select name="demo-category" id="demo-category">
-												<option value="">- Category -</option>
-												<option value="1">Manufacturing</option>
-												<option value="1">Shipping</option>
-												<option value="1">Administration</option>
-												<option value="1">Human Resources</option>
-											</select>
-										</div>
-									</div>
-									<div class="4u 12u$(small)">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="4u 12u$(small)">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="4u$ 12u(small)">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="6u 12u$(small)">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="6u$ 12u$(small)">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="12u$">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="12u$">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="special" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
 
 						<section>
 							<h4>Image</h4>
@@ -472,6 +123,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</section>
 				-->
 
+
+
 			</div>
 
 		<!-- Footer -->
@@ -480,15 +133,18 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<li><a href="https://ui.adsabs.harvard.edu/public-libraries/QX_wxPK-R1OegPl7lkqqzA" class="button">Publications</a></li>
 				</ul>
 				<ul class="actions">
-					<li><a href=./cv/cv.pdf class="button">CV</a></li>
+					<li><a href="./resources.html" class="button">Resources/Blog</a></li>
+				</ul>
+				<ul class="actions">
+					<li><a href="./cv/cv.pdf" class="button">CV</a></li>
 				</ul>
 				<ul class="icons">
-					<li><a href="https://twitter.com/fringetracker" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="http://www.github.com/benjaminpope/" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="https://instagram.com/benjaminpope/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="mailto:b.pope@uq.edu.au" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					<li><a style="text-decoration:none;" href="https://orcid.org/0000-0003-2595-9114"><i class="ai ai-orcid ai-2x"></i> </a></li>
-				</ul>
+  <li><a href="https://github.com/benjaminpope" class="icon fa-brands fa-github" aria-label="GitHub"><span class="label">GitHub</span></a></li>
+  <li><a href="https://bsky.app/profile/benjaminpope.bsky.social" class="icon fa-brands fa-bluesky" aria-label="Bluesky"><span class="label">Bluesky</span></a></li>
+  <li><a href="https://au.linkedin.com/in/benjamin-pope-1656811a2" class="icon fa-brands fa-linkedin" aria-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
+  <li><a href="mailto:benjamin.pope@mq.edu.au" class="icon fa-solid fa-envelope" aria-label="Email"><span class="label">Email</span></a></li>
+  <li><a href="https://orcid.org/0000-0003-2595-9114" class="icon" aria-label="ORCID"><i class="ai ai-orcid"></i><span class="label">ORCID</span></a></li>
+</ul>
 
 				<ul class="copyright">
 					<li>Text/Photos &copy; Benjamin Pope</li> <li>JWST/Pleiades Images &copy; NASA</li> <li>GJ 1151 Illustration &copy; Danielle Futselaar</li> <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -496,13 +152,30 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 			</footer>
 
-		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
-	</body>
+	
+    
+    
+
+
+
+
+
+
+
+
+
+<!-- contact-banner:start -->
+<footer id="contact-banner" style="margin-top:2rem;padding:1rem 4em;border-top:1px solid #ddd;font-size:0.95rem;background-color:#fff;margin-left:35%;">
+  <div><strong>Benjamin Pope</strong> — Associate Professor, School of Mathematical and Physical Sciences, Macquarie University</div>
+  <div>Email: <a href="mailto:benjamin.pope@mq.edu.au">benjamin.pope@mq.edu.au</a></div>
+  <div>Bluesky: <a href="https://bsky.app/profile/benjaminpope.bsky.social">@benjaminpope.bsky.social</a></div>
+</footer>
+<!-- contact-banner:end -->
+</body>
 </html>

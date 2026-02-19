@@ -1,0 +1,17 @@
+name: "Benjamin J. S. Pope"
+title: "Associate Professor of Statistical Data Science"
+affiliation:
+  current: "Macquarie University"
+  previous:
+    - "University of Queensland"
+    - "New York University (Sagan Fellow)"
+contact:
+  email: "benjamin.pope@mq.edu.au"
+  website: "https://benjaminpope.github.io"
+social:
+  bluesky: "benjaminpope.bsky.social"
+  twitter: ""  # deprecated
+notes: |
+  This data file is optional and intended for future use
+  with Jekyll includes/layouts to centralize boilerplate
+  (contact, affiliation, and social links).

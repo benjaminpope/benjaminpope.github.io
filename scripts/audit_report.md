@@ -1,0 +1,217 @@
+# Site Audit Report
+
+## Summary
+- HTML files: 72
+- Image files: 429
+- Top-level images: 0
+- Slide decks (Reveal.js detected): 59
+
+## Orphan Pages (not linked from index.html)
+- assets/js/revealjs/plugin/notes/speaker-view.html
+- assets/vendor/quarto/libs/revealjs/plugin/notes/speaker-view.html
+- data/cmd_halo.html
+- data/cmd_smear.html
+- planets.html
+- rps.html
+- talks.html
+- talks/aaq24/aaq24.html
+- talks/acamar7/acamar7.html
+- talks/aip22/aip22.html
+- talks/ansto/ansto.html
+- talks/aot/aot.html
+- talks/apep/apep.html
+- talks/astron/astron.html
+- talks/astron22/astron22.html
+- talks/brisscience/brisscience.html
+- talks/capstone/capstone.html
+- talks/ccafeb7/ccafeb7.html
+- talks/cmu/cmu.html
+- talks/csiro/csiro.html
+- talks/ctds/ctds.html
+- talks/dh_solar/dh_solar.html
+- talks/dsi/dsi.html
+- talks/exoplanets/exoplanets.html
+- talks/fizeau/fizeau.html
+- talks/flinders/flinders.html
+- talks/gaiadr2/gaiadr2.html
+- talks/gps/gps.html
+- talks/greenwich/apep.html
+- talks/kepscicon/kepscicon.html
+- talks/mad/mad.html
+- talks/mcmc/mcmc_lecture.html
+- talks/mcmc_lecture.html
+- talks/mqastro/mqastro.html
+- talks/nhfp/nhfp.html
+- talks/nhfp20/nhfp20.html
+- talks/pint_solar/pint_solar.html
+- talks/qbi/qbi.html
+- talks/ranganath/ranganath.html
+- talks/sagan.html
+- talks/sagan/sagan.html
+- talks/sagan18/sagan.html
+- talks/seattle/smear.html
+- talks/sifasolar/sifasolar.html
+- talks/smear/smear.html
+- talks/solar/solar.html
+- talks/stsci/stsci.html
+- talks/swinburne/swinburne.html
+- talks/symposium.html
+- talks/toronto/toronto.html
+- talks/ucr/ucr.html
+- talks/umelb23/umelb23.html
+- talks/unsw24/unsw24.html
+- talks/uq/uq.html
+- talks/uq14c/uq14c.html
+- talks/uqai.html
+- talks/uqai_slides.html
+- talks/uqastro/uqastro.html
+- talks/uqpain/uqpain.html
+- talks/uqphysics/uqphysics.html
+- talks/uqsa/uqsa.html
+- talks/usq/usq.html
+- talks/yale/yale.html
+- tauceti.html
+- teaching.html
+
+## Image Reference Targets (top)
+- ../../images/slides/rings.jpg (25 refs)
+- ../../images/slides/miyake.jpg (14 refs)
+- ../../images/slides/carrington.jpg (14 refs)
+- ../../images/slides/bothmiyake.jpg (13 refs)
+- ../../images/slides/deefigure.png (13 refs)
+- ../../images/slides/maehara.jpg (13 refs)
+- ../../images/slides/combined.png (13 refs)
+- ../../images/slides/magnetar_burst.jpg (12 refs)
+- https://live.staticflickr.com/8364/8263944907_fa5d0aecba_c.jpg (12 refs)
+- ../../images/slides/posterior_models.jpg (12 refs)
+- ../../images/slides/7176BCE.jpg (12 refs)
+- ../../images/slides/transit.jpg (12 refs)
+- ../../images/slides/timeseries.jpg (12 refs)
+- ../../images/slides/ampspec.jpg (12 refs)
+- ../../images/slides/on_off.jpg (11 refs)
+- ../../images/slides/jupiter.gif (11 refs)
+- ../../images/slides/intcal20.png (11 refs)
+- ../../images/slides/nyt.png (11 refs)
+- ../../images/slides/guttler_flows.png (11 refs)
+- ../../images/slides/k2sc.jpg (11 refs)
+- ../../images/slides/uusitalo.png (10 refs)
+- ../../images/slides/latitude_trees.png (10 refs)
+- ../../images/slides/miyake_amplitude_density.png (10 refs)
+- ../../images/slides/miyake_solar_cycle.png (10 refs)
+- ../../images/slides/l2m2.gif (10 refs)
+- ../../images/slides/helio.jpg (10 refs)
+- ../../images/slides/sensitivities.png (10 refs)
+- ../../images/slides/aldebaran_lc.png (10 refs)
+- images/profilepic.jpg (9 refs)
+- ../../images/slides/radiocarbon_team.jpg (9 refs)
+- ../../images/slides/miyake_durations.png (9 refs)
+- images/avatar.jpg (8 refs)
+- images/thumbs/03.jpg (7 refs)
+- images/thumbs/02.jpg (7 refs)
+- images/thumbs/01.jpg (7 refs)
+- ../../images/slides/active_stars_1_sector.jpg (7 refs)
+- ../../images/slides/quiescent_stars_1_sector.jpg (7 refs)
+- ../../images/slides/bothmiyake2.jpg (6 refs)
+- ../../images/slides/gudel_benz_flares_context.jpg (6 refs)
+- ../../images/slides/all-data.jpg (6 refs)
+- ../../images/slides/good_and_bad.png (6 refs)
+- ../../images/slides/jwst_mask.jpg (6 refs)
+- images/kernel.jpg (5 refs)
+- images/pleiades.jpg (5 refs)
+- images/radio.jpg (5 refs)
+- images/about.jpg (5 refs)
+- ../../images/slides/toliman_pupil_and_stars.jpg (5 refs)
+- ../../images/slides/toliman_mask.jpg (5 refs)
+- ../../images/slides/psd.png (5 refs)
+- ../../images/slides/por_coronagraph.png (5 refs)
+
+## Image Locations by Top-Level Folder
+- images: 360 files
+- talks: 59 files
+- fonts: 8 files
+- assets: 2 files
+
+## Reveal.js Paths Referenced
+- https://github.com/hakimel/reveal.js/ (1 pages)
+
+## Affiliation Mentions
+- Macquarie: 70 pages
+- NYU: 30 pages
+- UQ: 34 pages
+- Sagan Fellow: 12 pages
+
+## Social Mentions
+- Twitter: 71 pages
+- Bluesky: 70 pages
+
+## Emails by Page
+- directimaging.html: academicons@1.9.4, benjamin.pope@mq.edu.au
+- index.html: academicons@1.9.4, benjamin.pope@mq.edu.au
+- about.html: academicons@1.9.4, benjamin.pope@mq.edu.au
+- radio.html: academicons@1.9.4, benjamin.pope@mq.edu.au
+- planets.html: academicons@1.9.4, benjamin.pope@mq.edu.au
+- resources.html: academicons@1.9.4, benjamin.pope@mq.edu.au
+- kepler.html: academicons@1.9.4, benjamin.pope@mq.edu.au
+- teaching.html: academicons@1.9.4, benjamin.pope@mq.edu.au
+- talks.html: academicons@1.9.4, benjamin.pope@mq.edu.au
+- tauceti.html: academicons@1.9.4, benjamin.pope@mq.edu.au
+- rps.html: academicons@1.9.4, benjamin.pope@mq.edu.au
+- talks/mcmc_lecture.html: benjamin.pope@mq.edu.au, reveal.js@4.0.2
+- talks/sagan.html: benjamin.pope@mq.edu.au
+- talks/index.html: academicons@1.9.4, benjamin.pope@mq.edu.au
+- talks/uqai_slides.html: benjamin.pope@mq.edu.au
+- talks/uqai.html: benjamin.pope@mq.edu.au
+- talks/symposium.html: benjamin.pope@mq.edu.au
+- talks/solar/solar.html: benjamin.pope@mq.edu.au
+- talks/gaiadr2/gaiadr2.html: benjamin.pope@mq.edu.au
+- talks/exoplanets/exoplanets.html: benjamin.pope@mq.edu.au
+- talks/qbi/qbi.html: benjamin.pope@mq.edu.au
+- talks/unsw24/unsw24.html: benjamin.pope@mq.edu.au
+- talks/apep/apep.html: benjamin.pope@mq.edu.au
+- talks/ranganath/ranganath.html: benjamin.pope@mq.edu.au
+- talks/gps/gps.html: benjamin.pope@mq.edu.au
+- talks/csiro/csiro.html: benjamin.pope@mq.edu.au
+- talks/ansto/ansto.html: benjamin.pope@mq.edu.au
+- talks/seattle/smear.html: benjamin.pope@mq.edu.au
+- talks/yale/yale.html: benjamin.pope@mq.edu.au
+- talks/umelb23/umelb23.html: benjamin.pope@mq.edu.au
+- talks/greenwich/apep.html: benjamin.pope@mq.edu.au
+- talks/uq14c/uq14c.html: benjamin.pope@mq.edu.au
+- talks/flinders/flinders.html: benjamin.pope@mq.edu.au
+- talks/ccafeb7/ccafeb7.html: benjamin.pope@mq.edu.au
+- talks/nhfp/nhfp.html: benjamin.pope@mq.edu.au
+- talks/dsi/dsi.html: benjamin.pope@mq.edu.au
+- talks/dh_solar/dh_solar.html: benjamin.pope@mq.edu.au
+- talks/stsci/stsci.html: benjamin.pope@mq.edu.au
+- talks/ctds/ctds.html: benjamin.pope@mq.edu.au
+- talks/uqastro/uqastro.html: benjamin.pope@mq.edu.au
+- talks/uq/uq.html: benjamin.pope@mq.edu.au
+- talks/mad/mad.html: benjamin.pope@mq.edu.au
+- talks/cmu/cmu.html: benjamin.pope@mq.edu.au
+- talks/usq/usq.html: benjamin.pope@mq.edu.au
+- talks/capstone/capstone.html: benjamin.pope@mq.edu.au
+- talks/aip22/aip22.html: benjamin.pope@mq.edu.au
+- talks/smear/smear.html: benjamin.pope@mq.edu.au
+- talks/sagan/sagan.html: benjamin.pope@mq.edu.au
+- talks/uqpain/uqpain.html: benjamin.pope@mq.edu.au
+- talks/fizeau/fizeau.html: benjamin.pope@mq.edu.au
+- talks/mcmc/mcmc_lecture.html: benjamin.pope@mq.edu.au, reveal.js@4.0.2
+- talks/nhfp20/nhfp20.html: benjamin.pope@mq.edu.au
+- talks/uqsa/uqsa.html: benjamin.pope@mq.edu.au
+- talks/uqphysics/uqphysics.html: benjamin.pope@mq.edu.au
+- talks/swinburne/swinburne.html: benjamin.pope@mq.edu.au
+- talks/kepscicon/kepscicon.html: benjamin.pope@mq.edu.au
+- talks/toronto/toronto.html: benjamin.pope@mq.edu.au
+- talks/ucr/ucr.html: benjamin.pope@mq.edu.au
+- talks/mqastro/mqastro.html: benjamin.pope@mq.edu.au
+- talks/astron22/astron22.html: benjamin.pope@mq.edu.au
+- talks/sagan18/sagan.html: benjamin.pope@mq.edu.au
+- talks/aaq24/aaq24.html: benjamin.pope@mq.edu.au
+- talks/astron/astron.html: benjamin.pope@mq.edu.au
+- talks/pint_solar/pint_solar.html: benjamin.pope@mq.edu.au
+- talks/sifasolar/sifasolar.html: benjamin.pope@mq.edu.au
+- talks/brisscience/brisscience.html: benjamin.pope@mq.edu.au
+- talks/aot/aot.html: benjamin.pope@mq.edu.au
+- talks/acamar7/acamar7.html: benjamin.pope@mq.edu.au
+- data/cmd_smear.html: benjamin.pope@mq.edu.au
+- data/cmd_halo.html: benjamin.pope@mq.edu.au
