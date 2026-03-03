@@ -2473,7 +2473,7 @@
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em 0 0;
+		padding: 4.5em 4em 0 0;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -2497,7 +2497,7 @@
 
 		#header .image.avatar {
 			margin: 0 -2em 1em 0;
-			width: 13em;
+			width: 11.5em;
 		}
 
 /* Footer */
@@ -2505,7 +2505,7 @@
 	#footer {
 		bottom: 0;
 		left: 0;
-		padding: 0 4em 6em 0;
+		padding: 0.75em 4em 2.75em 0;
 		position: fixed;
 		text-align: right;
 		width: 35%;
@@ -2851,7 +2851,7 @@
 		/* Header */
 
 			#header {
-				padding: 6em 3em 3em 3em;
+				padding: 3.75em 3em 1.5em 3em;
 				width: 30%;
 			}
 
@@ -2866,7 +2866,7 @@
 		/* Footer */
 
 			#footer {
-				padding: 0 3em 5em 3em;
+				padding: 0.5em 3em 2.25em 3em;
 				width: 30%;
 			}
 
