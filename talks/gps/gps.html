@@ -314,7 +314,7 @@
 					</section>
 
 					<section>
-						You will usually use an optimizing library such as <a href="scipy.optimize.minimize">scipy</a> to maximize the likelihood of this GP fit and therefore optimize the hyperparameters - you uually don't care as much about their detailed distribution.
+						You will usually use an optimizing library such as <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html">scipy</a> to maximize the likelihood of this GP fit and therefore optimize the hyperparameters - you uually don't care as much about their detailed distribution.
 					</section>
 
 					<section>
@@ -503,32 +503,15 @@
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/math/math.js', async: true }
+					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../plugin/zoom-js/zoom.js', async: true },
+					{ src: '../plugin/notes/notes.js', async: true },
+					{ src: '../plugin/math/math.js', async: true }
 				]
 			});
 
 		</script>
-
-		
-
-
-
-
-
-
-
-
-<!-- contact-banner:start -->
-<footer id="contact-banner" style="margin-top:2rem;padding:1rem 4em;border-top:1px solid #ddd;font-size:0.95rem;background-color:#fff;margin-left:35%;">
-  <div><strong>Benjamin Pope</strong> — Associate Professor, School of Mathematical and Physical Sciences, Macquarie University</div>
-  <div>Email: <a href="mailto:benjamin.pope@mq.edu.au">benjamin.pope@mq.edu.au</a></div>
-  <div>Bluesky: <a href="https://bsky.app/profile/benjaminpope.bsky.social">@benjaminpope.bsky.social</a></div>
-</footer>
-<!-- contact-banner:end -->
 </body>
 </html>

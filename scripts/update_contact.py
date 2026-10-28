@@ -224,7 +224,7 @@ def main():
     config = load_config()
 
     changed_files = []
-    skip_dirs = {".git", "node_modules", "_site", "scripts", "assets"}
+    skip_dirs = {".git", "node_modules", "_site", "scripts", "assets", "talks", "data"}
     for root, dirs, files in os.walk(REPO_ROOT):
         # Prune traversal into skip directories
         dirs[:] = [d for d in dirs if d not in skip_dirs]

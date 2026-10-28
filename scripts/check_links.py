@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Broad local link checker for the repository.
-- Scans all HTML files for local href/src-like attributes
+- Scans all HTML files for local href/src-like attributes and Reveal.js dependency src paths
 - Resolves relative paths against each file location
 - Verifies targets exist on disk (skips http/https/mailto)
 - Reports missing links per file and a summary count
@@ -17,30 +17,26 @@ from collections import defaultdict
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
 HTML_ATTR_PATTERNS = [
-    # Common attributes
-    re.compile(r"href=\"([^\"]+)\"", re.IGNORECASE),
-    re.compile(r"src=\"([^\"]+)\"", re.IGNORECASE),
+    # Common attributes (single- and double-quoted)
+    re.compile(r'href\s*=\s*(?:"([^"]+)"|\'([^\']+)\')', re.IGNORECASE),
+    re.compile(r'src\s*=\s*(?:"([^"]+)"|\'([^\']+)\')', re.IGNORECASE),
     # Reveal/Quarto specific
-    re.compile(r"data-src=\"([^\"]+)\"", re.IGNORECASE),
-    re.compile(r"data-background=\"([^\"]+)\"", re.IGNORECASE),
-    re.compile(r"data-background-image=\"([^\"]+)\"", re.IGNORECASE),
+    re.compile(r'data-src\s*=\s*(?:"([^"]+)"|\'([^\']+)\')', re.IGNORECASE),
+    re.compile(r'data-background\s*=\s*(?:"([^"]+)"|\'([^\']+)\')', re.IGNORECASE),
+    re.compile(r'data-background-image\s*=\s*(?:"([^"]+)"|\'([^\']+)\')', re.IGNORECASE),
+    re.compile(r'data-background-video\s*=\s*(?:"([^"]+)"|\'([^\']+)\')', re.IGNORECASE),
+    re.compile(r'data-markdown\s*=\s*(?:"([^"]+)"|\'([^\']+)\')', re.IGNORECASE),
+    # Reveal.js dependencies src: '...' / "..."
+    re.compile(r'src\s*:\s*(?:"([^"]+)"|\'([^\']+)\')'),
 ]
 
-SKIP_PREFIXES = ("http://", "https://", "mailto:", "tel:", "data:")
-
-# File extensions we consider worth checking for local existence
-CHECKABLE_EXTS = {
-    ".html", ".htm", ".css", ".js", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp",
-    ".mp4", ".webm", ".mp3", ".ogg", ".pdf", ".woff", ".woff2", ".ttf", ".otf"
-}
+SKIP_PREFIXES = ("http://", "https://", "mailto:", "tel:", "data:", "//")
 
 
 def iter_html_files(root: Path):
     for dirpath, dirnames, filenames in os.walk(root):
+        dirnames[:] = [d for d in dirnames if d not in {".git", "node_modules", "_site"}]
         pdir = Path(dirpath)
-        # Skip common generated dirs
-        if pdir.name in {".git", "node_modules", "_site"}:
-            continue
         for f in filenames:
             if f.lower().endswith((".html", ".htm")):
                 yield pdir / f
@@ -66,19 +62,15 @@ def is_checkable(href: str) -> bool:
     # Skip anchors and JS pseudo-links
     if href.startswith("#") or href.lower().startswith("javascript:"):
         return False
-    # Only check known resource types if an extension is present
-    ext = Path(href).suffix.lower()
-    if ext and ext not in CHECKABLE_EXTS:
-        return False
     return True
 
 
 def resolve(base_file: Path, href: str) -> Path:
     # Absolute path from site root
     if href.startswith("/"):
-        return (REPO_ROOT / href.lstrip("/"))
+        return REPO_ROOT / href.lstrip("/")
     # Relative to the file
-    return (base_file.parent / href)
+    return base_file.parent / href
 
 
 def main():
@@ -90,7 +82,13 @@ def main():
         text = re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL)
         links = []
         for rx in HTML_ATTR_PATTERNS:
-            links.extend(rx.findall(text))
+            for match in rx.findall(text):
+                if isinstance(match, tuple):
+                    val = match[0] or match[1]
+                else:
+                    val = match
+                if val:
+                    links.append(val)
         for raw in links:
             href = normalize(raw)
             if not is_checkable(href):

@@ -1,6 +1,6 @@
 /* Font Awesome v4/v5 imports removed; core pages load FA6 via CDN */
 
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
 /*
 	Strata by HTML5 UP
@@ -55,6 +55,11 @@
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
+	}
+
+	img, video {
+		max-width: 100%;
+		height: auto;
 	}
 
 /* Containers */
@@ -2511,6 +2516,15 @@
 		width: 35%;
 	}
 
+		#footer ul.actions {
+			margin: 0 0 0.75em 0;
+		}
+
+		#footer .button {
+			height: 2.6em;
+			line-height: 2.6em;
+		}
+
 		#footer .icons {
 			margin: 1em 0 0 0;
 		}
@@ -3104,6 +3118,64 @@
 				line-height: 2.25em;
 				margin-left: 0;
 				padding-left: 0;
+			}
+
+	}
+
+/* Short desktop/laptop viewports */
+
+	@media screen and (min-width: 981px) and (max-height: 860px) {
+
+		#header {
+			padding: 3em 3em 1.5em 3em;
+		}
+
+			#header .image.avatar {
+				margin: 0 0 1em 0;
+				width: 5em;
+			}
+
+		#footer {
+			padding: 0 3em 2em 3em;
+		}
+
+			#footer .icons {
+				margin: 0.5em 0;
+			}
+
+			#footer .copyright {
+				margin: 0.5em 0;
+			}
+
+	}
+
+	@media screen and (min-width: 981px) and (max-height: 680px) {
+
+		#header {
+			padding: 1.5em 3em 1em 3em;
+		}
+
+			#header .image.avatar {
+				margin: 0 0 0.5em 0;
+				width: 4em;
+			}
+
+			#header h1 {
+				font-size: 1.15em;
+				line-height: 1.4em;
+			}
+
+		#footer {
+			padding: 0 3em 1em 3em;
+		}
+
+			#footer ul.actions {
+				margin: 0 0 0.4em 0;
+			}
+
+			#footer .button {
+				height: 2.2em;
+				line-height: 2.2em;
 			}
 
 	}
