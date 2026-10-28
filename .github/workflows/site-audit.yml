@@ -42,7 +42,8 @@ jobs:
           file_pattern: |
             scripts/audit_report.json
             scripts/audit_report.md
-            slides/index.html
+            talks/index.html
+            README.md
 
       - name: Upload audit artifacts
         uses: actions/upload-artifact@v4
@@ -51,4 +52,4 @@ jobs:
           path: |
             scripts/audit_report.json
             scripts/audit_report.md
-            slides/index.html
+            talks/index.html

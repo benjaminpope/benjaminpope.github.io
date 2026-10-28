@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-		<title>τ Ceti</title>
+		<title>τ Ceti — Benjamin Pope</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="keywords" content="τ Ceti" />
@@ -61,7 +61,7 @@
 
 					<p>Uh-oh! There is a 'transit' signal in the background light, a little later than the transit. This isn't an absolute killer - τ Ceti is very bright, and it isn't implausible that its light could have directly contaminated the background or done so via some electronic chip effect ('cross-talk'). It is also not quite at the same time as our putative planet. But it is pretty alarming.</p>
 
-					<p>Let's look at some less highly processed data. What we have been looking at so far has been a 'target pixel file' (TPF) produced with a frame every 2 minutes and a lot of sophisticated calibration. Insted let's use the <a href="https://mast.stsci.edu/tesscut/">TESSCut</a> tool to grab part of the Full Frame Image (FFI) data, which has 30 minute frames and a lot less processing but of a much wider field. If you use <a href="https://docs.lightkurve.org/">lightkurve.interact()</a> and look at the individual pixel time series in the FFI, they all show this dip. But in the pipeline TPF this is different: above the mid-axis of the star, they go up during 'transit' and below they go down. You can actually see this at a global level if you use the slider and the right scalings: it seems that as a whole the background flux shifts upward on the detector for a few hours and then shifts back down. So something funky has happened to the spatially-varying background during processing.</p>
+					<p>Let's look at some less highly processed data. What we have been looking at so far has been a 'target pixel file' (TPF) produced with a frame every 2 minutes and a lot of sophisticated calibration. Instead let's use the <a href="https://mast.stsci.edu/tesscut/">TESSCut</a> tool to grab part of the Full Frame Image (FFI) data, which has 30 minute frames and a lot less processing but of a much wider field. If you use <a href="https://docs.lightkurve.org/">lightkurve.interact()</a> and look at the individual pixel time series in the FFI, they all show this dip. But in the pipeline TPF this is different: above the mid-axis of the star, they go up during 'transit' and below they go down. You can actually see this at a global level if you use the slider and the right scalings: it seems that as a whole the background flux shifts upward on the detector for a few hours and then shifts back down. So something funky has happened to the spatially-varying background during processing.</p>
 
 					<p>So let's look at another very bright star in the field: the giant star ζ Ceti. It shows the same background dip - but as Tim White pointed out, at a slightly different time! If you look at individual pixel time series from 'above' and 'below' the star midlines, above the line they go up and below they go down - features with the same midpoint and similar duration to the 'signal' at τ Ceti - they are something to do with TESS and not a planet around τ Ceti. The difference between the top and the bottom, Tim realized, can be ascribed to the fact that these pixel cutouts are very elongated in that axis, so if we have a spatially-varying background but subtract only a constant background, we will find this asymmetric pattern. This poor background subtraction may therefore have contaminated all the pixels and created the appearance of a transit where in reality there is none.</p>
 
@@ -91,39 +91,11 @@
 					</p>
 
 					<p>
-						Regrettably we have been 'dispossessed' of this potentially very exciting planet candidate. But this is how science is: something that is too good to be true very often turns out that way, but it doesn't make it any less worth investigating. In digging through the data on τ Ceti we were forced to fix bugs in our code and grapple with unfamiliar systematics in TESS that we didn't see in <i>Kepler</i>. Personally, I am concerned that systematics which affect so many pixels in common over such a wide field are going to pose a serious problem to the approach we had been taking to bright stars in K2, and playing with the τ Ceti data has been a valuable learning experience. While we haven't yet detected her home planet's transits, we should keep in mind the maxim of Le Guin's Anarresti scientist Takver:  
-						<p><i>There was process: process was all. You could go in a promising direction or you could go wrong, but you did not set out with the expectation of ever stopping anywhere.</i></p>
+						Regrettably we have been 'dispossessed' of this potentially very exciting planet candidate. But this is how science is: something that is too good to be true very often turns out that way, but it doesn't make it any less worth investigating. In digging through the data on τ Ceti we were forced to fix bugs in our code and grapple with unfamiliar systematics in TESS that we didn't see in <i>Kepler</i>. Personally, I am concerned that systematics which affect so many pixels in common over such a wide field are going to pose a serious problem to the approach we had been taking to bright stars in K2, and playing with the τ Ceti data has been a valuable learning experience. While we haven't yet detected her home planet's transits, we should keep in mind the maxim of Le Guin's Anarresti scientist Takver:
 					</p>
-
-                
-
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row 50% uniform">
-									<div class="12u$"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
+					<p><i>There was process: process was all. You could go in a promising direction or you could go wrong, but you did not set out with the expectation of ever stopping anywhere.</i></p>
 
 					</section>
-				-->
-
-
 
 			</div>
 
@@ -157,19 +129,5 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-	
-    
-    
-
-
-
-<!-- contact-banner:start -->
-<footer id="contact-banner" style="margin-top:2rem;padding:1rem 4em;border-top:1px solid #ddd;font-size:0.95rem;background-color:#fff;margin-left:35%;">
-  <div><strong>Benjamin Pope</strong> — Associate Professor, School of Mathematical and Physical Sciences, Macquarie University</div>
-  <div>Email: <a href="mailto:benjamin.pope@mq.edu.au">benjamin.pope@mq.edu.au</a></div>
-  <div>Bluesky: <a href="https://bsky.app/profile/benjaminpope.bsky.social">@benjaminpope.bsky.social</a></div>
-</footer>
-<!-- contact-banner:end -->
 </body>
 </html>
